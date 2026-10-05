@@ -1,25 +1,196 @@
 {
+  "framework": "NIST Cybersecurity Framework",
+  "framework_version": "2.0",
+  "assessment_scope": "PR",
+  "total_controls_assessed": 22,
+  "catalog_total_subcategories": 106,
   "summary": {
-    "evidence_coverage": 79.17,
-    "supported": 8,
-    "partial": 3,
-    "no_evidence": 1,
+    "evidence_coverage": 40.91,
+    "supported": 0,
+    "partial": 18,
+    "no_evidence": 4,
     "needs_review": 0,
-    "assessable_controls": 12,
-    "total_controls": 12
+    "assessable_controls": 22,
+    "total_controls": 22
+  },
+  "function_summaries": {
+    "PR": {
+      "name": "PROTECT",
+      "evidence_coverage": 40.91,
+      "supported": 0,
+      "partial": 18,
+      "no_evidence": 4,
+      "needs_review": 0,
+      "assessable_controls": 22,
+      "total_controls": 22
+    }
+  },
+  "category_summaries": {
+    "PR.AA": {
+      "name": "Identity Management, Authentication, and Access Control",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "evidence_coverage": 50.0,
+      "supported": 0,
+      "partial": 6,
+      "no_evidence": 0,
+      "needs_review": 0,
+      "assessable_controls": 6,
+      "total_controls": 6
+    },
+    "PR.AT": {
+      "name": "Awareness and Training",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "evidence_coverage": 50.0,
+      "supported": 0,
+      "partial": 2,
+      "no_evidence": 0,
+      "needs_review": 0,
+      "assessable_controls": 2,
+      "total_controls": 2
+    },
+    "PR.DS": {
+      "name": "Data Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "evidence_coverage": 50.0,
+      "supported": 0,
+      "partial": 4,
+      "no_evidence": 0,
+      "needs_review": 0,
+      "assessable_controls": 4,
+      "total_controls": 4
+    },
+    "PR.IR": {
+      "name": "Technology Infrastructure Resilience",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "evidence_coverage": 25.0,
+      "supported": 0,
+      "partial": 2,
+      "no_evidence": 2,
+      "needs_review": 0,
+      "assessable_controls": 4,
+      "total_controls": 4
+    },
+    "PR.PS": {
+      "name": "Platform Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "evidence_coverage": 33.33,
+      "supported": 0,
+      "partial": 4,
+      "no_evidence": 2,
+      "needs_review": 0,
+      "assessable_controls": 6,
+      "total_controls": 6
+    }
   },
   "controls": [
     {
-      "id": "AC-01",
-      "title": "Remote Administrative MFA",
-      "requirement": "Remote administrative access must use multi-factor authentication.",
-      "status": "SUPPORTED",
-      "reason": "Multiple evidence sources explicitly state that multi-factor authentication is required for remote administrative access.",
-      "gap": null,
-      "recommendation": "No further action required based on the provided evidence.",
+      "id": "PR.AA-01",
+      "title": "Identity Management, Authentication, and Access Control",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "requirement": "Identities and credentials for authorized users, services, and hardware are managed by the organization",
+      "status": "PARTIAL",
+      "reason": "The evidence provided supports the management of user identities and credentials, including access authorization, least privilege, and user account management. However, there is no explicit evidence of managing cryptographic certificates, identity tokens, or hardware identifiers, which are part of the requirement.",
+      "gap": "Lack of evidence for managing cryptographic certificates, identity tokens, and hardware identifiers.",
+      "recommendation": "Provide additional evidence or documentation that covers the management of cryptographic certificates, identity tokens, and hardware identifiers to fully support the requirement.",
       "evidence_sources": [
         {
           "source": "02_access_control_policy.txt",
+          "chunk": 0
+        },
+        {
+          "source": "01_information_security_policy.txt",
+          "chunk": 1
+        },
+        {
+          "source": "14_remote_access_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "PR.AA-02",
+      "title": "Identity Management, Authentication, and Access Control",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "requirement": "Identities are proofed and bound to credentials based on the context of interactions",
+      "status": "PARTIAL",
+      "reason": "The evidence provided supports the issuance of individual credentials and the use of multi-factor authentication, but does not explicitly address the proofing of identities based on the context of interactions or the use of government-issued identity credentials for verification.",
+      "gap": "Lack of evidence regarding identity proofing using government-issued credentials and context-based identity verification.",
+      "recommendation": "Provide additional evidence or documentation that outlines the process for identity proofing, including the use of government-issued credentials and how identities are verified based on the context of interactions.",
+      "evidence_sources": [
+        {
+          "source": "02_access_control_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "PR.AA-03",
+      "title": "Identity Management, Authentication, and Access Control",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "requirement": "Users, services, and hardware are authenticated",
+      "status": "PARTIAL",
+      "reason": "The evidence partially supports the requirement. While multi-factor authentication is required for remote administrative access, there is no evidence of policies for minimum password strength, periodic reauthentication, or emergency access for authorized personnel.",
+      "gap": "Lack of evidence for password strength policies, periodic reauthentication, and emergency access procedures.",
+      "recommendation": "Review and document policies for minimum password strength, periodic reauthentication, and emergency access procedures to fully support the requirement.",
+      "evidence_sources": [
+        {
+          "source": "02_access_control_policy.txt",
+          "chunk": 1
+        }
+      ]
+    },
+    {
+      "id": "PR.AA-04",
+      "title": "Identity Management, Authentication, and Access Control",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "requirement": "Identity assertions are protected, conveyed, and verified",
+      "status": "PARTIAL",
+      "reason": "The evidence mentions encryption for data in transit and at rest, which is relevant to protecting identity assertions. However, there is no explicit mention of protecting, conveying, or verifying identity assertions specifically, nor the use of standards-based approaches for identity assertions.",
+      "gap": "Lack of explicit evidence regarding the protection, conveyance, and verification of identity assertions, as well as the use of standards-based approaches for identity assertions.",
+      "recommendation": "Provide evidence of policies or procedures that explicitly address the protection, conveyance, and verification of identity assertions, including the use of standards-based approaches.",
+      "evidence_sources": [
+        {
+          "source": "16_encryption_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "PR.AA-05",
+      "title": "Identity Management, Authentication, and Access Control",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "requirement": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties",
+      "status": "PARTIAL",
+      "reason": "The evidence provides policies and procedures for access control, least privilege, and termination/role changes, but lacks explicit mention of separation of duties and periodic review of access permissions.",
+      "gap": "Missing explicit evidence of separation of duties and a formal schedule for periodic review of access permissions.",
+      "recommendation": "Document and implement procedures for periodic review of access permissions and explicitly incorporate separation of duties principles into access control policies.",
+      "evidence_sources": [
+        {
+          "source": "02_access_control_policy.txt",
+          "chunk": 0
+        },
+        {
+          "source": "01_information_security_policy.txt",
           "chunk": 1
         },
         {
@@ -27,147 +198,248 @@
           "chunk": 0
         },
         {
-          "source": "03_password_policy.txt",
+          "source": "18_physical_security_policy.txt",
           "chunk": 0
+        },
+        {
+          "source": "02_access_control_policy.txt",
+          "chunk": 1
         }
       ]
     },
     {
-      "id": "AC-02",
-      "title": "Periodic Access Reviews",
-      "requirement": "User access privileges must be periodically reviewed, and the organization must define a mandatory review frequency.",
+      "id": "PR.AA-06",
+      "title": "Identity Management, Authentication, and Access Control",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "requirement": "Physical access to assets is managed, monitored, and enforced commensurate with risk",
       "status": "PARTIAL",
-      "reason": "The evidence mentions that system owners should review privileged accounts when requested by Information Security, but there is no mandatory periodic review interval defined for all user accounts.",
-      "gap": "Lack of a mandatory periodic review frequency for all user accounts.",
-      "recommendation": "Define and document a mandatory periodic review frequency for all user accounts.",
+      "reason": "The evidence provided indicates that physical access to assets is managed and monitored through policies such as restricted facility access, visitor control, and protection of critical information systems. However, there is no clear evidence of enforcement commensurate with risk, such as risk-based reviews of physical access permissions or explicit mention of additional controls for high-risk areas.",
+      "gap": "Lack of evidence for risk-based enforcement of physical access controls and additional security measures for high-risk areas.",
+      "recommendation": "Provide evidence of risk assessments informing physical access controls and documentation of enhanced security measures for high-risk areas.",
       "evidence_sources": [
         {
-          "source": "20_account_management_procedure.txt",
+          "source": "18_physical_security_policy.txt",
           "chunk": 0
         }
       ]
     },
     {
-      "id": "IR-01",
-      "title": "Incident Reporting",
-      "requirement": "Personnel must report suspected cybersecurity incidents to the appropriate security function.",
-      "status": "SUPPORTED",
-      "reason": "The evidence clearly states that employees are responsible for reporting suspected cybersecurity incidents to the Information Security Department, as outlined in both the Information Security Policy and the Incident Response Policy.",
-      "gap": null,
-      "recommendation": "No further action is needed based on the provided evidence.",
+      "id": "PR.AT-01",
+      "title": "Awareness and Training",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AT",
+      "category_name": "Awareness and Training",
+      "requirement": "Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind",
+      "status": "PARTIAL",
+      "reason": "The evidence provided indicates that the organization has policies in place for security awareness training, including topics such as phishing, password protection, and incident reporting. However, there is no evidence of periodic assessments or tests of user understanding, consequences for policy violations, or mandatory annual refresher training.",
+      "gap": "Lack of evidence for periodic assessments or tests of user understanding, consequences for policy violations, and mandatory annual refresher training.",
+      "recommendation": "Provide evidence of periodic assessments or tests of user understanding, documentation on consequences for policy violations, and implementation of mandatory annual refresher training.",
       "evidence_sources": [
         {
           "source": "01_information_security_policy.txt",
           "chunk": 1
         },
         {
-          "source": "04_incident_response_policy.txt",
+          "source": "10_security_awareness_policy.txt",
           "chunk": 0
         }
       ]
     },
     {
-      "id": "IR-02",
-      "title": "Lessons Learned",
-      "requirement": "The organization must perform documented post-incident lessons-learned reviews after cybersecurity incidents.",
+      "id": "PR.AT-02",
+      "title": "Awareness and Training",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AT",
+      "category_name": "Awareness and Training",
+      "requirement": "Individuals in specialized roles are provided with awareness and training so that they possess the knowledge and skills to perform relevant tasks with cybersecurity risks in mind",
       "status": "PARTIAL",
-      "reason": "The evidence mentions incident response procedures and documentation of incident details, but does not explicitly state that post-incident lessons-learned reviews are conducted.",
-      "gap": "Lack of explicit mention of post-incident lessons-learned reviews.",
-      "recommendation": "Update the incident response policy to explicitly include post-incident lessons-learned reviews and their frequency.",
+      "reason": "The evidence indicates that all employees receive general security awareness training, but it does not explicitly address specialized roles or role-based training, periodic assessments, or annual refreshers for those roles.",
+      "gap": "Lack of evidence for specialized role identification, role-specific training, periodic assessments, and annual refreshers for specialized roles.",
+      "recommendation": "Provide evidence of specialized role identification, role-specific cybersecurity training, periodic assessments, and annual refreshers for those roles.",
       "evidence_sources": [
         {
-          "source": "04_incident_response_policy.txt",
+          "source": "01_information_security_policy.txt",
+          "chunk": 1
+        },
+        {
+          "source": "10_security_awareness_policy.txt",
           "chunk": 0
         }
       ]
     },
     {
-      "id": "RM-01",
-      "title": "Cyber Risk Assessment",
-      "requirement": "Cybersecurity risks must be identified and assessed based on likelihood and business impact.",
-      "status": "SUPPORTED",
-      "reason": "The evidence clearly outlines processes for identifying and assessing cybersecurity risks based on likelihood and business impact, as detailed in the Risk Management Policy and Information Security Policy.",
-      "gap": null,
-      "recommendation": "Ensure consistent application of the risk management processes across all relevant areas and consider defining a specific risk assessment frequency.",
+      "id": "PR.DS-01",
+      "title": "Data Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.DS",
+      "category_name": "Data Security",
+      "requirement": "The confidentiality, integrity, and availability of data-at-rest are protected",
+      "status": "PARTIAL",
+      "reason": "The evidence mentions encryption for data at rest in the Encryption Policy (Evidence 2) and secure storage of sensitive information in the Data Classification Policy (Evidence 4). However, there is no explicit mention of protecting the integrity and availability of data at rest, nor are there details on full disk encryption, digital signatures, or physical security measures for removable media.",
+      "gap": "Lack of evidence for integrity and availability protection, full disk encryption, digital signatures, and physical security measures for removable media.",
+      "recommendation": "Provide additional evidence or documentation that addresses the integrity and availability of data at rest, full disk encryption practices, use of digital signatures, and physical security measures for removable media.",
+      "evidence_sources": [
+        {
+          "source": "16_encryption_policy.txt",
+          "chunk": 0
+        },
+        {
+          "source": "15_data_classification_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "PR.DS-02",
+      "title": "Data Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.DS",
+      "category_name": "Data Security",
+      "requirement": "The confidentiality, integrity, and availability of data-in-transit are protected",
+      "status": "PARTIAL",
+      "reason": "The evidence partially supports the requirement. Encryption of sensitive data in transit is mandated (Evidence 1), and cryptographic standards are defined. However, there is no evidence of mechanisms to protect data integrity (e.g., digital signatures, cryptographic hashes), automatic encryption/blocking of sensitive outbound communications, or controls to prevent sensitive data reuse in non-production environments.",
+      "gap": "Missing evidence of integrity protection mechanisms (e.g., digital signatures), automated encryption/blocking for sensitive outbound data, and controls to prevent sensitive data reuse in non-production environments.",
+      "recommendation": "Provide evidence of integrity protection measures, automated sensitive data handling controls, and policies/procedures for preventing sensitive data reuse in non-production environments.",
+      "evidence_sources": [
+        {
+          "source": "16_encryption_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "PR.DS-10",
+      "title": "Data Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.DS",
+      "category_name": "Data Security",
+      "requirement": "The confidentiality, integrity, and availability of data-in-use are protected",
+      "status": "PARTIAL",
+      "reason": "The evidence provides some support for protecting the confidentiality, integrity, and availability of data-in-use, particularly through access control, data classification, and secure disposal. However, there is no explicit mention of protecting data-in-use from access by other users and processes of the same platform or removing data from processors and memory when no longer needed.",
+      "gap": "Lack of evidence for protecting data-in-use from access by other users and processes of the same platform, and no mention of removing data from processors and memory when no longer needed.",
+      "recommendation": "Review and update policies to explicitly address the protection of data-in-use from unauthorized access by other users and processes, and include procedures for removing sensitive data from processors and memory when no longer needed.",
+      "evidence_sources": [
+        {
+          "source": "01_information_security_policy.txt",
+          "chunk": 1
+        },
+        {
+          "source": "15_data_classification_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "PR.DS-11",
+      "title": "Data Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.DS",
+      "category_name": "Data Security",
+      "requirement": "Backups of data are created, protected, maintained, and tested",
+      "status": "PARTIAL",
+      "reason": "The evidence provided supports the creation, protection, and testing of backups, but does not explicitly address the maintenance of backups or the secure offsite storage and geographic separation requirements.",
+      "gap": "Missing details on backup maintenance, offsite storage, and geographic separation.",
+      "recommendation": "Provide additional evidence or documentation that addresses the maintenance of backups, secure offsite storage, and geographic separation of backup data.",
+      "evidence_sources": [
+        {
+          "source": "07_backup_policy.txt",
+          "chunk": 0
+        },
+        {
+          "source": "01_information_security_policy.txt",
+          "chunk": 1
+        },
+        {
+          "source": "01_information_security_policy.txt",
+          "chunk": 2
+        }
+      ]
+    },
+    {
+      "id": "PR.PS-01",
+      "title": "Platform Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "requirement": "Configuration management practices are established and applied",
+      "status": "PARTIAL",
+      "reason": "The evidence provided includes policies related to change management, risk management, and vulnerability management, which are relevant to configuration management. However, there is no explicit mention of establishing, testing, deploying, or maintaining hardened baselines, reviewing default configuration settings, or monitoring software for deviations from approved baselines.",
+      "gap": "Lack of evidence for hardened baselines, review of default configuration settings, and monitoring for deviations from approved baselines.",
+      "recommendation": "Provide evidence of practices related to establishing and maintaining hardened baselines, reviewing default configurations, and monitoring for deviations to fully support the requirement.",
+      "evidence_sources": [
+        {
+          "source": "13_change_management_policy.txt",
+          "chunk": 0
+        },
+        {
+          "source": "05_risk_management_policy.txt",
+          "chunk": 0
+        },
+        {
+          "source": "12_vulnerability_management_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "PR.PS-02",
+      "title": "Platform Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "requirement": "Software is maintained, replaced, and removed commensurate with risk",
+      "status": "PARTIAL",
+      "reason": "The evidence provided indicates that the organization has policies in place for identifying, assessing, and remediating vulnerabilities (Evidence 5), and for managing cybersecurity risks (Evidence 3 and 4). However, there is no explicit evidence of software maintenance, replacement, or removal practices commensurate with risk, such as routine patching, end-of-life software replacement, or removal of unauthorized/unnecessary software.",
+      "gap": "Lack of specific evidence regarding software maintenance, replacement, and removal practices, including routine patching, end-of-life software management, and removal of unauthorized or unnecessary software.",
+      "recommendation": "Provide evidence of software maintenance, replacement, and removal practices, such as patching schedules, end-of-life software management plans, and procedures for removing unauthorized or unnecessary software.",
       "evidence_sources": [
         {
           "source": "05_risk_management_policy.txt",
           "chunk": 0
         },
         {
-          "source": "01_information_security_policy.txt",
-          "chunk": 1
-        }
-      ]
-    },
-    {
-      "id": "AM-01",
-      "title": "Asset Inventory",
-      "requirement": "The organization must maintain an inventory of information systems, devices, software, and important assets.",
-      "status": "SUPPORTED",
-      "reason": "The evidence explicitly states that Acme Corp shall maintain an inventory of information systems, devices, software, and important information assets, as outlined in the Asset Management Policy.",
-      "gap": null,
-      "recommendation": "No further action is needed based on the provided evidence.",
-      "evidence_sources": [
-        {
-          "source": "06_asset_management_policy.txt",
+          "source": "12_vulnerability_management_policy.txt",
           "chunk": 0
         }
       ]
     },
     {
-      "id": "BK-01",
-      "title": "Backup Restoration Testing",
-      "requirement": "Backup restoration must be tested periodically.",
-      "status": "SUPPORTED",
-      "reason": "The backup policy explicitly states that backup restoration shall be tested at least annually, which meets the requirement for periodic testing.",
-      "gap": null,
-      "recommendation": "Ensure that the annual backup restoration tests are documented and that any issues identified during testing are addressed promptly.",
-      "evidence_sources": [
-        {
-          "source": "07_backup_policy.txt",
-          "chunk": 0
-        }
-      ]
+      "id": "PR.PS-03",
+      "title": "Platform Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "requirement": "Hardware is maintained, replaced, and removed commensurate with risk",
+      "status": "NO_EVIDENCE",
+      "reason": "None of the provided evidence addresses hardware maintenance, replacement, or removal practices, which are central to the requirement.",
+      "gap": "Lack of evidence related to hardware lifecycle management, including risk-based maintenance, replacement, and secure disposal.",
+      "recommendation": "Provide evidence specifically related to hardware management policies, procedures, or practices that align with the requirement.",
+      "evidence_sources": []
     },
     {
-      "id": "BC-01",
-      "title": "Business Continuity Testing",
-      "requirement": "Business continuity plans must be tested on a defined recurring schedule.",
+      "id": "PR.PS-04",
+      "title": "Platform Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "requirement": "Log records are generated and made available for continuous monitoring",
       "status": "PARTIAL",
-      "reason": "The evidence indicates that business continuity plans are tested periodically, but the exact frequency of testing is not defined.",
-      "gap": "The testing frequency for business continuity plans is not specified.",
-      "recommendation": "Define and document a specific recurring schedule for testing business continuity plans.",
-      "evidence_sources": [
-        {
-          "source": "08_business_continuity_policy.txt",
-          "chunk": 0
-        }
-      ]
-    },
-    {
-      "id": "TP-01",
-      "title": "Supplier Security",
-      "requirement": "Cybersecurity risks must be considered before engaging important third-party suppliers.",
-      "status": "SUPPORTED",
-      "reason": "The evidence explicitly states that security risks shall be considered before engaging important third parties, aligning with the requirement.",
-      "gap": null,
-      "recommendation": "Ensure consistent application and documentation of the due diligence process for third-party engagements.",
-      "evidence_sources": [
-        {
-          "source": "09_vendor_security_policy.txt",
-          "chunk": 0
-        }
-      ]
-    },
-    {
-      "id": "LG-01",
-      "title": "Security Logging",
-      "requirement": "Security-relevant systems must log authentication events and administrative actions.",
-      "status": "SUPPORTED",
-      "reason": "The logging and monitoring policy explicitly states that security-relevant systems shall generate logs for authentication events and administrative actions.",
-      "gap": null,
-      "recommendation": "Ensure that the logging and monitoring policy is consistently implemented and enforced across all security-relevant systems.",
+      "reason": "The evidence indicates that security-relevant systems generate logs for specific events (authentication, administrative actions, significant security events) and that logs are protected from unauthorized modification. However, there is no evidence that logs are made available for continuous monitoring or that log generators securely share logs with the organization's logging infrastructure.",
+      "gap": "Lack of evidence for continuous monitoring and secure sharing of logs with the logging infrastructure.",
+      "recommendation": "Provide evidence of log sharing mechanisms and continuous monitoring processes.",
       "evidence_sources": [
         {
           "source": "11_logging_monitoring_policy.txt",
@@ -176,28 +448,110 @@
       ]
     },
     {
-      "id": "VM-01",
-      "title": "Vulnerability Prioritization",
-      "requirement": "Vulnerabilities must be prioritized according to severity and business impact.",
-      "status": "SUPPORTED",
-      "reason": "The vulnerability management policy explicitly states that vulnerabilities shall be prioritized according to severity and business impact.",
-      "gap": null,
-      "recommendation": "Ensure consistent application and documentation of the prioritization process across all relevant teams.",
+      "id": "PR.PS-05",
+      "title": "Platform Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "requirement": "Installation and execution of unauthorized software are prevented",
+      "status": "NO_EVIDENCE",
+      "reason": "The provided evidence does not address the prevention of installation and execution of unauthorized software, which is the core requirement of NIST CSF 2.0 Subcategory PR.PS-05.",
+      "gap": "Lack of evidence related to software installation and execution controls, such as restrictions on permitted software, verification of software sources, or configuration of platforms to block unauthorized software.",
+      "recommendation": "Provide evidence that directly addresses the prevention of unauthorized software installation and execution, such as software whitelisting policies, integrity verification processes, or platform configuration settings.",
+      "evidence_sources": []
+    },
+    {
+      "id": "PR.PS-06",
+      "title": "Platform Security",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "requirement": "Secure software development practices are integrated, and their performance is monitored throughout the software development life cycle",
+      "status": "PARTIAL",
+      "reason": "The evidence provided includes policies related to secure software development practices, such as security requirements, code review, testing, and vulnerability management (Evidence 1). However, there is no evidence of performance monitoring throughout the software development life cycle, which is a critical part of the requirement.",
+      "gap": "Lack of evidence demonstrating performance monitoring of secure software development practices throughout the SDLC.",
+      "recommendation": "Provide evidence of monitoring mechanisms, metrics, or reports that track the performance of secure software development practices.",
       "evidence_sources": [
         {
-          "source": "12_vulnerability_management_policy.txt",
+          "source": "19_secure_development_policy.txt",
           "chunk": 0
         }
       ]
     },
     {
-      "id": "RMV-01",
-      "title": "Removable Media Controls",
-      "requirement": "All removable media devices must be inventoried, encrypted, and formally approved before use.",
+      "id": "PR.IR-01",
+      "title": "Technology Infrastructure Resilience",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.IR",
+      "category_name": "Technology Infrastructure Resilience",
+      "requirement": "Networks and environments are protected from unauthorized logical access and usage",
+      "status": "PARTIAL",
+      "reason": "The evidence partially supports the requirement by addressing access control, least privilege, and authentication, but lacks explicit details on network segmentation, zero trust architectures, and endpoint health checks.",
+      "gap": "Missing evidence of network segmentation, zero trust architectures, and endpoint health checks before granting access to production resources.",
+      "recommendation": "Provide evidence of network segmentation policies, zero trust architecture implementation, and endpoint health verification processes.",
+      "evidence_sources": [
+        {
+          "source": "02_access_control_policy.txt",
+          "chunk": 0
+        },
+        {
+          "source": "01_information_security_policy.txt",
+          "chunk": 1
+        }
+      ]
+    },
+    {
+      "id": "PR.IR-02",
+      "title": "Technology Infrastructure Resilience",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.IR",
+      "category_name": "Technology Infrastructure Resilience",
+      "requirement": "The organization's technology assets are protected from environmental threats",
+      "status": "PARTIAL",
+      "reason": "The evidence mentions protection of technology assets (Evidence 1, Chunk 1) and physical security measures (Evidence 4, Chunk 0), but does not explicitly address protection from environmental threats such as flooding, fire, wind, or excessive heat and humidity.",
+      "gap": "Lack of explicit mention of environmental threats and specific protective measures against them.",
+      "recommendation": "Update policies to explicitly include protection against environmental threats and specify measures such as fire suppression systems, flood barriers, or climate control for data centers.",
+      "evidence_sources": [
+        {
+          "source": "01_information_security_policy.txt",
+          "chunk": 1
+        },
+        {
+          "source": "18_physical_security_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "PR.IR-03",
+      "title": "Technology Infrastructure Resilience",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.IR",
+      "category_name": "Technology Infrastructure Resilience",
+      "requirement": "Mechanisms are implemented to achieve resilience requirements in normal and adverse situations",
       "status": "NO_EVIDENCE",
-      "reason": "None of the provided evidence mentions inventory, encryption, or formal approval specifically for removable media devices.",
-      "gap": "Lack of evidence regarding inventory, encryption, and formal approval of removable media devices.",
-      "recommendation": "Review and update policies to explicitly address the inventory, encryption, and formal approval of removable media devices.",
+      "reason": "The provided evidence focuses on change management, vulnerability management, secure development, access control, and risk management policies, but does not address mechanisms for achieving resilience in normal and adverse situations, such as avoiding single points of failure, using load balancing, or implementing high-availability components.",
+      "gap": "Lack of evidence demonstrating the implementation of resilience mechanisms in systems and infrastructure.",
+      "recommendation": "Provide evidence of resilience mechanisms, such as redundancy, load balancing, or high-availability components, to support the requirement.",
+      "evidence_sources": []
+    },
+    {
+      "id": "PR.IR-04",
+      "title": "Technology Infrastructure Resilience",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.IR",
+      "category_name": "Technology Infrastructure Resilience",
+      "requirement": "Adequate resource capacity to ensure availability is maintained",
+      "status": "NO_EVIDENCE",
+      "reason": "None of the provided evidence addresses resource capacity monitoring, forecasting, or scaling to ensure availability, which is central to the requirement.",
+      "gap": "Lack of evidence related to monitoring, forecasting, or scaling resource capacity (storage, power, compute, network bandwidth, etc.) to maintain availability.",
+      "recommendation": "Provide evidence of resource monitoring, capacity planning, or scaling practices.",
       "evidence_sources": []
     }
   ]

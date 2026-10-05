@@ -56,9 +56,10 @@ if __name__ == "__main__":
     print("\nGetting hybrid candidates...\n")
 
     candidates = hybrid_search(
-        query,
-        top_k=5,
-        candidate_k=5,
+        item["question"],
+        top_k=20,
+        candidate_k=20,
+        max_chunks_per_source=None,
     )
 
     print("\nRERANKING...\n")

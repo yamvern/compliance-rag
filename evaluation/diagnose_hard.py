@@ -80,8 +80,8 @@ def main():
         # Hybrid + Reranker
         candidates = hybrid_search(
             question,
-            top_k=20,
-            candidate_k=20,
+            top_k=10,
+            candidate_k=10,
             max_chunks_per_source=None,
         )
 

@@ -1,150 +1,357 @@
+import argparse
 import json
 from pathlib import Path
 
 from assessment.evidence_assessor import assess_requirement
 from assessment.scoring import calculate_evidence_coverage
+from assessment.nist_requirements import (
+    load_nist_catalog,
+    get_nist_controls,
+    build_assessment_requirement,
+)
 
 
-REQUIREMENTS = [
-    {
-        "id": "AC-01",
-        "title": "Remote Administrative MFA",
-        "requirement": (
-            "Remote administrative access must use "
-            "multi-factor authentication."
-        ),
-    },
-    {
-        "id": "AC-02",
-        "title": "Periodic Access Reviews",
-        "requirement": (
-            "User access privileges must be periodically reviewed, "
-            "and the organization must define a mandatory review frequency."
-        ),
-    },
-    {
-        "id": "IR-01",
-        "title": "Incident Reporting",
-        "requirement": (
-            "Personnel must report suspected cybersecurity incidents "
-            "to the appropriate security function."
-        ),
-    },
-    {
-        "id": "IR-02",
-        "title": "Lessons Learned",
-        "requirement": (
-            "The organization must perform documented post-incident "
-            "lessons-learned reviews after cybersecurity incidents."
-        ),
-    },
-    {
-        "id": "RM-01",
-        "title": "Cyber Risk Assessment",
-        "requirement": (
-            "Cybersecurity risks must be identified and assessed "
-            "based on likelihood and business impact."
-        ),
-    },
-    {
-        "id": "AM-01",
-        "title": "Asset Inventory",
-        "requirement": (
-            "The organization must maintain an inventory of "
-            "information systems, devices, software, and important assets."
-        ),
-    },
-    {
-        "id": "BK-01",
-        "title": "Backup Restoration Testing",
-        "requirement": (
-            "Backup restoration must be tested periodically."
-        ),
-    },
-    {
-        "id": "BC-01",
-        "title": "Business Continuity Testing",
-        "requirement": (
-            "Business continuity plans must be tested on a "
-            "defined recurring schedule."
-        ),
-    },
-    {
-        "id": "TP-01",
-        "title": "Supplier Security",
-        "requirement": (
-            "Cybersecurity risks must be considered before engaging "
-            "important third-party suppliers."
-        ),
-    },
-    {
-        "id": "LG-01",
-        "title": "Security Logging",
-        "requirement": (
-            "Security-relevant systems must log authentication events "
-            "and administrative actions."
-        ),
-    },
-    {
-        "id": "VM-01",
-        "title": "Vulnerability Prioritization",
-        "requirement": (
-            "Vulnerabilities must be prioritized according to "
-            "severity and business impact."
-        ),
-    },
-    {
-        "id": "RMV-01",
-        "title": "Removable Media Controls",
-        "requirement": (
-            "All removable media devices must be inventoried, "
-            "encrypted, and formally approved before use."
-        ),
-    },
-]
+REPORT_PATH = Path(
+    "reports/batch_assessment.json"
+)
+
+VALID_FUNCTIONS = {
+    "GV",
+    "ID",
+    "PR",
+    "DE",
+    "RS",
+    "RC",
+    "ALL",
+}
 
 
-def run_batch_assessment():
+def build_result_record(
+    control,
+    assessment,
+):
+    return {
+        "id": control["id"],
+
+        "title": control.get(
+            "category_name",
+            control["id"],
+        ),
+
+        "function": control.get(
+            "function",
+            "",
+        ),
+
+        "function_name": control.get(
+            "function_name",
+            "",
+        ),
+
+        "category": control.get(
+            "category",
+            "",
+        ),
+
+        "category_name": control.get(
+            "category_name",
+            "",
+        ),
+
+        "requirement": control["text"],
+
+        "status": assessment["status"],
+
+        "reason": assessment["reason"],
+
+        "gap": assessment.get(
+            "gap"
+        ),
+
+        "recommendation": assessment.get(
+            "recommendation"
+        ),
+
+        "evidence_sources": assessment.get(
+            "evidence_sources",
+            [],
+        ),
+    }
+
+
+def calculate_function_summaries(
+    results,
+):
+    summaries = {}
+
+    function_ids = sorted(
+        {
+            item["function"]
+            for item in results
+            if item.get("function")
+        }
+    )
+
+    for function_id in function_ids:
+
+        function_controls = [
+            item
+            for item in results
+            if item["function"] == function_id
+        ]
+
+        if not function_controls:
+            continue
+
+        function_summary = (
+            calculate_evidence_coverage(
+                function_controls
+            )
+        )
+
+        function_name = (
+            function_controls[0].get(
+                "function_name",
+                function_id,
+            )
+        )
+
+        summaries[function_id] = {
+            "name": function_name,
+            **function_summary,
+        }
+
+    return summaries
+
+
+def calculate_category_summaries(
+    results,
+):
+    summaries = {}
+
+    category_ids = sorted(
+        {
+            item["category"]
+            for item in results
+            if item.get("category")
+        }
+    )
+
+    for category_id in category_ids:
+
+        category_controls = [
+            item
+            for item in results
+            if item["category"] == category_id
+        ]
+
+        if not category_controls:
+            continue
+
+        category_summary = (
+            calculate_evidence_coverage(
+                category_controls
+            )
+        )
+
+        category_name = (
+            category_controls[0].get(
+                "category_name",
+                category_id,
+            )
+        )
+
+        function_id = (
+            category_controls[0].get(
+                "function",
+                "",
+            )
+        )
+
+        function_name = (
+            category_controls[0].get(
+                "function_name",
+                "",
+            )
+        )
+
+        summaries[category_id] = {
+            "name": category_name,
+            "function": function_id,
+            "function_name": function_name,
+            **category_summary,
+        }
+
+    return summaries
+
+
+def run_batch_assessment(
+    function_filter="ALL",
+    limit=None,
+):
+    catalog = load_nist_catalog()
+
+    controls = get_nist_controls(
+        function_filter=function_filter,
+    )
+
+    if limit is not None:
+
+        if limit <= 0:
+            raise ValueError(
+                "--limit must be greater than 0."
+            )
+
+        controls = controls[:limit]
+
+    if not controls:
+        raise ValueError(
+            "No NIST CSF 2.0 subcategories matched "
+            f"the selected function: {function_filter}"
+        )
+
     results = []
 
-    print("\nRunning batch assessment...\n")
+    print()
+    print("=" * 70)
+    print("NIST CSF 2.0 BATCH ASSESSMENT")
+    print("=" * 70)
 
-    for index, control in enumerate(REQUIREMENTS, start=1):
+    print(
+        f"Assessment scope: {function_filter}"
+    )
+
+    print(
+        f"Controls to assess: {len(controls)}"
+    )
+
+    print()
+
+    for index, control in enumerate(
+        controls,
+        start=1,
+    ):
+
         print(
-            f"[{index}/{len(REQUIREMENTS)}] "
-            f"{control['id']} - {control['title']}"
+            f"[{index}/{len(controls)}] "
+            f"{control['id']} - "
+            f"{control.get('category_name', '')}"
+        )
+
+        assessment_requirement = (
+            build_assessment_requirement(
+                control
+            )
         )
 
         result = assess_requirement(
-            control["requirement"]
+            assessment_requirement
         )
 
-        assessment = result["assessment"]
+        assessment = result.get(
+            "assessment",
+            {}
+        )
+
+        required_fields = {
+            "status",
+            "reason",
+        }
+
+        missing_fields = (
+            required_fields
+            - set(assessment.keys())
+        )
+
+        if missing_fields:
+            raise ValueError(
+                f"Assessment for {control['id']} "
+                f"is missing fields: "
+                f"{sorted(missing_fields)}"
+            )
+
+        record = build_result_record(
+            control=control,
+            assessment=assessment,
+        )
 
         results.append(
-            {
-                "id": control["id"],
-                "title": control["title"],
-                "requirement": control["requirement"],
-                "status": assessment["status"],
-                "reason": assessment["reason"],
-                "gap": assessment["gap"],
-                "recommendation": assessment["recommendation"],
-                "evidence_sources": assessment["evidence_sources"],
-            }
+            record
         )
 
-    summary = calculate_evidence_coverage(results)
+        print(
+            f"    Status: {record['status']}"
+        )
+
+    overall_summary = (
+        calculate_evidence_coverage(
+            results
+        )
+    )
+
+    function_summaries = (
+        calculate_function_summaries(
+            results
+        )
+    )
+
+    category_summaries = (
+        calculate_category_summaries(
+            results
+        )
+    )
 
     output = {
-        "summary": summary,
+        "framework": catalog.get(
+            "framework",
+            "NIST Cybersecurity Framework",
+        ),
+
+        "framework_version": catalog.get(
+            "version",
+            "2.0",
+        ),
+
+        "assessment_scope": (
+            function_filter
+        ),
+
+        "total_controls_assessed": (
+            len(results)
+        ),
+
+        "catalog_total_subcategories": (
+            catalog.get(
+                "total_subcategories",
+                len(
+                    catalog.get(
+                        "subcategories",
+                        [],
+                    )
+                ),
+            )
+        ),
+
+        "summary": overall_summary,
+
+        "function_summaries": (
+            function_summaries
+        ),
+
+        "category_summaries": (
+            category_summaries
+        ),
+
         "controls": results,
     }
 
-    Path("reports").mkdir(exist_ok=True)
+    REPORT_PATH.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
     with open(
-        "reports/batch_assessment.json",
+        REPORT_PATH,
         "w",
         encoding="utf-8",
     ) as f:
@@ -155,24 +362,125 @@ def run_batch_assessment():
             ensure_ascii=False,
         )
 
-    print("\n" + "=" * 70)
+    print()
+    print("=" * 70)
     print("ASSESSMENT SUMMARY")
     print("=" * 70)
 
     print(
-        "Evidence Coverage:",
-        f"{summary['evidence_coverage']}%"
+        "Framework:",
+        f"{output['framework']} "
+        f"{output['framework_version']}",
     )
-    print("Supported:", summary["supported"])
-    print("Partial:", summary["partial"])
-    print("No Evidence:", summary["no_evidence"])
-    print("Needs Review:", summary["needs_review"])
 
     print(
-        "\nSaved report to:",
-        "reports/batch_assessment.json"
+        "Scope:",
+        function_filter,
+    )
+
+    print(
+        "Controls assessed:",
+        len(results),
+    )
+
+    print(
+        "Evidence Coverage:",
+        f"{overall_summary['evidence_coverage']}%",
+    )
+
+    print(
+        "Supported:",
+        overall_summary["supported"],
+    )
+
+    print(
+        "Partial:",
+        overall_summary["partial"],
+    )
+
+    print(
+        "No Evidence:",
+        overall_summary["no_evidence"],
+    )
+
+    print(
+        "Needs Review:",
+        overall_summary["needs_review"],
+    )
+
+    if function_summaries:
+
+        print()
+        print(
+            "FUNCTION COVERAGE"
+        )
+
+        print(
+            "-" * 70
+        )
+
+        for function_id, summary in (
+            function_summaries.items()
+        ):
+
+            print(
+                f"{function_id} "
+                f"{summary['name']}: "
+                f"{summary['evidence_coverage']}%"
+            )
+
+    print()
+
+    print(
+        "Saved report to:",
+        REPORT_PATH,
+    )
+
+    return output
+
+
+def parse_arguments():
+    parser = argparse.ArgumentParser(
+        description=(
+            "Run ComplianceRAG against "
+            "NIST Cybersecurity Framework 2.0."
+        )
+    )
+
+    parser.add_argument(
+        "--function",
+        default="ALL",
+        type=str.upper,
+        choices=sorted(
+            VALID_FUNCTIONS
+        ),
+        help=(
+            "Assessment scope: "
+            "GV, ID, PR, DE, RS, RC, or ALL."
+        ),
+    )
+
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help=(
+            "Optional maximum number of "
+            "subcategories to assess."
+        ),
+    )
+
+    return parser.parse_args()
+
+
+def main():
+    args = parse_arguments()
+
+    run_batch_assessment(
+        function_filter=args.function,
+        limit=args.limit,
     )
 
 
 if __name__ == "__main__":
-    run_batch_assessment()
+    main()

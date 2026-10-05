@@ -1,0 +1,3193 @@
+{
+  "framework": "NIST Cybersecurity Framework",
+  "version": "2.0",
+  "source": "Official NIST JSON export",
+  "functions": {
+    "GV": {
+      "id": "GV",
+      "name": "GOVERN",
+      "text": "The organization's cybersecurity risk management strategy, expectations, and policy are established, communicated, and monitored"
+    },
+    "ID": {
+      "id": "ID",
+      "name": "IDENTIFY",
+      "text": "The organization's current cybersecurity risks are understood"
+    },
+    "PR": {
+      "id": "PR",
+      "name": "PROTECT",
+      "text": "Safeguards to manage the organization's cybersecurity risks are used"
+    },
+    "DE": {
+      "id": "DE",
+      "name": "DETECT",
+      "text": "Possible cybersecurity attacks and compromises are found and analyzed"
+    },
+    "RS": {
+      "id": "RS",
+      "name": "RESPOND",
+      "text": "Actions regarding a detected cybersecurity incident are taken"
+    },
+    "RC": {
+      "id": "RC",
+      "name": "RECOVER",
+      "text": "Assets and operations affected by a cybersecurity incident are restored"
+    }
+  },
+  "categories": {
+    "GV.OC": {
+      "id": "GV.OC",
+      "title": "Organizational Context",
+      "text": ""
+    },
+    "GV.RM": {
+      "id": "GV.RM",
+      "title": "Risk Management Strategy",
+      "text": ""
+    },
+    "GV.RR": {
+      "id": "GV.RR",
+      "title": "Roles, Responsibilities, and Authorities",
+      "text": ""
+    },
+    "GV.PO": {
+      "id": "GV.PO",
+      "title": "Policy",
+      "text": ""
+    },
+    "GV.OV": {
+      "id": "GV.OV",
+      "title": "Oversight",
+      "text": "Results of organization-wide cybersecurity risk management activities and performance are used to inform, improve, and adjust the risk management strategy"
+    },
+    "GV.SC": {
+      "id": "GV.SC",
+      "title": "Cybersecurity Supply Chain Risk Management",
+      "text": ""
+    },
+    "ID.AM": {
+      "id": "ID.AM",
+      "title": "Asset Management",
+      "text": "Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy"
+    },
+    "ID.RA": {
+      "id": "ID.RA",
+      "title": "Risk Assessment",
+      "text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization"
+    },
+    "ID.IM": {
+      "id": "ID.IM",
+      "title": "Improvement",
+      "text": ""
+    },
+    "ID.BE": {
+      "id": "ID.BE",
+      "title": "Business Environment",
+      "text": ""
+    },
+    "ID.GV": {
+      "id": "ID.GV",
+      "title": "Governance",
+      "text": ""
+    },
+    "ID.RM": {
+      "id": "ID.RM",
+      "title": "Risk Management Strategy",
+      "text": ""
+    },
+    "ID.SC": {
+      "id": "ID.SC",
+      "title": "Supply Chain Risk Management",
+      "text": ""
+    },
+    "PR.AA": {
+      "id": "PR.AA",
+      "title": "Identity Management, Authentication, and Access Control",
+      "text": ""
+    },
+    "PR.AT": {
+      "id": "PR.AT",
+      "title": "Awareness and Training",
+      "text": "The organization's personnel are provided with cybersecurity awareness and training so that they can perform their cybersecurity-related tasks"
+    },
+    "PR.DS": {
+      "id": "PR.DS",
+      "title": "Data Security",
+      "text": "Data are managed consistent with the organization's risk strategy to protect the confidentiality, integrity, and availability of information"
+    },
+    "PR.PS": {
+      "id": "PR.PS",
+      "title": "Platform Security",
+      "text": "The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with the organization's risk strategy to protect their confidentiality, integrity, and availability"
+    },
+    "PR.IR": {
+      "id": "PR.IR",
+      "title": "Technology Infrastructure Resilience",
+      "text": "Security architectures are managed with the organization's risk strategy to protect asset confidentiality, integrity, and availability, and organizational resilience"
+    },
+    "PR.AC": {
+      "id": "PR.AC",
+      "title": "Identity Management, Authentication and Access Control",
+      "text": ""
+    },
+    "PR.IP": {
+      "id": "PR.IP",
+      "title": "Information Protection Processes and Procedures",
+      "text": ""
+    },
+    "PR.MA": {
+      "id": "PR.MA",
+      "title": "Maintenance",
+      "text": ""
+    },
+    "PR.PT": {
+      "id": "PR.PT",
+      "title": "Protective Technology",
+      "text": ""
+    },
+    "DE.CM": {
+      "id": "DE.CM",
+      "title": "Continuous Monitoring",
+      "text": "Assets are monitored to find anomalies, indicators of compromise, and other potentially adverse events"
+    },
+    "DE.AE": {
+      "id": "DE.AE",
+      "title": "Adverse Event Analysis",
+      "text": ""
+    },
+    "DE.DP": {
+      "id": "DE.DP",
+      "title": "Detection Processes",
+      "text": ""
+    },
+    "RS.MA": {
+      "id": "RS.MA",
+      "title": "Incident Management",
+      "text": "Responses to detected cybersecurity incidents are managed"
+    },
+    "RS.AN": {
+      "id": "RS.AN",
+      "title": "Incident Analysis",
+      "text": "Investigations are conducted to ensure effective response and support forensics and recovery activities"
+    },
+    "RS.CO": {
+      "id": "RS.CO",
+      "title": "Incident Response Reporting and Communication",
+      "text": "Response activities are coordinated with internal and external stakeholders as required by laws, regulations, or policies"
+    },
+    "RS.MI": {
+      "id": "RS.MI",
+      "title": "Incident Mitigation",
+      "text": "Activities are performed to prevent expansion of an event and mitigate its effects"
+    },
+    "RS.RP": {
+      "id": "RS.RP",
+      "title": "Response Planning",
+      "text": ""
+    },
+    "RS.IM": {
+      "id": "RS.IM",
+      "title": "Improvements",
+      "text": ""
+    },
+    "RC.RP": {
+      "id": "RC.RP",
+      "title": "Incident Recovery Plan Execution",
+      "text": "Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents"
+    },
+    "RC.CO": {
+      "id": "RC.CO",
+      "title": "Incident Recovery Communication",
+      "text": "Restoration activities are coordinated with internal and external parties"
+    },
+    "RC.IM": {
+      "id": "RC.IM",
+      "title": "Improvements",
+      "text": ""
+    }
+  },
+  "total_subcategories": 106,
+  "subcategories": [
+    {
+      "id": "GV.OC-01",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.OC",
+      "category_name": "Organizational Context",
+      "category_text": "",
+      "text": "The organizational mission is understood and informs cybersecurity risk management",
+      "implementation_examples": [
+        {
+          "id": "GV.OC-01.001",
+          "title": "Ex1",
+          "text": "Share the organization's mission (e.g., through vision and mission statements, marketing, and service strategies) to provide a basis for identifying risks that may impede that mission"
+        }
+      ]
+    },
+    {
+      "id": "GV.OC-02",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.OC",
+      "category_name": "Organizational Context",
+      "category_text": "",
+      "text": "Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered",
+      "implementation_examples": [
+        {
+          "id": "GV.OC-02.002",
+          "title": "Ex1",
+          "text": "Identify relevant internal stakeholders and their cybersecurity-related expectations (e.g., performance and risk expectations of officers, directors, and advisors; cultural expectations of employees)"
+        },
+        {
+          "id": "GV.OC-02.003",
+          "title": "Ex2",
+          "text": "Identify relevant external stakeholders and their cybersecurity-related expectations (e.g., privacy expectations of customers, business expectations of partnerships, compliance expectations of regulators, ethics expectations of society)"
+        }
+      ]
+    },
+    {
+      "id": "GV.OC-03",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.OC",
+      "category_name": "Organizational Context",
+      "category_text": "",
+      "text": "Legal, regulatory, and contractual requirements regarding cybersecurity - including privacy and civil liberties obligations - are understood and managed",
+      "implementation_examples": [
+        {
+          "id": "GV.OC-03.004",
+          "title": "Ex1",
+          "text": "Determine a process to track and manage legal and regulatory requirements regarding protection of individuals' information (e.g., Health Insurance Portability and Accountability Act, California Consumer Privacy Act, General Data Protection Regulation)"
+        },
+        {
+          "id": "GV.OC-03.005",
+          "title": "Ex2",
+          "text": "Determine a process to track and manage contractual requirements for cybersecurity management of supplier, customer, and partner information"
+        },
+        {
+          "id": "GV.OC-03.006",
+          "title": "Ex3",
+          "text": "Align the organization's cybersecurity strategy with legal, regulatory, and contractual requirements"
+        }
+      ]
+    },
+    {
+      "id": "GV.OC-04",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.OC",
+      "category_name": "Organizational Context",
+      "category_text": "",
+      "text": "Critical objectives, capabilities, and services that external stakeholders depend on or expect from the organization are understood and communicated",
+      "implementation_examples": [
+        {
+          "id": "GV.OC-04.007",
+          "title": "Ex1",
+          "text": "Establish criteria for determining the criticality of capabilities and services as viewed by internal and external stakeholders"
+        },
+        {
+          "id": "GV.OC-04.008",
+          "title": "Ex2",
+          "text": "Determine (e.g., from a business impact analysis) assets and business operations that are vital to achieving mission objectives and the potential impact of a loss (or partial loss) of such operations"
+        },
+        {
+          "id": "GV.OC-04.009",
+          "title": "Ex3",
+          "text": "Establish and communicate resilience objectives (e.g., recovery time objectives) for delivering critical capabilities and services in various operating states (e.g., under attack, during recovery, normal operation)"
+        }
+      ]
+    },
+    {
+      "id": "GV.OC-05",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.OC",
+      "category_name": "Organizational Context",
+      "category_text": "",
+      "text": "Outcomes, capabilities, and services that the organization depends on are understood and communicated",
+      "implementation_examples": [
+        {
+          "id": "GV.OC-05.010",
+          "title": "Ex1",
+          "text": "Create an inventory of the organization's dependencies on external resources (e.g., facilities, cloud-based hosting providers) and their relationships to organizational assets and business functions"
+        },
+        {
+          "id": "GV.OC-05.011",
+          "title": "Ex2",
+          "text": "Identify and document external dependencies that are potential points of failure for the organization's critical capabilities and services, and share that information with appropriate personnel"
+        }
+      ]
+    },
+    {
+      "id": "GV.RM-01",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RM",
+      "category_name": "Risk Management Strategy",
+      "category_text": "",
+      "text": "Risk management objectives are established and agreed to by organizational stakeholders",
+      "implementation_examples": [
+        {
+          "id": "GV.RM-01.012",
+          "title": "Ex1",
+          "text": "Update near-term and long-term cybersecurity risk management objectives as part of annual strategic planning and when major changes occur"
+        },
+        {
+          "id": "GV.RM-01.013",
+          "title": "Ex2",
+          "text": "Establish measurable objectives for cybersecurity risk management (e.g., manage the quality of user training, ensure adequate risk protection for industrial control systems)"
+        },
+        {
+          "id": "GV.RM-01.014",
+          "title": "Ex3",
+          "text": "Senior leaders agree about cybersecurity objectives and use them for measuring and managing risk and performance"
+        }
+      ]
+    },
+    {
+      "id": "GV.RM-02",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RM",
+      "category_name": "Risk Management Strategy",
+      "category_text": "",
+      "text": "Risk appetite and risk tolerance statements are established, communicated, and maintained",
+      "implementation_examples": [
+        {
+          "id": "GV.RM-02.015",
+          "title": "Ex1",
+          "text": "Determine and communicate risk appetite statements that convey expectations about the appropriate level of risk for the organization"
+        },
+        {
+          "id": "GV.RM-02.016",
+          "title": "Ex2",
+          "text": "Translate risk appetite statements into specific, measurable, and broadly understandable risk tolerance statements"
+        },
+        {
+          "id": "GV.RM-02.017",
+          "title": "Ex3",
+          "text": "Refine organizational objectives and risk appetite periodically based on known risk exposure and residual risk"
+        }
+      ]
+    },
+    {
+      "id": "GV.RM-03",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RM",
+      "category_name": "Risk Management Strategy",
+      "category_text": "",
+      "text": "Cybersecurity risk management activities and outcomes are included in enterprise risk management processes",
+      "implementation_examples": [
+        {
+          "id": "GV.RM-03.018",
+          "title": "Ex1",
+          "text": "Aggregate and manage cybersecurity risks alongside other enterprise risks (e.g., compliance, financial, operational, regulatory, reputational, safety)"
+        },
+        {
+          "id": "GV.RM-03.019",
+          "title": "Ex2",
+          "text": "Include cybersecurity risk managers in enterprise risk management planning"
+        },
+        {
+          "id": "GV.RM-03.020",
+          "title": "Ex3",
+          "text": "Establish criteria for escalating cybersecurity risks within enterprise risk management"
+        }
+      ]
+    },
+    {
+      "id": "GV.RM-04",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RM",
+      "category_name": "Risk Management Strategy",
+      "category_text": "",
+      "text": "Strategic direction that describes appropriate risk response options is established and communicated",
+      "implementation_examples": [
+        {
+          "id": "GV.RM-04.021",
+          "title": "Ex1",
+          "text": "Specify criteria for accepting and avoiding cybersecurity risk for various classifications of data"
+        },
+        {
+          "id": "GV.RM-04.022",
+          "title": "Ex2",
+          "text": "Determine whether to purchase cybersecurity insurance"
+        },
+        {
+          "id": "GV.RM-04.023",
+          "title": "Ex3",
+          "text": "Document conditions under which shared responsibility models are acceptable (e.g., outsourcing certain cybersecurity functions, having a third party perform financial transactions on behalf of the organization, using public cloud-based services)"
+        }
+      ]
+    },
+    {
+      "id": "GV.RM-05",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RM",
+      "category_name": "Risk Management Strategy",
+      "category_text": "",
+      "text": "Lines of communication across the organization are established for cybersecurity risks, including risks from suppliers and other third parties",
+      "implementation_examples": [
+        {
+          "id": "GV.RM-05.024",
+          "title": "Ex1",
+          "text": "Determine how to update senior executives, directors, and management on the organization's cybersecurity posture at agreed-upon intervals"
+        },
+        {
+          "id": "GV.RM-05.025",
+          "title": "Ex2",
+          "text": "Identify how all departments across the organization - such as management, operations, internal auditors, legal, acquisition, physical security, and HR - will communicate with each other about cybersecurity risks"
+        }
+      ]
+    },
+    {
+      "id": "GV.RM-06",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RM",
+      "category_name": "Risk Management Strategy",
+      "category_text": "",
+      "text": "A standardized method for calculating, documenting, categorizing, and prioritizing cybersecurity risks is established and communicated",
+      "implementation_examples": [
+        {
+          "id": "GV.RM-06.026",
+          "title": "Ex1",
+          "text": "Establish criteria for using a quantitative approach to cybersecurity risk analysis, and specify probability and exposure formulas"
+        },
+        {
+          "id": "GV.RM-06.027",
+          "title": "Ex2",
+          "text": "Create and use templates (e.g., a risk register) to document cybersecurity risk information (e.g., risk description, exposure, treatment, and ownership)"
+        },
+        {
+          "id": "GV.RM-06.028",
+          "title": "Ex3",
+          "text": "Establish criteria for risk prioritization at the appropriate levels within the enterprise"
+        },
+        {
+          "id": "GV.RM-06.029",
+          "title": "Ex4",
+          "text": "Use a consistent list of risk categories to support integrating, aggregating, and comparing cybersecurity risks"
+        }
+      ]
+    },
+    {
+      "id": "GV.RM-07",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RM",
+      "category_name": "Risk Management Strategy",
+      "category_text": "",
+      "text": "Strategic opportunities (i.e., positive risks) are characterized and are included in organizational cybersecurity risk discussions",
+      "implementation_examples": [
+        {
+          "id": "GV.RM-07.030",
+          "title": "Ex1",
+          "text": "Define and communicate guidance and methods for identifying opportunities and including them in risk discussions (e.g., strengths, weaknesses, opportunities, and threats [SWOT] analysis)"
+        },
+        {
+          "id": "GV.RM-07.031",
+          "title": "Ex2",
+          "text": "Identify stretch goals and document them"
+        },
+        {
+          "id": "GV.RM-07.032",
+          "title": "Ex3",
+          "text": "Calculate, document, and prioritize positive risks alongside negative risks"
+        }
+      ]
+    },
+    {
+      "id": "GV.RR-01",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RR",
+      "category_name": "Roles, Responsibilities, and Authorities",
+      "category_text": "",
+      "text": "Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving",
+      "implementation_examples": [
+        {
+          "id": "GV.RR-01.033",
+          "title": "Ex1",
+          "text": "Leaders (e.g., directors) agree on their roles and responsibilities in developing, implementing, and assessing the organization's cybersecurity strategy"
+        },
+        {
+          "id": "GV.RR-01.034",
+          "title": "Ex2",
+          "text": "Share leaders' expectations regarding a secure and ethical culture, especially when current events present the opportunity to highlight positive or negative examples of cybersecurity risk management"
+        },
+        {
+          "id": "GV.RR-01.035",
+          "title": "Ex3",
+          "text": "Leaders direct the CISO to maintain a comprehensive cybersecurity risk strategy and review and update it at least annually and after major events"
+        },
+        {
+          "id": "GV.RR-01.036",
+          "title": "Ex4",
+          "text": "Conduct reviews to ensure adequate authority and coordination among those responsible for managing cybersecurity risk"
+        }
+      ]
+    },
+    {
+      "id": "GV.RR-02",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RR",
+      "category_name": "Roles, Responsibilities, and Authorities",
+      "category_text": "",
+      "text": "Roles, responsibilities, and authorities related to cybersecurity risk management are established, communicated, understood, and enforced",
+      "implementation_examples": [
+        {
+          "id": "GV.RR-02.037",
+          "title": "Ex1",
+          "text": "Document risk management roles and responsibilities in policy"
+        },
+        {
+          "id": "GV.RR-02.038",
+          "title": "Ex2",
+          "text": "Document who is responsible and accountable for cybersecurity risk management activities and how those teams and individuals are to be consulted and informed"
+        },
+        {
+          "id": "GV.RR-02.039",
+          "title": "Ex3",
+          "text": "Include cybersecurity responsibilities and performance requirements in personnel descriptions"
+        },
+        {
+          "id": "GV.RR-02.040",
+          "title": "Ex4",
+          "text": "Document performance goals for personnel with cybersecurity risk management responsibilities, and periodically measure performance to identify areas for improvement"
+        },
+        {
+          "id": "GV.RR-02.041",
+          "title": "Ex5",
+          "text": "Clearly articulate cybersecurity responsibilities within operations, risk functions, and internal audit functions"
+        }
+      ]
+    },
+    {
+      "id": "GV.RR-03",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RR",
+      "category_name": "Roles, Responsibilities, and Authorities",
+      "category_text": "",
+      "text": "Adequate resources are allocated commensurate with the cybersecurity risk strategy, roles, responsibilities, and policies",
+      "implementation_examples": [
+        {
+          "id": "GV.RR-03.042",
+          "title": "Ex1",
+          "text": "Conduct periodic management reviews to ensure that those given cybersecurity risk management responsibilities have the necessary authority"
+        },
+        {
+          "id": "GV.RR-03.043",
+          "title": "Ex2",
+          "text": "Identify resource allocation and investment in line with risk tolerance and response"
+        },
+        {
+          "id": "GV.RR-03.044",
+          "title": "Ex3",
+          "text": "Provide adequate and sufficient people, process, and technical resources to support the cybersecurity strategy"
+        }
+      ]
+    },
+    {
+      "id": "GV.RR-04",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.RR",
+      "category_name": "Roles, Responsibilities, and Authorities",
+      "category_text": "",
+      "text": "Cybersecurity is included in human resources practices",
+      "implementation_examples": [
+        {
+          "id": "GV.RR-04.045",
+          "title": "Ex1",
+          "text": "Integrate cybersecurity risk management considerations into human resources processes (e.g., personnel screening, onboarding, change notification, offboarding)"
+        },
+        {
+          "id": "GV.RR-04.046",
+          "title": "Ex2",
+          "text": "Consider cybersecurity knowledge to be a positive factor in hiring, training, and retention decisions"
+        },
+        {
+          "id": "GV.RR-04.047",
+          "title": "Ex3",
+          "text": "Conduct background checks prior to onboarding new personnel for sensitive roles, and periodically repeat background checks for personnel with such roles"
+        },
+        {
+          "id": "GV.RR-04.048",
+          "title": "Ex4",
+          "text": "Define and enforce obligations for personnel to be aware of, adhere to, and uphold security policies as they relate to their roles"
+        }
+      ]
+    },
+    {
+      "id": "GV.PO-01",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.PO",
+      "category_name": "Policy",
+      "category_text": "",
+      "text": "Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced",
+      "implementation_examples": [
+        {
+          "id": "GV.PO-01.049",
+          "title": "Ex1",
+          "text": "Create, disseminate, and maintain an understandable, usable risk management policy with statements of management intent, expectations, and direction"
+        },
+        {
+          "id": "GV.PO-01.050",
+          "title": "Ex2",
+          "text": "Periodically review policy and supporting processes and procedures to ensure that they align with risk management strategy objectives and priorities, as well as the high-level direction of the cybersecurity policy"
+        },
+        {
+          "id": "GV.PO-01.051",
+          "title": "Ex3",
+          "text": "Require approval from senior management on policy"
+        },
+        {
+          "id": "GV.PO-01.052",
+          "title": "Ex4",
+          "text": "Communicate cybersecurity risk management policy and supporting processes and procedures across the organization"
+        },
+        {
+          "id": "GV.PO-01.053",
+          "title": "Ex5",
+          "text": "Require personnel to acknowledge receipt of policy when first hired, annually, and whenever policy is updated"
+        }
+      ]
+    },
+    {
+      "id": "GV.PO-02",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.PO",
+      "category_name": "Policy",
+      "category_text": "",
+      "text": "Policy for managing cybersecurity risks is reviewed, updated, communicated, and enforced to reflect changes in requirements, threats, technology, and organizational mission",
+      "implementation_examples": [
+        {
+          "id": "GV.PO-02.054",
+          "title": "Ex1",
+          "text": "Update policy based on periodic reviews of cybersecurity risk management results to ensure that policy and supporting processes and procedures adequately maintain risk at an acceptable level"
+        },
+        {
+          "id": "GV.PO-02.055",
+          "title": "Ex2",
+          "text": "Provide a timeline for reviewing changes to the organization's risk environment (e.g., changes in risk or in the organization's mission objectives), and communicate recommended policy updates"
+        },
+        {
+          "id": "GV.PO-02.056",
+          "title": "Ex3",
+          "text": "Update policy to reflect changes in legal and regulatory requirements"
+        },
+        {
+          "id": "GV.PO-02.057",
+          "title": "Ex4",
+          "text": "Update policy to reflect changes in technology (e.g., adoption of artificial intelligence) and changes to the business (e.g., acquisition of a new business, new contract requirements)"
+        }
+      ]
+    },
+    {
+      "id": "GV.OV-01",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.OV",
+      "category_name": "Oversight",
+      "category_text": "Results of organization-wide cybersecurity risk management activities and performance are used to inform, improve, and adjust the risk management strategy",
+      "text": "Cybersecurity risk management strategy outcomes are reviewed to inform and adjust strategy and direction",
+      "implementation_examples": [
+        {
+          "id": "GV.OV-01.058",
+          "title": "Ex1",
+          "text": "Measure how well the risk management strategy and risk results have helped leaders make decisions and achieve organizational objectives"
+        },
+        {
+          "id": "GV.OV-01.059",
+          "title": "Ex2",
+          "text": "Examine whether cybersecurity risk strategies that impede operations or innovation should be adjusted"
+        }
+      ]
+    },
+    {
+      "id": "GV.OV-02",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.OV",
+      "category_name": "Oversight",
+      "category_text": "Results of organization-wide cybersecurity risk management activities and performance are used to inform, improve, and adjust the risk management strategy",
+      "text": "The cybersecurity risk management strategy is reviewed and adjusted to ensure coverage of organizational requirements and risks",
+      "implementation_examples": [
+        {
+          "id": "GV.OV-02.060",
+          "title": "Ex1",
+          "text": "Review audit findings to confirm whether the existing cybersecurity strategy has ensured compliance with internal and external requirements"
+        },
+        {
+          "id": "GV.OV-02.061",
+          "title": "Ex2",
+          "text": "Review the performance oversight of those in cybersecurity-related roles to determine whether policy changes are necessary"
+        },
+        {
+          "id": "GV.OV-02.062",
+          "title": "Ex3",
+          "text": "Review strategy in light of cybersecurity incidents"
+        }
+      ]
+    },
+    {
+      "id": "GV.OV-03",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.OV",
+      "category_name": "Oversight",
+      "category_text": "Results of organization-wide cybersecurity risk management activities and performance are used to inform, improve, and adjust the risk management strategy",
+      "text": "Organizational cybersecurity risk management performance is evaluated and reviewed for adjustments needed",
+      "implementation_examples": [
+        {
+          "id": "GV.OV-03.063",
+          "title": "Ex1",
+          "text": "Review key performance indicators (KPIs) to ensure that organization-wide policies and procedures achieve objectives"
+        },
+        {
+          "id": "GV.OV-03.064",
+          "title": "Ex2",
+          "text": "Review key risk indicators (KRIs) to identify risks the organization faces, including likelihood and potential impact"
+        },
+        {
+          "id": "GV.OV-03.065",
+          "title": "Ex3",
+          "text": "Collect and communicate metrics on cybersecurity risk management with senior leadership"
+        }
+      ]
+    },
+    {
+      "id": "GV.SC-01",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.SC",
+      "category_name": "Cybersecurity Supply Chain Risk Management",
+      "category_text": "",
+      "text": "A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders",
+      "implementation_examples": [
+        {
+          "id": "GV.SC-01.066",
+          "title": "Ex1",
+          "text": "Establish a strategy that expresses the objectives of the cybersecurity supply chain risk management program"
+        },
+        {
+          "id": "GV.SC-01.067",
+          "title": "Ex2",
+          "text": "Develop the cybersecurity supply chain risk management program, including a plan (with milestones), policies, and procedures that guide implementation and improvement of the program, and share the policies and procedures with the organizational stakeholders"
+        },
+        {
+          "id": "GV.SC-01.068",
+          "title": "Ex3",
+          "text": "Develop and implement program processes based on the strategy, objectives, policies, and procedures that are agreed upon and performed by the organizational stakeholders"
+        },
+        {
+          "id": "GV.SC-01.069",
+          "title": "Ex4",
+          "text": "Establish a cross-organizational mechanism that ensures alignment between functions that contribute to cybersecurity supply chain risk management, such as cybersecurity, IT, operations, legal, human resources, and engineering"
+        }
+      ]
+    },
+    {
+      "id": "GV.SC-02",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.SC",
+      "category_name": "Cybersecurity Supply Chain Risk Management",
+      "category_text": "",
+      "text": "Cybersecurity roles and responsibilities for suppliers, customers, and partners are established, communicated, and coordinated internally and externally",
+      "implementation_examples": [
+        {
+          "id": "GV.SC-02.070",
+          "title": "Ex1",
+          "text": "Identify one or more specific roles or positions that will be responsible and accountable for planning, resourcing, and executing cybersecurity supply chain risk management activities"
+        },
+        {
+          "id": "GV.SC-02.071",
+          "title": "Ex2",
+          "text": "Document cybersecurity supply chain risk management roles and responsibilities in policy"
+        },
+        {
+          "id": "GV.SC-02.072",
+          "title": "Ex3",
+          "text": "Create responsibility matrixes to document who will be responsible and accountable for cybersecurity supply chain risk management activities and how those teams and individuals will be consulted and informed"
+        },
+        {
+          "id": "GV.SC-02.073",
+          "title": "Ex4",
+          "text": "Include cybersecurity supply chain risk management responsibilities and performance requirements in personnel descriptions to ensure clarity and improve accountability"
+        },
+        {
+          "id": "GV.SC-02.074",
+          "title": "Ex5",
+          "text": "Document performance goals for personnel with cybersecurity risk management-specific responsibilities, and periodically measure them to demonstrate and improve performance"
+        },
+        {
+          "id": "GV.SC-02.075",
+          "title": "Ex6",
+          "text": "Develop roles and responsibilities for suppliers, customers, and business partners to address shared responsibilities for applicable cybersecurity risks, and integrate them into organizational policies and applicable third-party agreements"
+        },
+        {
+          "id": "GV.SC-02.076",
+          "title": "Ex7",
+          "text": "Internally communicate cybersecurity supply chain risk management roles and responsibilities for third parties"
+        },
+        {
+          "id": "GV.SC-02.077",
+          "title": "Ex8",
+          "text": "Establish rules and protocols for information sharing and reporting processes between the organization and its suppliers"
+        }
+      ]
+    },
+    {
+      "id": "GV.SC-03",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.SC",
+      "category_name": "Cybersecurity Supply Chain Risk Management",
+      "category_text": "",
+      "text": "Cybersecurity supply chain risk management is integrated into cybersecurity and enterprise risk management, risk assessment, and improvement processes",
+      "implementation_examples": [
+        {
+          "id": "GV.SC-03.078",
+          "title": "Ex1",
+          "text": "Identify areas of alignment and overlap with cybersecurity and enterprise risk management"
+        },
+        {
+          "id": "GV.SC-03.079",
+          "title": "Ex2",
+          "text": "Establish integrated control sets for cybersecurity risk management and cybersecurity supply chain risk management"
+        },
+        {
+          "id": "GV.SC-03.080",
+          "title": "Ex3",
+          "text": "Integrate cybersecurity supply chain risk management into improvement processes"
+        },
+        {
+          "id": "GV.SC-03.081",
+          "title": "Ex4",
+          "text": "Escalate material cybersecurity risks in supply chains to senior management, and address them at the enterprise risk management level"
+        }
+      ]
+    },
+    {
+      "id": "GV.SC-04",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.SC",
+      "category_name": "Cybersecurity Supply Chain Risk Management",
+      "category_text": "",
+      "text": "Suppliers are known and prioritized by criticality",
+      "implementation_examples": [
+        {
+          "id": "GV.SC-04.082",
+          "title": "Ex1",
+          "text": "Develop criteria for supplier criticality based on, for example, the sensitivity of data processed or possessed by suppliers, the degree of access to the organization's systems, and the importance of the products or services to the organization's mission"
+        },
+        {
+          "id": "GV.SC-04.083",
+          "title": "Ex2",
+          "text": "Keep a record of all suppliers, and prioritize suppliers based on the criticality criteria"
+        }
+      ]
+    },
+    {
+      "id": "GV.SC-05",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.SC",
+      "category_name": "Cybersecurity Supply Chain Risk Management",
+      "category_text": "",
+      "text": "Requirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contracts and other types of agreements with suppliers and other relevant third parties",
+      "implementation_examples": [
+        {
+          "id": "GV.SC-05.084",
+          "title": "Ex1",
+          "text": "Establish security requirements for suppliers, products, and services commensurate with their criticality level and potential impact if compromised"
+        },
+        {
+          "id": "GV.SC-05.085",
+          "title": "Ex2",
+          "text": "Include all cybersecurity and supply chain requirements that third parties must follow and how compliance with the requirements may be verified in default contractual language"
+        },
+        {
+          "id": "GV.SC-05.086",
+          "title": "Ex3",
+          "text": "Define the rules and protocols for information sharing between the organization and its suppliers and sub-tier suppliers in agreements"
+        },
+        {
+          "id": "GV.SC-05.087",
+          "title": "Ex4",
+          "text": "Manage risk by including security requirements in agreements based on their criticality and potential impact if compromised"
+        },
+        {
+          "id": "GV.SC-05.088",
+          "title": "Ex5",
+          "text": "Define security requirements in service-level agreements (SLAs) for monitoring suppliers for acceptable security performance throughout the supplier relationship lifecycle"
+        },
+        {
+          "id": "GV.SC-05.089",
+          "title": "Ex6",
+          "text": "Contractually require suppliers to disclose cybersecurity features, functions, and vulnerabilities of their products and services for the life of the product or the term of service"
+        },
+        {
+          "id": "GV.SC-05.090",
+          "title": "Ex7",
+          "text": "Contractually require suppliers to provide and maintain a current component inventory (e.g., software or hardware bill of materials) for critical products"
+        },
+        {
+          "id": "GV.SC-05.091",
+          "title": "Ex8",
+          "text": "Contractually require suppliers to vet their employees and guard against insider threats"
+        },
+        {
+          "id": "GV.SC-05.092",
+          "title": "Ex9",
+          "text": "Contractually require suppliers to provide evidence of performing acceptable security practices through, for example, self-attestation, conformance to known standards, certifications, or inspections"
+        },
+        {
+          "id": "GV.SC-05.093",
+          "title": "Ex10",
+          "text": "Specify in contracts and other agreements the rights and responsibilities of the organization, its suppliers, and their supply chains, with respect to potential cybersecurity risks"
+        }
+      ]
+    },
+    {
+      "id": "GV.SC-06",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.SC",
+      "category_name": "Cybersecurity Supply Chain Risk Management",
+      "category_text": "",
+      "text": "Planning and due diligence are performed to reduce risks before entering into formal supplier or other third-party relationships",
+      "implementation_examples": [
+        {
+          "id": "GV.SC-06.094",
+          "title": "Ex1",
+          "text": "Perform thorough due diligence on prospective suppliers that is consistent with procurement planning and commensurate with the level of risk, criticality, and complexity of each supplier relationship"
+        },
+        {
+          "id": "GV.SC-06.095",
+          "title": "Ex2",
+          "text": "Assess the suitability of the technology and cybersecurity capabilities and the risk management practices of prospective suppliers"
+        },
+        {
+          "id": "GV.SC-06.096",
+          "title": "Ex3",
+          "text": "Conduct supplier risk assessments against business and applicable cybersecurity requirements"
+        },
+        {
+          "id": "GV.SC-06.097",
+          "title": "Ex4",
+          "text": "Assess the authenticity, integrity, and security of critical products prior to acquisition and use"
+        }
+      ]
+    },
+    {
+      "id": "GV.SC-07",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.SC",
+      "category_name": "Cybersecurity Supply Chain Risk Management",
+      "category_text": "",
+      "text": "The risks posed by a supplier, their products and services, and other third parties are understood, recorded, prioritized, assessed, responded to, and monitored over the course of the relationship",
+      "implementation_examples": [
+        {
+          "id": "GV.SC-07.098",
+          "title": "Ex1",
+          "text": "Adjust assessment formats and frequencies based on the third party's reputation and the criticality of the products or services they provide"
+        },
+        {
+          "id": "GV.SC-07.099",
+          "title": "Ex2",
+          "text": "Evaluate third parties' evidence of compliance with contractual cybersecurity requirements, such as self-attestations, warranties, certifications, and other artifacts"
+        },
+        {
+          "id": "GV.SC-07.100",
+          "title": "Ex3",
+          "text": "Monitor critical suppliers to ensure that they are fulfilling their security obligations throughout the supplier relationship lifecycle using a variety of methods and techniques, such as inspections, audits, tests, or other forms of evaluation"
+        },
+        {
+          "id": "GV.SC-07.101",
+          "title": "Ex4",
+          "text": "Monitor critical suppliers, services, and products for changes to their risk profiles, and reevaluate supplier criticality and risk impact accordingly"
+        },
+        {
+          "id": "GV.SC-07.102",
+          "title": "Ex5",
+          "text": "Plan for unexpected supplier and supply chain-related interruptions to ensure business continuity"
+        }
+      ]
+    },
+    {
+      "id": "GV.SC-08",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.SC",
+      "category_name": "Cybersecurity Supply Chain Risk Management",
+      "category_text": "",
+      "text": "Relevant suppliers and other third parties are included in incident planning, response, and recovery activities",
+      "implementation_examples": [
+        {
+          "id": "GV.SC-08.103",
+          "title": "Ex1",
+          "text": "Define and use rules and protocols for reporting incident response and recovery activities and the status between the organization and its suppliers"
+        },
+        {
+          "id": "GV.SC-08.104",
+          "title": "Ex2",
+          "text": "Identify and document the roles and responsibilities of the organization and its suppliers for incident response"
+        },
+        {
+          "id": "GV.SC-08.105",
+          "title": "Ex3",
+          "text": "Include critical suppliers in incident response exercises and simulations"
+        },
+        {
+          "id": "GV.SC-08.106",
+          "title": "Ex4",
+          "text": "Define and coordinate crisis communication methods and protocols between the organization and its critical suppliers"
+        },
+        {
+          "id": "GV.SC-08.107",
+          "title": "Ex5",
+          "text": "Conduct collaborative lessons learned sessions with critical suppliers"
+        }
+      ]
+    },
+    {
+      "id": "GV.SC-09",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.SC",
+      "category_name": "Cybersecurity Supply Chain Risk Management",
+      "category_text": "",
+      "text": "Supply chain security practices are integrated into cybersecurity and enterprise risk management programs, and their performance is monitored throughout the technology product and service life cycle",
+      "implementation_examples": [
+        {
+          "id": "GV.SC-09.108",
+          "title": "Ex1",
+          "text": "Policies and procedures require provenance records for all acquired technology products and services"
+        },
+        {
+          "id": "GV.SC-09.109",
+          "title": "Ex2",
+          "text": "Periodically provide risk reporting to leaders about how acquired components are proven to be untampered and authentic"
+        },
+        {
+          "id": "GV.SC-09.110",
+          "title": "Ex3",
+          "text": "Communicate regularly among cybersecurity risk managers and operations personnel about the need to acquire software patches, updates, and upgrades only from authenticated and trustworthy software providers"
+        },
+        {
+          "id": "GV.SC-09.111",
+          "title": "Ex4",
+          "text": "Review policies to ensure that they require approved supplier personnel to perform maintenance on supplier products"
+        },
+        {
+          "id": "GV.SC-09.112",
+          "title": "Ex5",
+          "text": "Policies and procedure require checking upgrades to critical hardware for unauthorized changes"
+        }
+      ]
+    },
+    {
+      "id": "GV.SC-10",
+      "function": "GV",
+      "function_name": "GOVERN",
+      "category": "GV.SC",
+      "category_name": "Cybersecurity Supply Chain Risk Management",
+      "category_text": "",
+      "text": "Cybersecurity supply chain risk management plans include provisions for activities that occur after the conclusion of a partnership or service agreement",
+      "implementation_examples": [
+        {
+          "id": "GV.SC-10.113",
+          "title": "Ex1",
+          "text": "Establish processes for terminating critical relationships under both normal and adverse circumstances"
+        },
+        {
+          "id": "GV.SC-10.114",
+          "title": "Ex2",
+          "text": "Define and implement plans for component end-of-life maintenance support and obsolescence"
+        },
+        {
+          "id": "GV.SC-10.115",
+          "title": "Ex3",
+          "text": "Verify that supplier access to organization resources is deactivated promptly when it is no longer needed"
+        },
+        {
+          "id": "GV.SC-10.116",
+          "title": "Ex4",
+          "text": "Verify that assets containing the organization's data are returned or properly disposed of in a timely, controlled, and safe manner"
+        },
+        {
+          "id": "GV.SC-10.117",
+          "title": "Ex5",
+          "text": "Develop and execute a plan for terminating or transitioning supplier relationships that takes supply chain security risk and resiliency into account"
+        },
+        {
+          "id": "GV.SC-10.118",
+          "title": "Ex6",
+          "text": "Mitigate risks to data and systems created by supplier termination"
+        },
+        {
+          "id": "GV.SC-10.119",
+          "title": "Ex7",
+          "text": "Manage data leakage risks associated with supplier termination"
+        }
+      ]
+    },
+    {
+      "id": "ID.AM-01",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.AM",
+      "category_name": "Asset Management",
+      "category_text": "Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy",
+      "text": "Inventories of hardware managed by the organization are maintained",
+      "implementation_examples": [
+        {
+          "id": "ID.AM-01.120",
+          "title": "Ex1",
+          "text": "Maintain inventories for all types of hardware, including IT, IoT, OT, and mobile devices"
+        },
+        {
+          "id": "ID.AM-01.121",
+          "title": "Ex2",
+          "text": "Constantly monitor networks to detect new hardware and automatically update inventories"
+        }
+      ]
+    },
+    {
+      "id": "ID.AM-02",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.AM",
+      "category_name": "Asset Management",
+      "category_text": "Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy",
+      "text": "Inventories of software, services, and systems managed by the organization are maintained",
+      "implementation_examples": [
+        {
+          "id": "ID.AM-02.122",
+          "title": "Ex1",
+          "text": "Maintain inventories for all types of software and services, including commercial-off-the-shelf, open-source, custom applications, API services, and cloud-based applications and services"
+        },
+        {
+          "id": "ID.AM-02.123",
+          "title": "Ex2",
+          "text": "Constantly monitor all platforms, including containers and virtual machines, for software and service inventory changes"
+        },
+        {
+          "id": "ID.AM-02.124",
+          "title": "Ex3",
+          "text": "Maintain an inventory of the organization's systems"
+        }
+      ]
+    },
+    {
+      "id": "ID.AM-03",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.AM",
+      "category_name": "Asset Management",
+      "category_text": "Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy",
+      "text": "Representations of the organization's authorized network communication and internal and external network data flows are maintained",
+      "implementation_examples": [
+        {
+          "id": "ID.AM-03.125",
+          "title": "Ex1",
+          "text": "Maintain baselines of communication and data flows within the organization's wired and wireless networks"
+        },
+        {
+          "id": "ID.AM-03.126",
+          "title": "Ex2",
+          "text": "Maintain baselines of communication and data flows between the organization and third parties"
+        },
+        {
+          "id": "ID.AM-03.127",
+          "title": "Ex3",
+          "text": "Maintain baselines of communication and data flows for the organization's infrastructure-as-a-service (IaaS) usage"
+        },
+        {
+          "id": "ID.AM-03.128",
+          "title": "Ex4",
+          "text": "Maintain documentation of expected network ports, protocols, and services that are typically used among authorized systems"
+        }
+      ]
+    },
+    {
+      "id": "ID.AM-04",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.AM",
+      "category_name": "Asset Management",
+      "category_text": "Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy",
+      "text": "Inventories of services provided by suppliers are maintained",
+      "implementation_examples": [
+        {
+          "id": "ID.AM-04.129",
+          "title": "Ex1",
+          "text": "Inventory all external services used by the organization, including third-party infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and software-as-a-service (SaaS) offerings; APIs; and other externally hosted application services"
+        },
+        {
+          "id": "ID.AM-04.130",
+          "title": "Ex2",
+          "text": "Update the inventory when a new external service is going to be utilized to ensure adequate cybersecurity risk management monitoring of the organization's use of that service"
+        }
+      ]
+    },
+    {
+      "id": "ID.AM-05",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.AM",
+      "category_name": "Asset Management",
+      "category_text": "Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy",
+      "text": "Assets are prioritized based on classification, criticality, resources, and impact on the mission",
+      "implementation_examples": [
+        {
+          "id": "ID.AM-05.131",
+          "title": "Ex1",
+          "text": "Define criteria for prioritizing each class of assets"
+        },
+        {
+          "id": "ID.AM-05.132",
+          "title": "Ex2",
+          "text": "Apply the prioritization criteria to assets"
+        },
+        {
+          "id": "ID.AM-05.133",
+          "title": "Ex3",
+          "text": "Track the asset priorities and update them periodically or when significant changes to the organization occur"
+        }
+      ]
+    },
+    {
+      "id": "ID.AM-07",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.AM",
+      "category_name": "Asset Management",
+      "category_text": "Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy",
+      "text": "Inventories of data and corresponding metadata for designated data types are maintained",
+      "implementation_examples": [
+        {
+          "id": "ID.AM-07.134",
+          "title": "Ex1",
+          "text": "Maintain a list of the designated data types of interest (e.g., personally identifiable information, protected health information, financial account numbers, organization intellectual property, operational technology data)"
+        },
+        {
+          "id": "ID.AM-07.135",
+          "title": "Ex2",
+          "text": "Continuously discover and analyze ad hoc data to identify new instances of designated data types"
+        },
+        {
+          "id": "ID.AM-07.136",
+          "title": "Ex3",
+          "text": "Assign data classifications to designated data types through tags or labels"
+        },
+        {
+          "id": "ID.AM-07.137",
+          "title": "Ex4",
+          "text": "Track the provenance, data owner, and geolocation of each instance of designated data types"
+        }
+      ]
+    },
+    {
+      "id": "ID.AM-08",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.AM",
+      "category_name": "Asset Management",
+      "category_text": "Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy",
+      "text": "Systems, hardware, software, services, and data are managed throughout their life cycles",
+      "implementation_examples": [
+        {
+          "id": "ID.AM-08.138",
+          "title": "Ex1",
+          "text": "Integrate cybersecurity considerations throughout the life cycles of systems, hardware, software, and services"
+        },
+        {
+          "id": "ID.AM-08.139",
+          "title": "Ex2",
+          "text": "Integrate cybersecurity considerations into product life cycles"
+        },
+        {
+          "id": "ID.AM-08.140",
+          "title": "Ex3",
+          "text": "Identify unofficial uses of technology to meet mission objectives (i.e., shadow IT)"
+        },
+        {
+          "id": "ID.AM-08.141",
+          "title": "Ex4",
+          "text": "Periodically identify redundant systems, hardware, software, and services that unnecessarily increase the organization's attack surface"
+        },
+        {
+          "id": "ID.AM-08.142",
+          "title": "Ex5",
+          "text": "Properly configure and secure systems, hardware, software, and services prior to their deployment in production"
+        },
+        {
+          "id": "ID.AM-08.143",
+          "title": "Ex6",
+          "text": "Update inventories when systems, hardware, software, and services are moved or transferred within the organization"
+        },
+        {
+          "id": "ID.AM-08.144",
+          "title": "Ex7",
+          "text": "Securely destroy stored data based on the organization's data retention policy using the prescribed destruction method, and keep and manage a record of the destructions"
+        },
+        {
+          "id": "ID.AM-08.145",
+          "title": "Ex8",
+          "text": "Securely sanitize data storage when hardware is being retired, decommissioned, reassigned, or sent for repairs or replacement"
+        },
+        {
+          "id": "ID.AM-08.146",
+          "title": "Ex9",
+          "text": "Offer methods for destroying paper, storage media, and other physical forms of data storage"
+        }
+      ]
+    },
+    {
+      "id": "ID.RA-01",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.RA",
+      "category_name": "Risk Assessment",
+      "category_text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "text": "Vulnerabilities in assets are identified, validated, and recorded",
+      "implementation_examples": [
+        {
+          "id": "ID.RA-01.147",
+          "title": "Ex1",
+          "text": "Use vulnerability management technologies to identify unpatched and misconfigured software"
+        },
+        {
+          "id": "ID.RA-01.148",
+          "title": "Ex2",
+          "text": "Assess network and system architectures for design and implementation weaknesses that affect cybersecurity"
+        },
+        {
+          "id": "ID.RA-01.149",
+          "title": "Ex3",
+          "text": "Review, analyze, or test organization-developed software to identify design, coding, and default configuration vulnerabilities"
+        },
+        {
+          "id": "ID.RA-01.150",
+          "title": "Ex4",
+          "text": "Assess facilities that house critical computing assets for physical vulnerabilities and resilience issues"
+        },
+        {
+          "id": "ID.RA-01.151",
+          "title": "Ex5",
+          "text": "Monitor sources of cyber threat intelligence for information on new vulnerabilities in products and services"
+        },
+        {
+          "id": "ID.RA-01.152",
+          "title": "Ex6",
+          "text": "Review processes and procedures for weaknesses that could be exploited to affect cybersecurity"
+        }
+      ]
+    },
+    {
+      "id": "ID.RA-02",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.RA",
+      "category_name": "Risk Assessment",
+      "category_text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "text": "Cyber threat intelligence is received from information sharing forums and sources",
+      "implementation_examples": [
+        {
+          "id": "ID.RA-02.153",
+          "title": "Ex1",
+          "text": "Configure cybersecurity tools and technologies with detection or response capabilities to securely ingest cyber threat intelligence feeds"
+        },
+        {
+          "id": "ID.RA-02.154",
+          "title": "Ex2",
+          "text": "Receive and review advisories from reputable third parties on current threat actors and their tactics, techniques, and procedures (TTPs)"
+        },
+        {
+          "id": "ID.RA-02.155",
+          "title": "Ex3",
+          "text": "Monitor sources of cyber threat intelligence for information on the types of vulnerabilities that emerging technologies may have"
+        }
+      ]
+    },
+    {
+      "id": "ID.RA-03",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.RA",
+      "category_name": "Risk Assessment",
+      "category_text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "text": "Internal and external threats to the organization are identified and recorded",
+      "implementation_examples": [
+        {
+          "id": "ID.RA-03.156",
+          "title": "Ex1",
+          "text": "Use cyber threat intelligence to maintain awareness of the types of threat actors likely to target the organization and the TTPs they are likely to use"
+        },
+        {
+          "id": "ID.RA-03.157",
+          "title": "Ex2",
+          "text": "Perform threat hunting to look for signs of threat actors within the environment"
+        },
+        {
+          "id": "ID.RA-03.158",
+          "title": "Ex3",
+          "text": "Implement processes for identifying internal threat actors"
+        }
+      ]
+    },
+    {
+      "id": "ID.RA-04",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.RA",
+      "category_name": "Risk Assessment",
+      "category_text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "text": "Potential impacts and likelihoods of threats exploiting vulnerabilities are identified and recorded",
+      "implementation_examples": [
+        {
+          "id": "ID.RA-04.159",
+          "title": "Ex1",
+          "text": "Business leaders and cybersecurity risk management practitioners work together to estimate the likelihood and impact of risk scenarios and record them in risk registers"
+        },
+        {
+          "id": "ID.RA-04.160",
+          "title": "Ex2",
+          "text": "Enumerate the potential business impacts of unauthorized access to the organization's communications, systems, and data processed in or by those systems"
+        },
+        {
+          "id": "ID.RA-04.161",
+          "title": "Ex3",
+          "text": "Account for the potential impacts of cascading failures for systems of systems"
+        }
+      ]
+    },
+    {
+      "id": "ID.RA-05",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.RA",
+      "category_name": "Risk Assessment",
+      "category_text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "text": "Threats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and inform risk response prioritization",
+      "implementation_examples": [
+        {
+          "id": "ID.RA-05.162",
+          "title": "Ex1",
+          "text": "Develop threat models to better understand risks to the data and identify appropriate risk responses"
+        },
+        {
+          "id": "ID.RA-05.163",
+          "title": "Ex2",
+          "text": "Prioritize cybersecurity resource allocations and investments based on estimated likelihoods and impacts"
+        }
+      ]
+    },
+    {
+      "id": "ID.RA-06",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.RA",
+      "category_name": "Risk Assessment",
+      "category_text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "text": "Risk responses are chosen, prioritized, planned, tracked, and communicated",
+      "implementation_examples": [
+        {
+          "id": "ID.RA-06.164",
+          "title": "Ex1",
+          "text": "Apply the vulnerability management plan's criteria for deciding whether to accept, transfer, mitigate, or avoid risk"
+        },
+        {
+          "id": "ID.RA-06.165",
+          "title": "Ex2",
+          "text": "Apply the vulnerability management plan's criteria for selecting compensating controls to mitigate risk"
+        },
+        {
+          "id": "ID.RA-06.166",
+          "title": "Ex3",
+          "text": "Track the progress of risk response implementation (e.g., plan of action and milestones [POA&M], risk register, risk detail report)"
+        },
+        {
+          "id": "ID.RA-06.167",
+          "title": "Ex4",
+          "text": "Use risk assessment findings to inform risk response decisions and actions"
+        },
+        {
+          "id": "ID.RA-06.168",
+          "title": "Ex5",
+          "text": "Communicate planned risk responses to affected stakeholders in priority order"
+        }
+      ]
+    },
+    {
+      "id": "ID.RA-07",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.RA",
+      "category_name": "Risk Assessment",
+      "category_text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "text": "Changes and exceptions are managed, assessed for risk impact, recorded, and tracked",
+      "implementation_examples": [
+        {
+          "id": "ID.RA-07.169",
+          "title": "Ex1",
+          "text": "Implement and follow procedures for the formal documentation, review, testing, and approval of proposed changes and requested exceptions"
+        },
+        {
+          "id": "ID.RA-07.170",
+          "title": "Ex2",
+          "text": "Document the possible risks of making or not making each proposed change, and provide guidance on rolling back changes"
+        },
+        {
+          "id": "ID.RA-07.171",
+          "title": "Ex3",
+          "text": "Document the risks related to each requested exception and the plan for responding to those risks"
+        },
+        {
+          "id": "ID.RA-07.172",
+          "title": "Ex4",
+          "text": "Periodically review risks that were accepted based upon planned future actions or milestones"
+        }
+      ]
+    },
+    {
+      "id": "ID.RA-08",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.RA",
+      "category_name": "Risk Assessment",
+      "category_text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "text": "Processes for receiving, analyzing, and responding to vulnerability disclosures are established",
+      "implementation_examples": [
+        {
+          "id": "ID.RA-08.173",
+          "title": "Ex1",
+          "text": "Conduct vulnerability information sharing between the organization and its suppliers following the rules and protocols defined in contracts"
+        },
+        {
+          "id": "ID.RA-08.174",
+          "title": "Ex2",
+          "text": "Assign responsibilities and verify the execution of procedures for processing, analyzing the impact of, and responding to cybersecurity threat, vulnerability, or incident disclosures by suppliers, customers, partners, and government cybersecurity organizations"
+        }
+      ]
+    },
+    {
+      "id": "ID.RA-09",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.RA",
+      "category_name": "Risk Assessment",
+      "category_text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "text": "The authenticity and integrity of hardware and software are assessed prior to acquisition and use",
+      "implementation_examples": [
+        {
+          "id": "ID.RA-09.175",
+          "title": "Ex1",
+          "text": "Assess the authenticity and cybersecurity of critical technology products and services prior to acquisition and use"
+        }
+      ]
+    },
+    {
+      "id": "ID.RA-10",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.RA",
+      "category_name": "Risk Assessment",
+      "category_text": "The cybersecurity risk to the organization, assets, and individuals is understood by the organization",
+      "text": "Critical suppliers are assessed prior to acquisition",
+      "implementation_examples": [
+        {
+          "id": "ID.RA-10.176",
+          "title": "Ex1",
+          "text": "Conduct supplier risk assessments against business and applicable cybersecurity requirements, including the supply chain"
+        }
+      ]
+    },
+    {
+      "id": "ID.IM-01",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.IM",
+      "category_name": "Improvement",
+      "category_text": "",
+      "text": "Improvements are identified from evaluations",
+      "implementation_examples": [
+        {
+          "id": "ID.IM-01.177",
+          "title": "Ex1",
+          "text": "Perform self-assessments of critical services that take current threats and TTPs into consideration"
+        },
+        {
+          "id": "ID.IM-01.178",
+          "title": "Ex2",
+          "text": "Invest in third-party assessments or independent audits of the effectiveness of the organization's cybersecurity program to identify areas that need improvement"
+        },
+        {
+          "id": "ID.IM-01.179",
+          "title": "Ex3",
+          "text": "Constantly evaluate compliance with selected cybersecurity requirements through automated means"
+        }
+      ]
+    },
+    {
+      "id": "ID.IM-02",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.IM",
+      "category_name": "Improvement",
+      "category_text": "",
+      "text": "Improvements are identified from security tests and exercises, including those done in coordination with suppliers and relevant third parties",
+      "implementation_examples": [
+        {
+          "id": "ID.IM-02.180",
+          "title": "Ex1",
+          "text": "Identify improvements for future incident response activities based on findings from incident response assessments (e.g., tabletop exercises and simulations, tests, internal reviews, independent audits)"
+        },
+        {
+          "id": "ID.IM-02.181",
+          "title": "Ex2",
+          "text": "Identify improvements for future business continuity, disaster recovery, and incident response activities based on exercises performed in coordination with critical service providers and product suppliers"
+        },
+        {
+          "id": "ID.IM-02.182",
+          "title": "Ex3",
+          "text": "Involve internal stakeholders (e.g., senior executives, legal department, HR) in security tests and exercises as appropriate"
+        },
+        {
+          "id": "ID.IM-02.183",
+          "title": "Ex4",
+          "text": "Perform penetration testing to identify opportunities to improve the security posture of selected high-risk systems as approved by leadership"
+        },
+        {
+          "id": "ID.IM-02.184",
+          "title": "Ex5",
+          "text": "Exercise contingency plans for responding to and recovering from the discovery that products or services did not originate with the contracted supplier or partner or were altered before receipt"
+        },
+        {
+          "id": "ID.IM-02.185",
+          "title": "Ex6",
+          "text": "Collect and analyze performance metrics using security tools and services to inform improvements to the cybersecurity program"
+        }
+      ]
+    },
+    {
+      "id": "ID.IM-03",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.IM",
+      "category_name": "Improvement",
+      "category_text": "",
+      "text": "Improvements are identified from execution of operational processes, procedures, and activities",
+      "implementation_examples": [
+        {
+          "id": "ID.IM-03.186",
+          "title": "Ex1",
+          "text": "Conduct collaborative lessons learned sessions with suppliers"
+        },
+        {
+          "id": "ID.IM-03.187",
+          "title": "Ex2",
+          "text": "Annually review cybersecurity policies, processes, and procedures to take lessons learned into account"
+        },
+        {
+          "id": "ID.IM-03.188",
+          "title": "Ex3",
+          "text": "Use metrics to assess operational cybersecurity performance over time"
+        }
+      ]
+    },
+    {
+      "id": "ID.IM-04",
+      "function": "ID",
+      "function_name": "IDENTIFY",
+      "category": "ID.IM",
+      "category_name": "Improvement",
+      "category_text": "",
+      "text": "Incident response plans and other cybersecurity plans that affect operations are established, communicated, maintained, and improved",
+      "implementation_examples": [
+        {
+          "id": "ID.IM-04.189",
+          "title": "Ex1",
+          "text": "Establish contingency plans (e.g., incident response, business continuity, disaster recovery) for responding to and recovering from adverse events that can interfere with operations, expose confidential information, or otherwise endanger the organization's mission and viability"
+        },
+        {
+          "id": "ID.IM-04.190",
+          "title": "Ex2",
+          "text": "Include contact and communication information, processes for handling common scenarios, and criteria for prioritization, escalation, and elevation in all contingency plans"
+        },
+        {
+          "id": "ID.IM-04.191",
+          "title": "Ex3",
+          "text": "Create a vulnerability management plan to identify and assess all types of vulnerabilities and to prioritize, test, and implement risk responses"
+        },
+        {
+          "id": "ID.IM-04.192",
+          "title": "Ex4",
+          "text": "Communicate cybersecurity plans (including updates) to those responsible for carrying them out and to affected parties"
+        },
+        {
+          "id": "ID.IM-04.193",
+          "title": "Ex5",
+          "text": "Review and update all cybersecurity plans annually or when a need for significant improvements is identified"
+        }
+      ]
+    },
+    {
+      "id": "PR.AA-01",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "category_text": "",
+      "text": "Identities and credentials for authorized users, services, and hardware are managed by the organization",
+      "implementation_examples": [
+        {
+          "id": "PR.AA-01.194",
+          "title": "Ex1",
+          "text": "Initiate requests for new access or additional access for employees, contractors, and others, and track, review, and fulfill the requests, with permission from system or data owners when needed"
+        },
+        {
+          "id": "PR.AA-01.195",
+          "title": "Ex2",
+          "text": "Issue, manage, and revoke cryptographic certificates and identity tokens, cryptographic keys (i.e., key management), and other credentials"
+        },
+        {
+          "id": "PR.AA-01.196",
+          "title": "Ex3",
+          "text": "Select a unique identifier for each device from immutable hardware characteristics or an identifier securely provisioned to the device"
+        },
+        {
+          "id": "PR.AA-01.197",
+          "title": "Ex4",
+          "text": "Physically label authorized hardware with an identifier for inventory and servicing purposes"
+        }
+      ]
+    },
+    {
+      "id": "PR.AA-02",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "category_text": "",
+      "text": "Identities are proofed and bound to credentials based on the context of interactions",
+      "implementation_examples": [
+        {
+          "id": "PR.AA-02.198",
+          "title": "Ex1",
+          "text": "Verify a person's claimed identity at enrollment time using government-issued identity credentials (e.g., passport, visa, driver's license)"
+        },
+        {
+          "id": "PR.AA-02.199",
+          "title": "Ex2",
+          "text": "Issue a different credential for each person (i.e., no credential sharing)"
+        }
+      ]
+    },
+    {
+      "id": "PR.AA-03",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "category_text": "",
+      "text": "Users, services, and hardware are authenticated",
+      "implementation_examples": [
+        {
+          "id": "PR.AA-03.200",
+          "title": "Ex1",
+          "text": "Require multifactor authentication"
+        },
+        {
+          "id": "PR.AA-03.201",
+          "title": "Ex2",
+          "text": "Enforce policies for the minimum strength of passwords, PINs, and similar authenticators"
+        },
+        {
+          "id": "PR.AA-03.202",
+          "title": "Ex3",
+          "text": "Periodically reauthenticate users, services, and hardware based on risk (e.g., in zero trust architectures)"
+        },
+        {
+          "id": "PR.AA-03.203",
+          "title": "Ex4",
+          "text": "Ensure that authorized personnel can access accounts essential for protecting safety under emergency conditions"
+        }
+      ]
+    },
+    {
+      "id": "PR.AA-04",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "category_text": "",
+      "text": "Identity assertions are protected, conveyed, and verified",
+      "implementation_examples": [
+        {
+          "id": "PR.AA-04.204",
+          "title": "Ex1",
+          "text": "Protect identity assertions that are used to convey authentication and user information through single sign-on systems"
+        },
+        {
+          "id": "PR.AA-04.205",
+          "title": "Ex2",
+          "text": "Protect identity assertions that are used to convey authentication and user information between federated systems"
+        },
+        {
+          "id": "PR.AA-04.206",
+          "title": "Ex3",
+          "text": "Implement standards-based approaches for identity assertions in all contexts, and follow all guidance for the generation (e.g., data models, metadata), protection (e.g., digital signing, encryption), and verification (e.g., signature validation) of identity assertions"
+        }
+      ]
+    },
+    {
+      "id": "PR.AA-05",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "category_text": "",
+      "text": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties",
+      "implementation_examples": [
+        {
+          "id": "PR.AA-05.207",
+          "title": "Ex1",
+          "text": "Review logical and physical access privileges periodically and whenever someone changes roles or leaves the organization, and promptly rescind privileges that are no longer needed"
+        },
+        {
+          "id": "PR.AA-05.208",
+          "title": "Ex2",
+          "text": "Take attributes of the requester and the requested resource into account for authorization decisions (e.g., geolocation, day/time, requester endpoint's cyber health)"
+        },
+        {
+          "id": "PR.AA-05.209",
+          "title": "Ex3",
+          "text": "Restrict access and privileges to the minimum necessary (e.g., zero trust architecture)"
+        },
+        {
+          "id": "PR.AA-05.210",
+          "title": "Ex4",
+          "text": "Periodically review the privileges associated with critical business functions to confirm proper separation of duties"
+        }
+      ]
+    },
+    {
+      "id": "PR.AA-06",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AA",
+      "category_name": "Identity Management, Authentication, and Access Control",
+      "category_text": "",
+      "text": "Physical access to assets is managed, monitored, and enforced commensurate with risk",
+      "implementation_examples": [
+        {
+          "id": "PR.AA-06.211",
+          "title": "Ex1",
+          "text": "Use security guards, security cameras, locked entrances, alarm systems, and other physical controls to monitor facilities and restrict access"
+        },
+        {
+          "id": "PR.AA-06.212",
+          "title": "Ex2",
+          "text": "Employ additional physical security controls for areas that contain high-risk assets"
+        },
+        {
+          "id": "PR.AA-06.213",
+          "title": "Ex3",
+          "text": "Escort guests, vendors, and other third parties within areas that contain business-critical assets"
+        }
+      ]
+    },
+    {
+      "id": "PR.AT-01",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AT",
+      "category_name": "Awareness and Training",
+      "category_text": "The organization's personnel are provided with cybersecurity awareness and training so that they can perform their cybersecurity-related tasks",
+      "text": "Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind",
+      "implementation_examples": [
+        {
+          "id": "PR.AT-01.214",
+          "title": "Ex1",
+          "text": "Provide basic cybersecurity awareness and training to employees, contractors, partners, suppliers, and all other users of the organization's non-public resources"
+        },
+        {
+          "id": "PR.AT-01.215",
+          "title": "Ex2",
+          "text": "Train personnel to recognize social engineering attempts and other common attacks, report attacks and suspicious activity, comply with acceptable use policies, and perform basic cyber hygiene tasks (e.g., patching software, choosing passwords, protecting credentials)"
+        },
+        {
+          "id": "PR.AT-01.216",
+          "title": "Ex3",
+          "text": "Explain the consequences of cybersecurity policy violations, both to individual users and the organization as a whole"
+        },
+        {
+          "id": "PR.AT-01.217",
+          "title": "Ex4",
+          "text": "Periodically assess or test users on their understanding of basic cybersecurity practices"
+        },
+        {
+          "id": "PR.AT-01.218",
+          "title": "Ex5",
+          "text": "Require annual refreshers to reinforce existing practices and introduce new practices"
+        }
+      ]
+    },
+    {
+      "id": "PR.AT-02",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.AT",
+      "category_name": "Awareness and Training",
+      "category_text": "The organization's personnel are provided with cybersecurity awareness and training so that they can perform their cybersecurity-related tasks",
+      "text": "Individuals in specialized roles are provided with awareness and training so that they possess the knowledge and skills to perform relevant tasks with cybersecurity risks in mind",
+      "implementation_examples": [
+        {
+          "id": "PR.AT-02.219",
+          "title": "Ex1",
+          "text": "Identify the specialized roles within the organization that require additional cybersecurity training, such as physical and cybersecurity personnel, finance personnel, senior leadership, and anyone with access to business-critical data"
+        },
+        {
+          "id": "PR.AT-02.220",
+          "title": "Ex2",
+          "text": "Provide role-based cybersecurity awareness and training to all those in specialized roles, including contractors, partners, suppliers, and other third parties"
+        },
+        {
+          "id": "PR.AT-02.221",
+          "title": "Ex3",
+          "text": "Periodically assess or test users on their understanding of cybersecurity practices for their specialized roles"
+        },
+        {
+          "id": "PR.AT-02.222",
+          "title": "Ex4",
+          "text": "Require annual refreshers to reinforce existing practices and introduce new practices"
+        }
+      ]
+    },
+    {
+      "id": "PR.DS-01",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.DS",
+      "category_name": "Data Security",
+      "category_text": "Data are managed consistent with the organization's risk strategy to protect the confidentiality, integrity, and availability of information",
+      "text": "The confidentiality, integrity, and availability of data-at-rest are protected",
+      "implementation_examples": [
+        {
+          "id": "PR.DS-01.223",
+          "title": "Ex1",
+          "text": "Use encryption, digital signatures, and cryptographic hashes to protect the confidentiality and integrity of stored data in files, databases, virtual machine disk images, container images, and other resources"
+        },
+        {
+          "id": "PR.DS-01.224",
+          "title": "Ex2",
+          "text": "Use full disk encryption to protect data stored on user endpoints"
+        },
+        {
+          "id": "PR.DS-01.225",
+          "title": "Ex3",
+          "text": "Confirm the integrity of software by validating signatures"
+        },
+        {
+          "id": "PR.DS-01.226",
+          "title": "Ex4",
+          "text": "Restrict the use of removable media to prevent data exfiltration"
+        },
+        {
+          "id": "PR.DS-01.227",
+          "title": "Ex5",
+          "text": "Physically secure removable media containing unencrypted sensitive information, such as within locked offices or file cabinets"
+        }
+      ]
+    },
+    {
+      "id": "PR.DS-02",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.DS",
+      "category_name": "Data Security",
+      "category_text": "Data are managed consistent with the organization's risk strategy to protect the confidentiality, integrity, and availability of information",
+      "text": "The confidentiality, integrity, and availability of data-in-transit are protected",
+      "implementation_examples": [
+        {
+          "id": "PR.DS-02.228",
+          "title": "Ex1",
+          "text": "Use encryption, digital signatures, and cryptographic hashes to protect the confidentiality and integrity of network communications"
+        },
+        {
+          "id": "PR.DS-02.229",
+          "title": "Ex2",
+          "text": "Automatically encrypt or block outbound emails and other communications that contain sensitive data, depending on the data classification"
+        },
+        {
+          "id": "PR.DS-02.230",
+          "title": "Ex3",
+          "text": "Block access to personal email, file sharing, file storage services, and other personal communications applications and services from organizational systems and networks"
+        },
+        {
+          "id": "PR.DS-02.231",
+          "title": "Ex4",
+          "text": "Prevent reuse of sensitive data from production environments (e.g., customer records) in development, testing, and other non-production environments"
+        }
+      ]
+    },
+    {
+      "id": "PR.DS-10",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.DS",
+      "category_name": "Data Security",
+      "category_text": "Data are managed consistent with the organization's risk strategy to protect the confidentiality, integrity, and availability of information",
+      "text": "The confidentiality, integrity, and availability of data-in-use are protected",
+      "implementation_examples": [
+        {
+          "id": "PR.DS-10.232",
+          "title": "Ex1",
+          "text": "Remove data that must remain confidential (e.g., from processors and memory) as soon as it is no longer needed"
+        },
+        {
+          "id": "PR.DS-10.233",
+          "title": "Ex2",
+          "text": "Protect data in use from access by other users and processes of the same platform"
+        }
+      ]
+    },
+    {
+      "id": "PR.DS-11",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.DS",
+      "category_name": "Data Security",
+      "category_text": "Data are managed consistent with the organization's risk strategy to protect the confidentiality, integrity, and availability of information",
+      "text": "Backups of data are created, protected, maintained, and tested",
+      "implementation_examples": [
+        {
+          "id": "PR.DS-11.234",
+          "title": "Ex1",
+          "text": "Continuously back up critical data in near-real-time, and back up other data frequently at agreed-upon schedules"
+        },
+        {
+          "id": "PR.DS-11.235",
+          "title": "Ex2",
+          "text": "Test backups and restores for all types of data sources at least annually"
+        },
+        {
+          "id": "PR.DS-11.236",
+          "title": "Ex3",
+          "text": "Securely store some backups offline and offsite so that an incident or disaster will not damage them"
+        },
+        {
+          "id": "PR.DS-11.237",
+          "title": "Ex4",
+          "text": "Enforce geographic separation and geolocation restrictions for data backup storage"
+        }
+      ]
+    },
+    {
+      "id": "PR.PS-01",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "category_text": "The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with the organization's risk strategy to protect their confidentiality, integrity, and availability",
+      "text": "Configuration management practices are established and applied",
+      "implementation_examples": [
+        {
+          "id": "PR.PS-01.238",
+          "title": "Ex1",
+          "text": "Establish, test, deploy, and maintain hardened baselines that enforce the organization's cybersecurity policies and provide only essential capabilities (i.e., principle of least functionality)"
+        },
+        {
+          "id": "PR.PS-01.239",
+          "title": "Ex2",
+          "text": "Review all default configuration settings that may potentially impact cybersecurity when installing or upgrading software"
+        },
+        {
+          "id": "PR.PS-01.240",
+          "title": "Ex3",
+          "text": "Monitor implemented software for deviations from approved baselines"
+        }
+      ]
+    },
+    {
+      "id": "PR.PS-02",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "category_text": "The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with the organization's risk strategy to protect their confidentiality, integrity, and availability",
+      "text": "Software is maintained, replaced, and removed commensurate with risk",
+      "implementation_examples": [
+        {
+          "id": "PR.PS-02.241",
+          "title": "Ex1",
+          "text": "Perform routine and emergency patching within the timeframes specified in the vulnerability management plan"
+        },
+        {
+          "id": "PR.PS-02.242",
+          "title": "Ex2",
+          "text": "Update container images, and deploy new container instances to replace rather than update existing instances"
+        },
+        {
+          "id": "PR.PS-02.243",
+          "title": "Ex3",
+          "text": "Replace end-of-life software and service versions with supported, maintained versions"
+        },
+        {
+          "id": "PR.PS-02.244",
+          "title": "Ex4",
+          "text": "Uninstall and remove unauthorized software and services that pose undue risks"
+        },
+        {
+          "id": "PR.PS-02.245",
+          "title": "Ex5",
+          "text": "Uninstall and remove any unnecessary software components (e.g., operating system utilities) that attackers might misuse"
+        },
+        {
+          "id": "PR.PS-02.246",
+          "title": "Ex6",
+          "text": "Define and implement plans for software and service end-of-life maintenance support and obsolescence"
+        }
+      ]
+    },
+    {
+      "id": "PR.PS-03",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "category_text": "The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with the organization's risk strategy to protect their confidentiality, integrity, and availability",
+      "text": "Hardware is maintained, replaced, and removed commensurate with risk",
+      "implementation_examples": [
+        {
+          "id": "PR.PS-03.247",
+          "title": "Ex1",
+          "text": "Replace hardware when it lacks needed security capabilities or when it cannot support software with needed security capabilities"
+        },
+        {
+          "id": "PR.PS-03.248",
+          "title": "Ex2",
+          "text": "Define and implement plans for hardware end-of-life maintenance support and obsolescence"
+        },
+        {
+          "id": "PR.PS-03.249",
+          "title": "Ex3",
+          "text": "Perform hardware disposal in a secure, responsible, and auditable manner"
+        }
+      ]
+    },
+    {
+      "id": "PR.PS-04",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "category_text": "The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with the organization's risk strategy to protect their confidentiality, integrity, and availability",
+      "text": "Log records are generated and made available for continuous monitoring",
+      "implementation_examples": [
+        {
+          "id": "PR.PS-04.250",
+          "title": "Ex1",
+          "text": "Configure all operating systems, applications, and services (including cloud-based services) to generate log records"
+        },
+        {
+          "id": "PR.PS-04.251",
+          "title": "Ex2",
+          "text": "Configure log generators to securely share their logs with the organization's logging infrastructure systems and services"
+        },
+        {
+          "id": "PR.PS-04.252",
+          "title": "Ex3",
+          "text": "Configure log generators to record the data needed by zero-trust architectures"
+        }
+      ]
+    },
+    {
+      "id": "PR.PS-05",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "category_text": "The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with the organization's risk strategy to protect their confidentiality, integrity, and availability",
+      "text": "Installation and execution of unauthorized software are prevented",
+      "implementation_examples": [
+        {
+          "id": "PR.PS-05.253",
+          "title": "Ex1",
+          "text": "When risk warrants it, restrict software execution to permitted products only or deny the execution of prohibited and unauthorized software"
+        },
+        {
+          "id": "PR.PS-05.254",
+          "title": "Ex2",
+          "text": "Verify the source of new software and the software's integrity before installing it"
+        },
+        {
+          "id": "PR.PS-05.255",
+          "title": "Ex3",
+          "text": "Configure platforms to use only approved DNS services that block access to known malicious domains"
+        },
+        {
+          "id": "PR.PS-05.256",
+          "title": "Ex4",
+          "text": "Configure platforms to allow the installation of organization-approved software only"
+        }
+      ]
+    },
+    {
+      "id": "PR.PS-06",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.PS",
+      "category_name": "Platform Security",
+      "category_text": "The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with the organization's risk strategy to protect their confidentiality, integrity, and availability",
+      "text": "Secure software development practices are integrated, and their performance is monitored throughout the software development life cycle",
+      "implementation_examples": [
+        {
+          "id": "PR.PS-06.257",
+          "title": "Ex1",
+          "text": "Protect all components of organization-developed software from tampering and unauthorized access"
+        },
+        {
+          "id": "PR.PS-06.258",
+          "title": "Ex2",
+          "text": "Secure all software produced by the organization, with minimal vulnerabilities in their releases"
+        },
+        {
+          "id": "PR.PS-06.259",
+          "title": "Ex3",
+          "text": "Maintain the software used in production environments, and securely dispose of software once it is no longer needed"
+        }
+      ]
+    },
+    {
+      "id": "PR.IR-01",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.IR",
+      "category_name": "Technology Infrastructure Resilience",
+      "category_text": "Security architectures are managed with the organization's risk strategy to protect asset confidentiality, integrity, and availability, and organizational resilience",
+      "text": "Networks and environments are protected from unauthorized logical access and usage",
+      "implementation_examples": [
+        {
+          "id": "PR.IR-01.260",
+          "title": "Ex1",
+          "text": "Logically segment organization networks and cloud-based platforms according to trust boundaries and platform types (e.g., IT, IoT, OT, mobile, guests), and permit required communications only between segments"
+        },
+        {
+          "id": "PR.IR-01.261",
+          "title": "Ex2",
+          "text": "Logically segment organization networks from external networks, and permit only necessary communications to enter the organization's networks from the external networks"
+        },
+        {
+          "id": "PR.IR-01.262",
+          "title": "Ex3",
+          "text": "Implement zero trust architectures to restrict network access to each resource to the minimum necessary"
+        },
+        {
+          "id": "PR.IR-01.263",
+          "title": "Ex4",
+          "text": "Check the cyber health of endpoints before allowing them to access and use production resources"
+        }
+      ]
+    },
+    {
+      "id": "PR.IR-02",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.IR",
+      "category_name": "Technology Infrastructure Resilience",
+      "category_text": "Security architectures are managed with the organization's risk strategy to protect asset confidentiality, integrity, and availability, and organizational resilience",
+      "text": "The organization's technology assets are protected from environmental threats",
+      "implementation_examples": [
+        {
+          "id": "PR.IR-02.264",
+          "title": "Ex1",
+          "text": "Protect organizational equipment from known environmental threats, such as flooding, fire, wind, and excessive heat and humidity"
+        },
+        {
+          "id": "PR.IR-02.265",
+          "title": "Ex2",
+          "text": "Include protection from environmental threats and provisions for adequate operating infrastructure in requirements for service providers that operate systems on the organization's behalf"
+        }
+      ]
+    },
+    {
+      "id": "PR.IR-03",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.IR",
+      "category_name": "Technology Infrastructure Resilience",
+      "category_text": "Security architectures are managed with the organization's risk strategy to protect asset confidentiality, integrity, and availability, and organizational resilience",
+      "text": "Mechanisms are implemented to achieve resilience requirements in normal and adverse situations",
+      "implementation_examples": [
+        {
+          "id": "PR.IR-03.266",
+          "title": "Ex1",
+          "text": "Avoid single points of failure in systems and infrastructure"
+        },
+        {
+          "id": "PR.IR-03.267",
+          "title": "Ex2",
+          "text": "Use load balancing to increase capacity and improve reliability"
+        },
+        {
+          "id": "PR.IR-03.268",
+          "title": "Ex3",
+          "text": "Use high-availability components like redundant storage and power supplies to improve system reliability"
+        }
+      ]
+    },
+    {
+      "id": "PR.IR-04",
+      "function": "PR",
+      "function_name": "PROTECT",
+      "category": "PR.IR",
+      "category_name": "Technology Infrastructure Resilience",
+      "category_text": "Security architectures are managed with the organization's risk strategy to protect asset confidentiality, integrity, and availability, and organizational resilience",
+      "text": "Adequate resource capacity to ensure availability is maintained",
+      "implementation_examples": [
+        {
+          "id": "PR.IR-04.269",
+          "title": "Ex1",
+          "text": "Monitor usage of storage, power, compute, network bandwidth, and other resources"
+        },
+        {
+          "id": "PR.IR-04.270",
+          "title": "Ex2",
+          "text": "Forecast future needs, and scale resources accordingly"
+        }
+      ]
+    },
+    {
+      "id": "DE.CM-01",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.CM",
+      "category_name": "Continuous Monitoring",
+      "category_text": "Assets are monitored to find anomalies, indicators of compromise, and other potentially adverse events",
+      "text": "Networks and network services are monitored to find potentially adverse events",
+      "implementation_examples": [
+        {
+          "id": "DE.CM-01.271",
+          "title": "Ex1",
+          "text": "Monitor DNS, BGP, and other network services for adverse events"
+        },
+        {
+          "id": "DE.CM-01.272",
+          "title": "Ex2",
+          "text": "Monitor wired and wireless networks for connections from unauthorized endpoints"
+        },
+        {
+          "id": "DE.CM-01.273",
+          "title": "Ex3",
+          "text": "Monitor facilities for unauthorized or rogue wireless networks"
+        },
+        {
+          "id": "DE.CM-01.274",
+          "title": "Ex4",
+          "text": "Compare actual network flows against baselines to detect deviations"
+        },
+        {
+          "id": "DE.CM-01.275",
+          "title": "Ex5",
+          "text": "Monitor network communications to identify changes in security postures for zero trust purposes"
+        }
+      ]
+    },
+    {
+      "id": "DE.CM-02",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.CM",
+      "category_name": "Continuous Monitoring",
+      "category_text": "Assets are monitored to find anomalies, indicators of compromise, and other potentially adverse events",
+      "text": "The physical environment is monitored to find potentially adverse events",
+      "implementation_examples": [
+        {
+          "id": "DE.CM-02.276",
+          "title": "Ex1",
+          "text": "Monitor logs from physical access control systems (e.g., badge readers) to find unusual access patterns (e.g., deviations from the norm) and failed access attempts"
+        },
+        {
+          "id": "DE.CM-02.277",
+          "title": "Ex2",
+          "text": "Review and monitor physical access records (e.g., from visitor registration, sign-in sheets)"
+        },
+        {
+          "id": "DE.CM-02.278",
+          "title": "Ex3",
+          "text": "Monitor physical access controls (e.g., locks, latches, hinge pins, alarms) for signs of tampering"
+        },
+        {
+          "id": "DE.CM-02.279",
+          "title": "Ex4",
+          "text": "Monitor the physical environment using alarm systems, cameras, and security guards"
+        }
+      ]
+    },
+    {
+      "id": "DE.CM-03",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.CM",
+      "category_name": "Continuous Monitoring",
+      "category_text": "Assets are monitored to find anomalies, indicators of compromise, and other potentially adverse events",
+      "text": "Personnel activity and technology usage are monitored to find potentially adverse events",
+      "implementation_examples": [
+        {
+          "id": "DE.CM-03.280",
+          "title": "Ex1",
+          "text": "Use behavior analytics software to detect anomalous user activity to mitigate insider threats"
+        },
+        {
+          "id": "DE.CM-03.281",
+          "title": "Ex2",
+          "text": "Monitor logs from logical access control systems to find unusual access patterns and failed access attempts"
+        },
+        {
+          "id": "DE.CM-03.282",
+          "title": "Ex3",
+          "text": "Continuously monitor deception technology, including user accounts, for any usage"
+        }
+      ]
+    },
+    {
+      "id": "DE.CM-06",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.CM",
+      "category_name": "Continuous Monitoring",
+      "category_text": "Assets are monitored to find anomalies, indicators of compromise, and other potentially adverse events",
+      "text": "External service provider activities and services are monitored to find potentially adverse events",
+      "implementation_examples": [
+        {
+          "id": "DE.CM-06.283",
+          "title": "Ex1",
+          "text": "Monitor remote and onsite administration and maintenance activities that external providers perform on organizational systems"
+        },
+        {
+          "id": "DE.CM-06.284",
+          "title": "Ex2",
+          "text": "Monitor activity from cloud-based services, internet service providers, and other service providers for deviations from expected behavior"
+        }
+      ]
+    },
+    {
+      "id": "DE.CM-09",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.CM",
+      "category_name": "Continuous Monitoring",
+      "category_text": "Assets are monitored to find anomalies, indicators of compromise, and other potentially adverse events",
+      "text": "Computing hardware and software, runtime environments, and their data are monitored to find potentially adverse events",
+      "implementation_examples": [
+        {
+          "id": "DE.CM-09.285",
+          "title": "Ex1",
+          "text": "Monitor email, web, file sharing, collaboration services, and other common attack vectors to detect malware, phishing, data leaks and exfiltration, and other adverse events"
+        },
+        {
+          "id": "DE.CM-09.286",
+          "title": "Ex2",
+          "text": "Monitor authentication attempts to identify attacks against credentials and unauthorized credential reuse"
+        },
+        {
+          "id": "DE.CM-09.287",
+          "title": "Ex3",
+          "text": "Monitor software configurations for deviations from security baselines"
+        },
+        {
+          "id": "DE.CM-09.288",
+          "title": "Ex4",
+          "text": "Monitor hardware and software for signs of tampering"
+        },
+        {
+          "id": "DE.CM-09.289",
+          "title": "Ex5",
+          "text": "Use technologies with a presence on endpoints to detect cyber health issues (e.g., missing patches, malware infections, unauthorized software), and redirect the endpoints to a remediation environment before access is authorized"
+        }
+      ]
+    },
+    {
+      "id": "DE.AE-02",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.AE",
+      "category_name": "Adverse Event Analysis",
+      "category_text": "",
+      "text": "Potentially adverse events are analyzed to better understand associated activities",
+      "implementation_examples": [
+        {
+          "id": "DE.AE-02.290",
+          "title": "Ex1",
+          "text": "Use security information and event management (SIEM) or other tools to continuously monitor log events for known malicious and suspicious activity"
+        },
+        {
+          "id": "DE.AE-02.291",
+          "title": "Ex2",
+          "text": "Utilize up-to-date cyber threat intelligence in log analysis tools to improve detection accuracy and characterize threat actors, their methods, and indicators of compromise"
+        },
+        {
+          "id": "DE.AE-02.292",
+          "title": "Ex3",
+          "text": "Regularly conduct manual reviews of log events for technologies that cannot be sufficiently monitored through automation"
+        },
+        {
+          "id": "DE.AE-02.293",
+          "title": "Ex4",
+          "text": "Use log analysis tools to generate reports on their findings"
+        }
+      ]
+    },
+    {
+      "id": "DE.AE-03",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.AE",
+      "category_name": "Adverse Event Analysis",
+      "category_text": "",
+      "text": "Information is correlated from multiple sources",
+      "implementation_examples": [
+        {
+          "id": "DE.AE-03.294",
+          "title": "Ex1",
+          "text": "Constantly transfer log data generated by other sources to a relatively small number of log servers"
+        },
+        {
+          "id": "DE.AE-03.295",
+          "title": "Ex2",
+          "text": "Use event correlation technology (e.g., SIEM) to collect information captured by multiple sources"
+        },
+        {
+          "id": "DE.AE-03.296",
+          "title": "Ex3",
+          "text": "Utilize cyber threat intelligence to help correlate events among log sources"
+        }
+      ]
+    },
+    {
+      "id": "DE.AE-04",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.AE",
+      "category_name": "Adverse Event Analysis",
+      "category_text": "",
+      "text": "The estimated impact and scope of adverse events are understood",
+      "implementation_examples": [
+        {
+          "id": "DE.AE-04.297",
+          "title": "Ex1",
+          "text": "Use SIEMs or other tools to estimate impact and scope, and review and refine the estimates"
+        },
+        {
+          "id": "DE.AE-04.298",
+          "title": "Ex2",
+          "text": "A person creates their own estimates of impact and scope"
+        }
+      ]
+    },
+    {
+      "id": "DE.AE-06",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.AE",
+      "category_name": "Adverse Event Analysis",
+      "category_text": "",
+      "text": "Information on adverse events is provided to authorized staff and tools",
+      "implementation_examples": [
+        {
+          "id": "DE.AE-06.299",
+          "title": "Ex1",
+          "text": "Use cybersecurity software to generate alerts and provide them to the security operations center (SOC), incident responders, and incident response tools"
+        },
+        {
+          "id": "DE.AE-06.300",
+          "title": "Ex2",
+          "text": "Incident responders and other authorized personnel can access log analysis findings at all times"
+        },
+        {
+          "id": "DE.AE-06.301",
+          "title": "Ex3",
+          "text": "Automatically create and assign tickets in the organization's ticketing system when certain types of alerts occur"
+        },
+        {
+          "id": "DE.AE-06.302",
+          "title": "Ex4",
+          "text": "Manually create and assign tickets in the organization's ticketing system when technical staff discover indicators of compromise"
+        }
+      ]
+    },
+    {
+      "id": "DE.AE-07",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.AE",
+      "category_name": "Adverse Event Analysis",
+      "category_text": "",
+      "text": "Cyber threat intelligence and other contextual information are integrated into the analysis",
+      "implementation_examples": [
+        {
+          "id": "DE.AE-07.303",
+          "title": "Ex1",
+          "text": "Securely provide cyber threat intelligence feeds to detection technologies, processes, and personnel"
+        },
+        {
+          "id": "DE.AE-07.304",
+          "title": "Ex2",
+          "text": "Securely provide information from asset inventories to detection technologies, processes, and personnel"
+        },
+        {
+          "id": "DE.AE-07.305",
+          "title": "Ex3",
+          "text": "Rapidly acquire and analyze vulnerability disclosures for the organization's technologies from suppliers, vendors, and third-party security advisories"
+        }
+      ]
+    },
+    {
+      "id": "DE.AE-08",
+      "function": "DE",
+      "function_name": "DETECT",
+      "category": "DE.AE",
+      "category_name": "Adverse Event Analysis",
+      "category_text": "",
+      "text": "Incidents are declared when adverse events meet the defined incident criteria",
+      "implementation_examples": [
+        {
+          "id": "DE.AE-08.306",
+          "title": "Ex1",
+          "text": "Apply incident criteria to known and assumed characteristics of activity in order to determine whether an incident should be declared"
+        },
+        {
+          "id": "DE.AE-08.307",
+          "title": "Ex2",
+          "text": "Take known false positives into account when applying incident criteria"
+        }
+      ]
+    },
+    {
+      "id": "RS.MA-01",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.MA",
+      "category_name": "Incident Management",
+      "category_text": "Responses to detected cybersecurity incidents are managed",
+      "text": "The incident response plan is executed in coordination with relevant third parties once an incident is declared",
+      "implementation_examples": [
+        {
+          "id": "RS.MA-01.308",
+          "title": "Ex1",
+          "text": "Detection technologies automatically report confirmed incidents"
+        },
+        {
+          "id": "RS.MA-01.309",
+          "title": "Ex2",
+          "text": "Request incident response assistance from the organization's incident response outsourcer"
+        },
+        {
+          "id": "RS.MA-01.310",
+          "title": "Ex3",
+          "text": "Designate an incident lead for each incident"
+        },
+        {
+          "id": "RS.MA-01.311",
+          "title": "Ex4",
+          "text": "Initiate execution of additional cybersecurity plans as needed to support incident response (for example, business continuity and disaster recovery)"
+        }
+      ]
+    },
+    {
+      "id": "RS.MA-02",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.MA",
+      "category_name": "Incident Management",
+      "category_text": "Responses to detected cybersecurity incidents are managed",
+      "text": "Incident reports are triaged and validated",
+      "implementation_examples": [
+        {
+          "id": "RS.MA-02.312",
+          "title": "Ex1",
+          "text": "Preliminarily review incident reports to confirm that they are cybersecurity-related and necessitate incident response activities"
+        },
+        {
+          "id": "RS.MA-02.313",
+          "title": "Ex2",
+          "text": "Apply criteria to estimate the severity of an incident"
+        }
+      ]
+    },
+    {
+      "id": "RS.MA-03",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.MA",
+      "category_name": "Incident Management",
+      "category_text": "Responses to detected cybersecurity incidents are managed",
+      "text": "Incidents are categorized and prioritized",
+      "implementation_examples": [
+        {
+          "id": "RS.MA-03.314",
+          "title": "Ex1",
+          "text": "Further review and categorize incidents based on the type of incident (e.g., data breach, ransomware, DDoS, account compromise)"
+        },
+        {
+          "id": "RS.MA-03.315",
+          "title": "Ex2",
+          "text": "Prioritize incidents based on their scope, likely impact, and time-critical nature"
+        },
+        {
+          "id": "RS.MA-03.316",
+          "title": "Ex3",
+          "text": "Select incident response strategies for active incidents by balancing the need to quickly recover from an incident with the need to observe the attacker or conduct a more thorough investigation"
+        }
+      ]
+    },
+    {
+      "id": "RS.MA-04",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.MA",
+      "category_name": "Incident Management",
+      "category_text": "Responses to detected cybersecurity incidents are managed",
+      "text": "Incidents are escalated or elevated as needed",
+      "implementation_examples": [
+        {
+          "id": "RS.MA-04.317",
+          "title": "Ex1",
+          "text": "Track and validate the status of all ongoing incidents"
+        },
+        {
+          "id": "RS.MA-04.318",
+          "title": "Ex2",
+          "text": "Coordinate incident escalation or elevation with designated internal and external stakeholders"
+        }
+      ]
+    },
+    {
+      "id": "RS.MA-05",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.MA",
+      "category_name": "Incident Management",
+      "category_text": "Responses to detected cybersecurity incidents are managed",
+      "text": "The criteria for initiating incident recovery are applied",
+      "implementation_examples": [
+        {
+          "id": "RS.MA-05.319",
+          "title": "Ex1",
+          "text": "Apply incident recovery criteria to known and assumed characteristics of the incident to determine whether incident recovery processes should be initiated"
+        },
+        {
+          "id": "RS.MA-05.320",
+          "title": "Ex2",
+          "text": "Take the possible operational disruption of incident recovery activities into account"
+        }
+      ]
+    },
+    {
+      "id": "RS.AN-03",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.AN",
+      "category_name": "Incident Analysis",
+      "category_text": "Investigations are conducted to ensure effective response and support forensics and recovery activities",
+      "text": "Analysis is performed to establish what has taken place during an incident and the root cause of the incident",
+      "implementation_examples": [
+        {
+          "id": "RS.AN-03.321",
+          "title": "Ex1",
+          "text": "Determine the sequence of events that occurred during the incident and which assets and resources were involved in each event"
+        },
+        {
+          "id": "RS.AN-03.322",
+          "title": "Ex2",
+          "text": "Attempt to determine what vulnerabilities, threats, and threat actors were directly or indirectly involved in the incident"
+        },
+        {
+          "id": "RS.AN-03.323",
+          "title": "Ex3",
+          "text": "Analyze the incident to find the underlying, systemic root causes"
+        },
+        {
+          "id": "RS.AN-03.324",
+          "title": "Ex4",
+          "text": "Check any cyber deception technology for additional information on attacker behavior"
+        }
+      ]
+    },
+    {
+      "id": "RS.AN-06",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.AN",
+      "category_name": "Incident Analysis",
+      "category_text": "Investigations are conducted to ensure effective response and support forensics and recovery activities",
+      "text": "Actions performed during an investigation are recorded, and the records' integrity and provenance are preserved",
+      "implementation_examples": [
+        {
+          "id": "RS.AN-06.325",
+          "title": "Ex1",
+          "text": "Require each incident responder and others (e.g., system administrators, cybersecurity engineers) who perform incident response tasks to record their actions and make the record immutable"
+        },
+        {
+          "id": "RS.AN-06.326",
+          "title": "Ex2",
+          "text": "Require the incident lead to document the incident in detail and be responsible for preserving the integrity of the documentation and the sources of all information being reported"
+        }
+      ]
+    },
+    {
+      "id": "RS.AN-07",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.AN",
+      "category_name": "Incident Analysis",
+      "category_text": "Investigations are conducted to ensure effective response and support forensics and recovery activities",
+      "text": "Incident data and metadata are collected, and their integrity and provenance are preserved",
+      "implementation_examples": [
+        {
+          "id": "RS.AN-07.327",
+          "title": "Ex1",
+          "text": "Collect, preserve, and safeguard the integrity of all pertinent incident data and metadata (e.g., data source, date/time of collection) based on evidence preservation and chain-of-custody procedures"
+        }
+      ]
+    },
+    {
+      "id": "RS.AN-08",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.AN",
+      "category_name": "Incident Analysis",
+      "category_text": "Investigations are conducted to ensure effective response and support forensics and recovery activities",
+      "text": "An incident's magnitude is estimated and validated",
+      "implementation_examples": [
+        {
+          "id": "RS.AN-08.328",
+          "title": "Ex1",
+          "text": "Review other potential targets of the incident to search for indicators of compromise and evidence of persistence"
+        },
+        {
+          "id": "RS.AN-08.329",
+          "title": "Ex2",
+          "text": "Automatically run tools on targets to look for indicators of compromise and evidence of persistence"
+        }
+      ]
+    },
+    {
+      "id": "RS.CO-02",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.CO",
+      "category_name": "Incident Response Reporting and Communication",
+      "category_text": "Response activities are coordinated with internal and external stakeholders as required by laws, regulations, or policies",
+      "text": "Internal and external stakeholders are notified of incidents",
+      "implementation_examples": [
+        {
+          "id": "RS.CO-02.330",
+          "title": "Ex1",
+          "text": "Follow the organization's breach notification procedures after discovering a data breach incident, including notifying affected customers"
+        },
+        {
+          "id": "RS.CO-02.331",
+          "title": "Ex2",
+          "text": "Notify business partners and customers of incidents in accordance with contractual requirements"
+        },
+        {
+          "id": "RS.CO-02.332",
+          "title": "Ex3",
+          "text": "Notify law enforcement agencies and regulatory bodies of incidents based on criteria in the incident response plan and management approval"
+        }
+      ]
+    },
+    {
+      "id": "RS.CO-03",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.CO",
+      "category_name": "Incident Response Reporting and Communication",
+      "category_text": "Response activities are coordinated with internal and external stakeholders as required by laws, regulations, or policies",
+      "text": "Information is shared with designated internal and external stakeholders",
+      "implementation_examples": [
+        {
+          "id": "RS.CO-03.333",
+          "title": "Ex1",
+          "text": "Securely share information consistent with response plans and information sharing agreements"
+        },
+        {
+          "id": "RS.CO-03.334",
+          "title": "Ex2",
+          "text": "Voluntarily share information about an attacker's observed TTPs, with all sensitive data removed, with an Information Sharing and Analysis Center (ISAC)"
+        },
+        {
+          "id": "RS.CO-03.335",
+          "title": "Ex3",
+          "text": "Notify HR when malicious insider activity occurs"
+        },
+        {
+          "id": "RS.CO-03.336",
+          "title": "Ex4",
+          "text": "Regularly update senior leadership on the status of major incidents"
+        },
+        {
+          "id": "RS.CO-03.337",
+          "title": "Ex5",
+          "text": "Follow the rules and protocols defined in contracts for incident information sharing between the organization and its suppliers"
+        },
+        {
+          "id": "RS.CO-03.338",
+          "title": "Ex6",
+          "text": "Coordinate crisis communication methods between the organization and its critical suppliers"
+        }
+      ]
+    },
+    {
+      "id": "RS.MI-01",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.MI",
+      "category_name": "Incident Mitigation",
+      "category_text": "Activities are performed to prevent expansion of an event and mitigate its effects",
+      "text": "Incidents are contained",
+      "implementation_examples": [
+        {
+          "id": "RS.MI-01.339",
+          "title": "Ex1",
+          "text": "Cybersecurity technologies (e.g., antivirus software) and cybersecurity features of other technologies (e.g., operating systems, network infrastructure devices) automatically perform containment actions"
+        },
+        {
+          "id": "RS.MI-01.340",
+          "title": "Ex2",
+          "text": "Allow incident responders to manually select and perform containment actions"
+        },
+        {
+          "id": "RS.MI-01.341",
+          "title": "Ex3",
+          "text": "Allow a third party (e.g., internet service provider, managed security service provider) to perform containment actions on behalf of the organization"
+        },
+        {
+          "id": "RS.MI-01.342",
+          "title": "Ex4",
+          "text": "Automatically transfer compromised endpoints to a remediation virtual local area network (VLAN)"
+        }
+      ]
+    },
+    {
+      "id": "RS.MI-02",
+      "function": "RS",
+      "function_name": "RESPOND",
+      "category": "RS.MI",
+      "category_name": "Incident Mitigation",
+      "category_text": "Activities are performed to prevent expansion of an event and mitigate its effects",
+      "text": "Incidents are eradicated",
+      "implementation_examples": [
+        {
+          "id": "RS.MI-02.343",
+          "title": "Ex1",
+          "text": "Cybersecurity technologies and cybersecurity features of other technologies (e.g., operating systems, network infrastructure devices) automatically perform eradication actions"
+        },
+        {
+          "id": "RS.MI-02.344",
+          "title": "Ex2",
+          "text": "Allow incident responders to manually select and perform eradication actions"
+        },
+        {
+          "id": "RS.MI-02.345",
+          "title": "Ex3",
+          "text": "Allow a third party (e.g., managed security service provider) to perform eradication actions on behalf of the organization"
+        }
+      ]
+    },
+    {
+      "id": "RC.RP-01",
+      "function": "RC",
+      "function_name": "RECOVER",
+      "category": "RC.RP",
+      "category_name": "Incident Recovery Plan Execution",
+      "category_text": "Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents",
+      "text": "The recovery portion of the incident response plan is executed once initiated from the incident response process",
+      "implementation_examples": [
+        {
+          "id": "RC.RP-01.346",
+          "title": "Ex1",
+          "text": "Begin recovery procedures during or after incident response processes"
+        },
+        {
+          "id": "RC.RP-01.347",
+          "title": "Ex2",
+          "text": "Make all individuals with recovery responsibilities aware of the plans for recovery and the authorizations required to implement each aspect of the plans"
+        }
+      ]
+    },
+    {
+      "id": "RC.RP-02",
+      "function": "RC",
+      "function_name": "RECOVER",
+      "category": "RC.RP",
+      "category_name": "Incident Recovery Plan Execution",
+      "category_text": "Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents",
+      "text": "Recovery actions are selected, scoped, prioritized, and performed",
+      "implementation_examples": [
+        {
+          "id": "RC.RP-02.348",
+          "title": "Ex1",
+          "text": "Select recovery actions based on the criteria defined in the incident response plan and available resources"
+        },
+        {
+          "id": "RC.RP-02.349",
+          "title": "Ex2",
+          "text": "Change planned recovery actions based on a reassessment of organizational needs and resources"
+        }
+      ]
+    },
+    {
+      "id": "RC.RP-03",
+      "function": "RC",
+      "function_name": "RECOVER",
+      "category": "RC.RP",
+      "category_name": "Incident Recovery Plan Execution",
+      "category_text": "Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents",
+      "text": "The integrity of backups and other restoration assets is verified before using them for restoration",
+      "implementation_examples": [
+        {
+          "id": "RC.RP-03.350",
+          "title": "Ex1",
+          "text": "Check restoration assets for indicators of compromise, file corruption, and other integrity issues before use"
+        }
+      ]
+    },
+    {
+      "id": "RC.RP-04",
+      "function": "RC",
+      "function_name": "RECOVER",
+      "category": "RC.RP",
+      "category_name": "Incident Recovery Plan Execution",
+      "category_text": "Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents",
+      "text": "Critical mission functions and cybersecurity risk management are considered to establish post-incident operational norms",
+      "implementation_examples": [
+        {
+          "id": "RC.RP-04.351",
+          "title": "Ex1",
+          "text": "Use business impact and system categorization records (including service delivery objectives) to validate that essential services are restored in the appropriate order"
+        },
+        {
+          "id": "RC.RP-04.352",
+          "title": "Ex2",
+          "text": "Work with system owners to confirm the successful restoration of systems and the return to normal operations"
+        },
+        {
+          "id": "RC.RP-04.353",
+          "title": "Ex3",
+          "text": "Monitor the performance of restored systems to verify the adequacy of the restoration"
+        }
+      ]
+    },
+    {
+      "id": "RC.RP-05",
+      "function": "RC",
+      "function_name": "RECOVER",
+      "category": "RC.RP",
+      "category_name": "Incident Recovery Plan Execution",
+      "category_text": "Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents",
+      "text": "The integrity of restored assets is verified, systems and services are restored, and normal operating status is confirmed",
+      "implementation_examples": [
+        {
+          "id": "RC.RP-05.354",
+          "title": "Ex1",
+          "text": "Check restored assets for indicators of compromise and remediation of root causes of the incident before production use"
+        },
+        {
+          "id": "RC.RP-05.355",
+          "title": "Ex2",
+          "text": "Verify the correctness and adequacy of the restoration actions taken before putting a restored system online"
+        }
+      ]
+    },
+    {
+      "id": "RC.RP-06",
+      "function": "RC",
+      "function_name": "RECOVER",
+      "category": "RC.RP",
+      "category_name": "Incident Recovery Plan Execution",
+      "category_text": "Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents",
+      "text": "The end of incident recovery is declared based on criteria, and incident-related documentation is completed",
+      "implementation_examples": [
+        {
+          "id": "RC.RP-06.356",
+          "title": "Ex1",
+          "text": "Prepare an after-action report that documents the incident itself, the response and recovery actions taken, and lessons learned"
+        },
+        {
+          "id": "RC.RP-06.357",
+          "title": "Ex2",
+          "text": "Declare the end of incident recovery once the criteria are met"
+        }
+      ]
+    },
+    {
+      "id": "RC.CO-03",
+      "function": "RC",
+      "function_name": "RECOVER",
+      "category": "RC.CO",
+      "category_name": "Incident Recovery Communication",
+      "category_text": "Restoration activities are coordinated with internal and external parties",
+      "text": "Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders",
+      "implementation_examples": [
+        {
+          "id": "RC.CO-03.358",
+          "title": "Ex1",
+          "text": "Securely share recovery information, including restoration progress, consistent with response plans and information sharing agreements"
+        },
+        {
+          "id": "RC.CO-03.359",
+          "title": "Ex2",
+          "text": "Regularly update senior leadership on recovery status and restoration progress for major incidents"
+        },
+        {
+          "id": "RC.CO-03.360",
+          "title": "Ex3",
+          "text": "Follow the rules and protocols defined in contracts for incident information sharing between the organization and its suppliers"
+        },
+        {
+          "id": "RC.CO-03.361",
+          "title": "Ex4",
+          "text": "Coordinate crisis communication between the organization and its critical suppliers"
+        }
+      ]
+    },
+    {
+      "id": "RC.CO-04",
+      "function": "RC",
+      "function_name": "RECOVER",
+      "category": "RC.CO",
+      "category_name": "Incident Recovery Communication",
+      "category_text": "Restoration activities are coordinated with internal and external parties",
+      "text": "Public updates on incident recovery are shared using approved methods and messaging",
+      "implementation_examples": [
+        {
+          "id": "RC.CO-04.362",
+          "title": "Ex1",
+          "text": "Follow the organization's breach notification procedures for recovering from a data breach incident"
+        },
+        {
+          "id": "RC.CO-04.363",
+          "title": "Ex2",
+          "text": "Explain the steps being taken to recover from the incident and to prevent a recurrence"
+        }
+      ]
+    }
+  ]
+}
