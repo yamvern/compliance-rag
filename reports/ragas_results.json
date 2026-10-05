@@ -1,0 +1,682 @@
+[
+  {
+    "question": "How does Acme Corp control user access to systems?",
+    "answer": "Acme Corp controls user access to systems through a multi-layered approach. Access is granted based on business requirements and the principle of least privilege, requiring manager approval for new user requests. Multi-factor authentication is mandated for remote administrative access, and user accounts are individually assigned with restrictions on shared accounts. Access is removed upon termination, and changes are managed based on role adjustments.",
+    "contexts": [
+      "# Acme Corp Access Control Policy ## Document Information Policy Owner: Information Security Department Version: 1.0 Status: Approved Effective Date: 2026-01-01 ## 1. Purpose This policy defines requirements for controlling access to Acme Corp information systems and information assets. ## 2. Access Authorization Access to company systems shall be granted only to authorized users based on business requirements. All new user access requests must be approved by the user's manager before access is provisioned. ## 3. Least Privilege Users shall receive only the minimum level of access required to perform their assigned responsibilities. Administrative privileges shall be restricted to authorized personnel. ## 4. User Account Management Each user shall be assigned an individual account. Shared user accounts should not be used unless there is a documented business or technical requirement. ## 5. Authentication Users must authenticate before accessing protected company systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Account Management Procedure ## Account Creation New accounts require an approved access request. ## Role Changes Access permissions shall be updated when a user's responsibilities change. ## Termination Accounts shall be disabled when employment ends. ## Privileged Accounts Administrative access requires explicit approval. ## Review System owners should review privileged accounts when requested by Information Security. ## Gap intentionally left There is no mandatory periodic review interval for all user accounts.",
+      "# Acme Corp Physical Security Policy ## Facility Access Access to restricted facilities shall be limited to authorized personnel. ## Visitors Visitors to restricted areas shall be controlled and supervised. ## Equipment Critical information systems shall be protected against unauthorized physical access. ## Reporting Physical security incidents shall be reported. ## Gap intentionally left No formal schedule for reviewing physical access permissions is defined.",
+      "# Acme Corp Information Security Policy ## Document Information Policy Owner: Information Security Department Version: 1.0 Status: Approved Effective Date: 2026-01-01 Review Frequency: Annual ## 1. Purpose The purpose of this policy is to establish the information security principles and responsibilities used by Acme Corp to protect its information systems, business information, and technology assets. ## 2. Scope This policy applies to all employees, contractors, information systems, applications, devices, and information assets owned or managed by Acme Corp. ## 3. Information Security Governance Acme Corp shall maintain an information security program aligned with organizational objectives and cybersecurity risk. Management is responsible for supporting the information security program and ensuring that appropriate security responsibilities are assigned. The Information Security Manager is responsible for coordinating information security activities and reporting significant cybersecurity risks to management. ## 4. Risk Management Cybersecurity risks shall be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be"
+    ],
+    "reference": "Access is limited to authorized users based on business requirements, least privilege, and approval processes.",
+    "sources": [
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "20_account_management_procedure.txt",
+        "chunk": 0
+      },
+      {
+        "source": "18_physical_security_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "What is required for remote administrative access?",
+    "answer": "Multi-factor authentication is required for remote administrative access, as stated in both [CONTEXT 1] and [CONTEXT 3]. Additionally, [CONTEXT 2] emphasizes that remote access, including administrative access, should only be provided to authorized personnel with a business need and must use approved encrypted communication methods.",
+    "contexts": [
+      "systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7. Privileged Access Privileged accounts shall only be provided to personnel who require administrative capabilities for their job responsibilities. Privileged accounts shall not be used for normal daily activities. ## 8. Exceptions Exceptions to this policy must be documented and approved by the Information Security Manager.",
+      "# Acme Corp Remote Access Policy ## Authorization Remote access shall only be provided to authorized personnel with a business need. ## Authentication Multi-factor authentication is required for remote access. ## Devices Remote access should use company-approved devices where possible. ## Protection Remote sessions shall use approved encrypted communication methods. ## Termination Remote access shall be revoked when no longer required.",
+      "# Acme Corp Access Control Policy ## Document Information Policy Owner: Information Security Department Version: 1.0 Status: Approved Effective Date: 2026-01-01 ## 1. Purpose This policy defines requirements for controlling access to Acme Corp information systems and information assets. ## 2. Access Authorization Access to company systems shall be granted only to authorized users based on business requirements. All new user access requests must be approved by the user's manager before access is provisioned. ## 3. Least Privilege Users shall receive only the minimum level of access required to perform their assigned responsibilities. Administrative privileges shall be restricted to authorized personnel. ## 4. User Account Management Each user shall be assigned an individual account. Shared user accounts should not be used unless there is a documented business or technical requirement. ## 5. Authentication Users must authenticate before accessing protected company systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7.",
+      "# Acme Corp Account Management Procedure ## Account Creation New accounts require an approved access request. ## Role Changes Access permissions shall be updated when a user's responsibilities change. ## Termination Accounts shall be disabled when employment ends. ## Privileged Accounts Administrative access requires explicit approval. ## Review System owners should review privileged accounts when requested by Information Security. ## Gap intentionally left There is no mandatory periodic review interval for all user accounts.",
+      "# Acme Corp Physical Security Policy ## Facility Access Access to restricted facilities shall be limited to authorized personnel. ## Visitors Visitors to restricted areas shall be controlled and supervised. ## Equipment Critical information systems shall be protected against unauthorized physical access. ## Reporting Physical security incidents shall be reported. ## Gap intentionally left No formal schedule for reviewing physical access permissions is defined."
+    ],
+    "reference": "Remote administrative access requires multi-factor authentication.",
+    "sources": [
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "14_remote_access_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "20_account_management_procedure.txt",
+        "chunk": 0
+      },
+      {
+        "source": "18_physical_security_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "What happens to user access when employment ends?",
+    "answer": "When employment ends, user access is removed, and accounts are disabled. This process is outlined in both the Acme Corp Account Management Procedure and the Access Control Policy, ensuring that access is promptly terminated upon an employee's departure. Managers are responsible for initiating these changes.",
+    "contexts": [
+      "systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7. Privileged Access Privileged accounts shall only be provided to personnel who require administrative capabilities for their job responsibilities. Privileged accounts shall not be used for normal daily activities. ## 8. Exceptions Exceptions to this policy must be documented and approved by the Information Security Manager.",
+      "# Acme Corp Account Management Procedure ## Account Creation New accounts require an approved access request. ## Role Changes Access permissions shall be updated when a user's responsibilities change. ## Termination Accounts shall be disabled when employment ends. ## Privileged Accounts Administrative access requires explicit approval. ## Review System owners should review privileged accounts when requested by Information Security. ## Gap intentionally left There is no mandatory periodic review interval for all user accounts.",
+      "# Acme Corp Access Control Policy ## Document Information Policy Owner: Information Security Department Version: 1.0 Status: Approved Effective Date: 2026-01-01 ## 1. Purpose This policy defines requirements for controlling access to Acme Corp information systems and information assets. ## 2. Access Authorization Access to company systems shall be granted only to authorized users based on business requirements. All new user access requests must be approved by the user's manager before access is provisioned. ## 3. Least Privilege Users shall receive only the minimum level of access required to perform their assigned responsibilities. Administrative privileges shall be restricted to authorized personnel. ## 4. User Account Management Each user shall be assigned an individual account. Shared user accounts should not be used unless there is a documented business or technical requirement. ## 5. Authentication Users must authenticate before accessing protected company systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7.",
+      "# Acme Corp Remote Access Policy ## Authorization Remote access shall only be provided to authorized personnel with a business need. ## Authentication Multi-factor authentication is required for remote access. ## Devices Remote access should use company-approved devices where possible. ## Protection Remote sessions shall use approved encrypted communication methods. ## Termination Remote access shall be revoked when no longer required.",
+      "# Acme Corp Password Policy ## Purpose This policy defines password and authentication requirements for Acme Corp systems. ## Password Requirements Passwords must be at least 12 characters long. Passwords must not be shared between users. Default passwords must be changed before production use. ## Multi-Factor Authentication Multi-factor authentication is required for remote access and privileged administrative accounts. ## Credential Protection Users must not store passwords in plain text or disclose them to unauthorized persons. ## Password Changes Passwords must be changed when compromise is suspected. ## Gap intentionally left This policy does not define a routine password expiration schedule."
+    ],
+    "reference": "User accounts and access must be removed or disabled when employment ends.",
+    "sources": [
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "20_account_management_procedure.txt",
+        "chunk": 0
+      },
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "14_remote_access_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "03_password_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "How are privileged accounts controlled?",
+    "answer": "Privileged accounts are controlled by granting access only to personnel who require administrative capabilities for their job responsibilities, ensuring these accounts are not used for normal daily activities. Explicit approval is required for administrative access, and multi-factor authentication is mandated for privileged accounts. System owners review privileged accounts upon request by the Information Security Manager, though there is no mandatory periodic review interval for all user accounts. Exceptions to these controls must be documented and approved by the Information Security Manager.",
+    "contexts": [
+      "systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7. Privileged Access Privileged accounts shall only be provided to personnel who require administrative capabilities for their job responsibilities. Privileged accounts shall not be used for normal daily activities. ## 8. Exceptions Exceptions to this policy must be documented and approved by the Information Security Manager.",
+      "# Acme Corp Account Management Procedure ## Account Creation New accounts require an approved access request. ## Role Changes Access permissions shall be updated when a user's responsibilities change. ## Termination Accounts shall be disabled when employment ends. ## Privileged Accounts Administrative access requires explicit approval. ## Review System owners should review privileged accounts when requested by Information Security. ## Gap intentionally left There is no mandatory periodic review interval for all user accounts.",
+      "# Acme Corp Access Control Policy ## Document Information Policy Owner: Information Security Department Version: 1.0 Status: Approved Effective Date: 2026-01-01 ## 1. Purpose This policy defines requirements for controlling access to Acme Corp information systems and information assets. ## 2. Access Authorization Access to company systems shall be granted only to authorized users based on business requirements. All new user access requests must be approved by the user's manager before access is provisioned. ## 3. Least Privilege Users shall receive only the minimum level of access required to perform their assigned responsibilities. Administrative privileges shall be restricted to authorized personnel. ## 4. User Account Management Each user shall be assigned an individual account. Shared user accounts should not be used unless there is a documented business or technical requirement. ## 5. Authentication Users must authenticate before accessing protected company systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Password Policy ## Purpose This policy defines password and authentication requirements for Acme Corp systems. ## Password Requirements Passwords must be at least 12 characters long. Passwords must not be shared between users. Default passwords must be changed before production use. ## Multi-Factor Authentication Multi-factor authentication is required for remote access and privileged administrative accounts. ## Credential Protection Users must not store passwords in plain text or disclose them to unauthorized persons. ## Password Changes Passwords must be changed when compromise is suspected. ## Gap intentionally left This policy does not define a routine password expiration schedule."
+    ],
+    "reference": "Privileged access is restricted to personnel who require administrative capabilities and should not be used for normal daily activities.",
+    "sources": [
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "20_account_management_procedure.txt",
+        "chunk": 0
+      },
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "03_password_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "What should happen if a password may have been compromised?",
+    "answer": "According to the Acme Corp Password Policy, if a password may have been compromised, it must be changed. This is stated in the \"Password Changes\" section, which requires passwords to be changed when compromise is suspected. There is no further detail provided in the context about the process or additional steps to take in such a situation.",
+    "contexts": [
+      "# Acme Corp Password Policy ## Purpose This policy defines password and authentication requirements for Acme Corp systems. ## Password Requirements Passwords must be at least 12 characters long. Passwords must not be shared between users. Default passwords must be changed before production use. ## Multi-Factor Authentication Multi-factor authentication is required for remote access and privileged administrative accounts. ## Credential Protection Users must not store passwords in plain text or disclose them to unauthorized persons. ## Password Changes Passwords must be changed when compromise is suspected. ## Gap intentionally left This policy does not define a routine password expiration schedule.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Encryption Policy ## Data in Transit Sensitive information transmitted over untrusted networks shall be encrypted. ## Data at Rest Sensitive data stored on approved systems should use encryption where appropriate. ## Cryptographic Standards Only approved cryptographic technologies shall be used. ## Key Protection Cryptographic keys shall be protected against unauthorized access. ## Gap intentionally left Formal cryptographic key rotation intervals are not defined.",
+      "Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile.",
+      "# Acme Corp Mobile Device Security Policy ## Devices Company-managed mobile devices shall use approved security configurations. ## Authentication Devices shall require user authentication. ## Updates Security updates shall be installed in a timely manner. ## Lost Devices Lost or stolen company devices must be reported immediately. ## Data Protection Sensitive company information stored on mobile devices shall be protected."
+    ],
+    "reference": "The affected password should be changed or reset promptly in accordance with the organization's password policy.",
+    "sources": [
+      {
+        "source": "03_password_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "16_encryption_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 2
+      },
+      {
+        "source": "17_mobile_device_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "How should suspected cybersecurity incidents be handled?",
+    "answer": "Suspected cybersecurity incidents must be immediately reported to the Information Security Department, as outlined in the Incident Response Policy. The incident response team will then investigate, classify the incident based on severity and business impact, contain affected systems, and coordinate recovery actions. Significant incidents are escalated to management, and all incident details and response actions are documented. Employees are responsible for reporting such incidents as part of their security awareness responsibilities.",
+    "contexts": [
+      "# Acme Corp Incident Response Policy ## Purpose This policy defines how Acme Corp identifies, reports, investigates, and responds to cybersecurity incidents. ## Reporting Employees must immediately report suspected security incidents to the Information Security Department. ## Incident Classification Incidents shall be classified according to severity and potential business impact. ## Response The incident response team shall investigate reported incidents, contain affected systems, and coordinate recovery actions. ## Communication Significant incidents shall be escalated to management. ## Documentation Incident details and response actions shall be recorded. ## Gap intentionally left No formal post-incident lessons-learned review frequency is defined.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile.",
+      "# Acme Corp Cybersecurity Risk Management Policy ## Purpose This policy establishes requirements for managing cybersecurity risk. ## Risk Identification Cybersecurity risks shall be identified for systems, applications, business processes, and third-party services. ## Risk Assessment Risks shall be evaluated based on likelihood and business impact. ## Risk Treatment Risk owners shall determine whether risks are mitigated, transferred, accepted, or avoided. ## Risk Register Significant risks shall be documented in a cybersecurity risk register. ## Review High-risk items shall be reviewed by management. ## Gap intentionally left The policy does not specify an exact organization-wide risk assessment frequency.",
+      "# Acme Corp Third-Party and Vendor Security Policy ## Purpose This policy defines cybersecurity requirements for suppliers and service providers. ## Due Diligence Security risks shall be considered before engaging important third parties. ## Contracts Relevant cybersecurity and confidentiality requirements shall be included in supplier agreements. ## Access Third-party access to Acme Corp systems shall be authorized and limited to business need. ## Monitoring High-risk suppliers may be reviewed based on risk. ## Gap intentionally left A mandatory periodic reassessment schedule for all critical suppliers is not defined."
+    ],
+    "reference": "Suspected cybersecurity incidents should be reported and escalated through the organization's incident response process.",
+    "sources": [
+      {
+        "source": "04_incident_response_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 2
+      },
+      {
+        "source": "05_risk_management_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "09_vendor_security_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "How are cybersecurity risks assessed?",
+    "answer": "Cybersecurity risks at Acme Corp are assessed by evaluating the likelihood and business impact of identified risks, considering threats, vulnerabilities, and existing security controls. Significant risks are documented in a risk register and reviewed by management, with high-risk items receiving special attention. The assessment process is part of the broader risk management policy, which also includes risk treatment and communication to appropriate personnel. However, the exact frequency of organization-wide risk assessments is not specified in the provided context.",
+    "contexts": [
+      "# Acme Corp Cybersecurity Risk Management Policy ## Purpose This policy establishes requirements for managing cybersecurity risk. ## Risk Identification Cybersecurity risks shall be identified for systems, applications, business processes, and third-party services. ## Risk Assessment Risks shall be evaluated based on likelihood and business impact. ## Risk Treatment Risk owners shall determine whether risks are mitigated, transferred, accepted, or avoided. ## Risk Register Significant risks shall be documented in a cybersecurity risk register. ## Review High-risk items shall be reviewed by management. ## Gap intentionally left The policy does not specify an exact organization-wide risk assessment frequency.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile.",
+      "# Acme Corp Third-Party and Vendor Security Policy ## Purpose This policy defines cybersecurity requirements for suppliers and service providers. ## Due Diligence Security risks shall be considered before engaging important third parties. ## Contracts Relevant cybersecurity and confidentiality requirements shall be included in supplier agreements. ## Access Third-party access to Acme Corp systems shall be authorized and limited to business need. ## Monitoring High-risk suppliers may be reviewed based on risk. ## Gap intentionally left A mandatory periodic reassessment schedule for all critical suppliers is not defined.",
+      "# Acme Corp Vulnerability Management Policy ## Identification Systems shall be assessed for known vulnerabilities. ## Prioritization Vulnerabilities shall be prioritized according to severity and business impact. ## Remediation Critical vulnerabilities shall be remediated as soon as reasonably possible. ## Tracking Identified vulnerabilities and remediation activities shall be tracked. ## Gap intentionally left Specific remediation timelines by severity are not formally defined."
+    ],
+    "reference": "Cybersecurity risks are assessed using factors such as threats, vulnerabilities, business impact, and existing controls.",
+    "sources": [
+      {
+        "source": "05_risk_management_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 2
+      },
+      {
+        "source": "09_vendor_security_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "12_vulnerability_management_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "How are significant cybersecurity risks communicated?",
+    "answer": "Significant cybersecurity risks are communicated to appropriate management personnel, as outlined in [CONTEXT 1]. Additionally, high-risk items are reviewed by management, as specified in [CONTEXT 2]. The process ensures that key stakeholders are informed and can take necessary actions to address these risks.",
+    "contexts": [
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Cybersecurity Risk Management Policy ## Purpose This policy establishes requirements for managing cybersecurity risk. ## Risk Identification Cybersecurity risks shall be identified for systems, applications, business processes, and third-party services. ## Risk Assessment Risks shall be evaluated based on likelihood and business impact. ## Risk Treatment Risk owners shall determine whether risks are mitigated, transferred, accepted, or avoided. ## Risk Register Significant risks shall be documented in a cybersecurity risk register. ## Review High-risk items shall be reviewed by management. ## Gap intentionally left The policy does not specify an exact organization-wide risk assessment frequency.",
+      "Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile.",
+      "# Acme Corp Third-Party and Vendor Security Policy ## Purpose This policy defines cybersecurity requirements for suppliers and service providers. ## Due Diligence Security risks shall be considered before engaging important third parties. ## Contracts Relevant cybersecurity and confidentiality requirements shall be included in supplier agreements. ## Access Third-party access to Acme Corp systems shall be authorized and limited to business need. ## Monitoring High-risk suppliers may be reviewed based on risk. ## Gap intentionally left A mandatory periodic reassessment schedule for all critical suppliers is not defined.",
+      "# Acme Corp Logging and Monitoring Policy ## Logging Security-relevant systems shall generate logs for authentication events, administrative actions, and significant security events. ## Protection Logs shall be protected from unauthorized modification. ## Monitoring The Information Security Department shall monitor important systems for suspicious activity. ## Review Critical security alerts shall be reviewed and investigated. ## Gap intentionally left Log retention duration is not defined."
+    ],
+    "reference": "Significant cybersecurity risks are communicated to appropriate management personnel.",
+    "sources": [
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "05_risk_management_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 2
+      },
+      {
+        "source": "09_vendor_security_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "11_logging_monitoring_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "What does Acme Corp require for asset management?",
+    "answer": "Acme Corp requires maintaining an inventory of information systems, devices, software, and important information assets, assigning an owner to each asset, classifying assets based on sensitivity and business importance, and recording assets throughout their lifecycle from acquisition to retirement. Additionally, asset owners are responsible for ensuring appropriate protection requirements are applied.",
+    "contexts": [
+      "# Acme Corp Asset Management Policy ## Asset Inventory Acme Corp shall maintain an inventory of information systems, devices, software, and important information assets. ## Asset Ownership Each important asset shall have an assigned owner. ## Classification Information assets shall be classified according to sensitivity and business importance. ## Lifecycle Assets shall be recorded when acquired and removed from the inventory when retired. ## Responsibility Asset owners are responsible for ensuring appropriate protection requirements are applied.",
+      "# Acme Corp Access Control Policy ## Document Information Policy Owner: Information Security Department Version: 1.0 Status: Approved Effective Date: 2026-01-01 ## 1. Purpose This policy defines requirements for controlling access to Acme Corp information systems and information assets. ## 2. Access Authorization Access to company systems shall be granted only to authorized users based on business requirements. All new user access requests must be approved by the user's manager before access is provisioned. ## 3. Least Privilege Users shall receive only the minimum level of access required to perform their assigned responsibilities. Administrative privileges shall be restricted to authorized personnel. ## 4. User Account Management Each user shall be assigned an individual account. Shared user accounts should not be used unless there is a documented business or technical requirement. ## 5. Authentication Users must authenticate before accessing protected company systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7.",
+      "# Acme Corp Cybersecurity Risk Management Policy ## Purpose This policy establishes requirements for managing cybersecurity risk. ## Risk Identification Cybersecurity risks shall be identified for systems, applications, business processes, and third-party services. ## Risk Assessment Risks shall be evaluated based on likelihood and business impact. ## Risk Treatment Risk owners shall determine whether risks are mitigated, transferred, accepted, or avoided. ## Risk Register Significant risks shall be documented in a cybersecurity risk register. ## Review High-risk items shall be reviewed by management. ## Gap intentionally left The policy does not specify an exact organization-wide risk assessment frequency.",
+      "# Acme Corp Information Security Policy ## Document Information Policy Owner: Information Security Department Version: 1.0 Status: Approved Effective Date: 2026-01-01 Review Frequency: Annual ## 1. Purpose The purpose of this policy is to establish the information security principles and responsibilities used by Acme Corp to protect its information systems, business information, and technology assets. ## 2. Scope This policy applies to all employees, contractors, information systems, applications, devices, and information assets owned or managed by Acme Corp. ## 3. Information Security Governance Acme Corp shall maintain an information security program aligned with organizational objectives and cybersecurity risk. Management is responsible for supporting the information security program and ensuring that appropriate security responsibilities are assigned. The Information Security Manager is responsible for coordinating information security activities and reporting significant cybersecurity risks to management. ## 4. Risk Management Cybersecurity risks shall be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be",
+      "# Acme Corp Account Management Procedure ## Account Creation New accounts require an approved access request. ## Role Changes Access permissions shall be updated when a user's responsibilities change. ## Termination Accounts shall be disabled when employment ends. ## Privileged Accounts Administrative access requires explicit approval. ## Review System owners should review privileged accounts when requested by Information Security. ## Gap intentionally left There is no mandatory periodic review interval for all user accounts."
+    ],
+    "reference": "Important information assets and systems should be identified, tracked, and managed through their lifecycle.",
+    "sources": [
+      {
+        "source": "06_asset_management_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "05_risk_management_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "20_account_management_procedure.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "What are the organization's backup requirements?",
+    "answer": "The organization's backup requirements include regularly backing up critical business information and system configurations, protecting backup data from unauthorized access, maintaining procedures for restoring critical data, testing backup restoration annually, and establishing backup retention periods based on business and legal requirements. These requirements are outlined in the Acme Corp Backup and Recovery Policy and supported by the organization's commitment to maintaining appropriate backup and recovery capabilities for important information systems and business information.",
+    "contexts": [
+      "# Acme Corp Backup and Recovery Policy ## Purpose This policy establishes requirements for data backup and recovery. ## Backup Critical business information and system configurations shall be backed up regularly. ## Protection Backup data shall be protected from unauthorized access. ## Restoration The organization shall maintain procedures for restoring critical data from backup. ## Testing Backup restoration shall be tested at least annually. ## Retention Backup retention periods shall be established according to business and legal requirements.",
+      "Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Remote Access Policy ## Authorization Remote access shall only be provided to authorized personnel with a business need. ## Authentication Multi-factor authentication is required for remote access. ## Devices Remote access should use company-approved devices where possible. ## Protection Remote sessions shall use approved encrypted communication methods. ## Termination Remote access shall be revoked when no longer required.",
+      "systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7. Privileged Access Privileged accounts shall only be provided to personnel who require administrative capabilities for their job responsibilities. Privileged accounts shall not be used for normal daily activities. ## 8. Exceptions Exceptions to this policy must be documented and approved by the Information Security Manager."
+    ],
+    "reference": "The organization maintains backup and recovery capabilities for important systems and information.",
+    "sources": [
+      {
+        "source": "07_backup_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 2
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "14_remote_access_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 1
+      }
+    ]
+  },
+  {
+    "question": "How does Acme Corp address business continuity?",
+    "answer": "Acme Corp addresses business continuity by maintaining a Business Continuity Policy that identifies critical services and dependencies, establishes recovery procedures for critical systems and processes, assigns specific responsibilities to personnel, and mandates periodic testing of business continuity plans. Additionally, the organization ensures appropriate backup and recovery capabilities for important information systems and business information, as outlined in the Security Department procedures. The policies are reviewed annually or when significant changes occur to ensure alignment with organizational objectives and cybersecurity risks. However, the exact test frequency and recovery time objectives are not defined in the provided context.",
+    "contexts": [
+      "# Acme Corp Business Continuity Policy ## Purpose Acme Corp shall maintain business continuity and disaster recovery capabilities. ## Business Impact Critical services and dependencies shall be identified. ## Recovery Recovery procedures shall exist for critical systems and business processes. ## Roles Business continuity responsibilities shall be assigned to appropriate personnel. ## Testing Business continuity plans shall be tested periodically. ## Gap intentionally left The policy does not define the exact test frequency or recovery time objectives.",
+      "Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile.",
+      "# Acme Corp Information Security Policy ## Document Information Policy Owner: Information Security Department Version: 1.0 Status: Approved Effective Date: 2026-01-01 Review Frequency: Annual ## 1. Purpose The purpose of this policy is to establish the information security principles and responsibilities used by Acme Corp to protect its information systems, business information, and technology assets. ## 2. Scope This policy applies to all employees, contractors, information systems, applications, devices, and information assets owned or managed by Acme Corp. ## 3. Information Security Governance Acme Corp shall maintain an information security program aligned with organizational objectives and cybersecurity risk. Management is responsible for supporting the information security program and ensuring that appropriate security responsibilities are assigned. The Information Security Manager is responsible for coordinating information security activities and reporting significant cybersecurity risks to management. ## 4. Risk Management Cybersecurity risks shall be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be",
+      "# Acme Corp Asset Management Policy ## Asset Inventory Acme Corp shall maintain an inventory of information systems, devices, software, and important information assets. ## Asset Ownership Each important asset shall have an assigned owner. ## Classification Information assets shall be classified according to sensitivity and business importance. ## Lifecycle Assets shall be recorded when acquired and removed from the inventory when retired. ## Responsibility Asset owners are responsible for ensuring appropriate protection requirements are applied.",
+      "# Acme Corp Incident Response Policy ## Purpose This policy defines how Acme Corp identifies, reports, investigates, and responds to cybersecurity incidents. ## Reporting Employees must immediately report suspected security incidents to the Information Security Department. ## Incident Classification Incidents shall be classified according to severity and potential business impact. ## Response The incident response team shall investigate reported incidents, contain affected systems, and coordinate recovery actions. ## Communication Significant incidents shall be escalated to management. ## Documentation Incident details and response actions shall be recorded. ## Gap intentionally left No formal post-incident lessons-learned review frequency is defined."
+    ],
+    "reference": "The organization maintains business continuity and recovery capabilities for important services and information systems.",
+    "sources": [
+      {
+        "source": "08_business_continuity_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 2
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "06_asset_management_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "04_incident_response_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "How are third-party cybersecurity risks addressed?",
+    "answer": "Third-party cybersecurity risks are addressed through due diligence before engaging important third parties, as outlined in the Third-Party and Vendor Security Policy. Cybersecurity and confidentiality requirements are included in supplier agreements, and third-party access to Acme Corp systems is authorized and limited to business needs. High-risk suppliers may be reviewed based on risk, and significant risks are documented in the cybersecurity risk register and reviewed by management, as per the Cybersecurity Risk Management Policy. However, the context does not specify a mandatory periodic reassessment schedule for all critical suppliers.",
+    "contexts": [
+      "# Acme Corp Cybersecurity Risk Management Policy ## Purpose This policy establishes requirements for managing cybersecurity risk. ## Risk Identification Cybersecurity risks shall be identified for systems, applications, business processes, and third-party services. ## Risk Assessment Risks shall be evaluated based on likelihood and business impact. ## Risk Treatment Risk owners shall determine whether risks are mitigated, transferred, accepted, or avoided. ## Risk Register Significant risks shall be documented in a cybersecurity risk register. ## Review High-risk items shall be reviewed by management. ## Gap intentionally left The policy does not specify an exact organization-wide risk assessment frequency.",
+      "# Acme Corp Third-Party and Vendor Security Policy ## Purpose This policy defines cybersecurity requirements for suppliers and service providers. ## Due Diligence Security risks shall be considered before engaging important third parties. ## Contracts Relevant cybersecurity and confidentiality requirements shall be included in supplier agreements. ## Access Third-party access to Acme Corp systems shall be authorized and limited to business need. ## Monitoring High-risk suppliers may be reviewed based on risk. ## Gap intentionally left A mandatory periodic reassessment schedule for all critical suppliers is not defined.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile.",
+      "# Acme Corp Logging and Monitoring Policy ## Logging Security-relevant systems shall generate logs for authentication events, administrative actions, and significant security events. ## Protection Logs shall be protected from unauthorized modification. ## Monitoring The Information Security Department shall monitor important systems for suspicious activity. ## Review Critical security alerts shall be reviewed and investigated. ## Gap intentionally left Log retention duration is not defined."
+    ],
+    "reference": "Cybersecurity risks related to suppliers and third parties are considered and managed through vendor security requirements.",
+    "sources": [
+      {
+        "source": "05_risk_management_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "09_vendor_security_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 2
+      },
+      {
+        "source": "11_logging_monitoring_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "What security awareness expectations exist for personnel?",
+    "answer": "Personnel are expected to complete information security awareness training, which covers topics such as phishing, password protection, incident reporting, and safe handling of company information. New employees receive this training during onboarding, and completion is recorded. Employees are responsible for reporting suspected cybersecurity incidents and protecting their authentication credentials. There is no mandatory annual refresher training frequency defined in the policy.",
+    "contexts": [
+      "# Acme Corp Security Awareness and Training Policy ## Purpose This policy establishes security awareness requirements for personnel. ## Training All employees shall receive information security awareness training. ## New Employees New employees shall receive awareness training as part of onboarding. ## Topics Training shall include phishing, password protection, incident reporting, and safe handling of company information. ## Records Training completion shall be recorded. ## Gap intentionally left The policy does not define a mandatory annual refresher frequency.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Physical Security Policy ## Facility Access Access to restricted facilities shall be limited to authorized personnel. ## Visitors Visitors to restricted areas shall be controlled and supervised. ## Equipment Critical information systems shall be protected against unauthorized physical access. ## Reporting Physical security incidents shall be reported. ## Gap intentionally left No formal schedule for reviewing physical access permissions is defined.",
+      "Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile.",
+      "# Acme Corp Data Classification Policy ## Classification Levels Information shall be classified according to sensitivity and business importance. ## Handling Personnel shall handle information according to its classification. ## Access Sensitive information shall be accessible only to authorized personnel. ## Storage Sensitive information must be stored using approved systems. ## Disposal Sensitive information shall be securely destroyed when no longer required."
+    ],
+    "reference": "Personnel are expected to receive cybersecurity awareness and training appropriate to their responsibilities.",
+    "sources": [
+      {
+        "source": "10_security_awareness_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "18_physical_security_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 2
+      },
+      {
+        "source": "15_data_classification_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "What security events should be logged?",
+    "answer": "According to the Acme Corp Logging and Monitoring Policy (Context 1), security-relevant systems should generate logs for authentication events, administrative actions, and significant security events. The policy does not provide further details on specific events, but it emphasizes the importance of logging these categories. No additional context is available to expand on this requirement.",
+    "contexts": [
+      "# Acme Corp Logging and Monitoring Policy ## Logging Security-relevant systems shall generate logs for authentication events, administrative actions, and significant security events. ## Protection Logs shall be protected from unauthorized modification. ## Monitoring The Information Security Department shall monitor important systems for suspicious activity. ## Review Critical security alerts shall be reviewed and investigated. ## Gap intentionally left Log retention duration is not defined.",
+      "Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Mobile Device Security Policy ## Devices Company-managed mobile devices shall use approved security configurations. ## Authentication Devices shall require user authentication. ## Updates Security updates shall be installed in a timely manner. ## Lost Devices Lost or stolen company devices must be reported immediately. ## Data Protection Sensitive company information stored on mobile devices shall be protected.",
+      "# Acme Corp Physical Security Policy ## Facility Access Access to restricted facilities shall be limited to authorized personnel. ## Visitors Visitors to restricted areas shall be controlled and supervised. ## Equipment Critical information systems shall be protected against unauthorized physical access. ## Reporting Physical security incidents shall be reported. ## Gap intentionally left No formal schedule for reviewing physical access permissions is defined."
+    ],
+    "reference": "Security-relevant activities such as authentication and administrative actions should be logged and monitored.",
+    "sources": [
+      {
+        "source": "11_logging_monitoring_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 2
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "17_mobile_device_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "18_physical_security_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "How are vulnerabilities managed?",
+    "answer": "Vulnerabilities at Acme Corp are managed through a structured process that includes identification, prioritization, remediation, and tracking. Systems are assessed for known vulnerabilities, which are then prioritized based on severity and business impact. Critical vulnerabilities are remediated as soon as reasonably possible, and all identified vulnerabilities and remediation activities are tracked. Security defects are also tracked and remediated as part of the secure software development process.",
+    "contexts": [
+      "# Acme Corp Vulnerability Management Policy ## Identification Systems shall be assessed for known vulnerabilities. ## Prioritization Vulnerabilities shall be prioritized according to severity and business impact. ## Remediation Critical vulnerabilities shall be remediated as soon as reasonably possible. ## Tracking Identified vulnerabilities and remediation activities shall be tracked. ## Gap intentionally left Specific remediation timelines by severity are not formally defined.",
+      "# Acme Corp Secure Software Development Policy ## Security Requirements Security requirements shall be considered during software development. ## Code Review Important application changes should undergo peer review. ## Testing Security testing shall be performed when appropriate before production release. ## Secrets Credentials and sensitive secrets shall not be stored directly in source code. ## Vulnerabilities Security defects shall be tracked and remediated.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Cybersecurity Risk Management Policy ## Purpose This policy establishes requirements for managing cybersecurity risk. ## Risk Identification Cybersecurity risks shall be identified for systems, applications, business processes, and third-party services. ## Risk Assessment Risks shall be evaluated based on likelihood and business impact. ## Risk Treatment Risk owners shall determine whether risks are mitigated, transferred, accepted, or avoided. ## Risk Register Significant risks shall be documented in a cybersecurity risk register. ## Review High-risk items shall be reviewed by management. ## Gap intentionally left The policy does not specify an exact organization-wide risk assessment frequency.",
+      "# Acme Corp Mobile Device Security Policy ## Devices Company-managed mobile devices shall use approved security configurations. ## Authentication Devices shall require user authentication. ## Updates Security updates shall be installed in a timely manner. ## Lost Devices Lost or stolen company devices must be reported immediately. ## Data Protection Sensitive company information stored on mobile devices shall be protected."
+    ],
+    "reference": "Vulnerabilities are identified, assessed, prioritized, and remediated according to risk.",
+    "sources": [
+      {
+        "source": "12_vulnerability_management_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "19_secure_development_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "05_risk_management_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "17_mobile_device_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "How are production changes controlled?",
+    "answer": "Production changes at Acme Corp are controlled through a structured change management policy. Significant changes require authorization, should be tested when practical, and must include documented implementation and rollback procedures. Emergency changes follow an expedited approval process but still require post-implementation documentation. These measures aim to reduce operational and security risks associated with production system modifications.",
+    "contexts": [
+      "# Acme Corp Change Management Policy ## Purpose Changes to production systems shall be controlled to reduce operational and security risk. ## Approval Significant production changes require authorization before implementation. ## Testing Changes should be tested before deployment when practical. ## Documentation Implementation and rollback information shall be documented. ## Emergency Changes Emergency changes may follow an expedited approval process and must be documented afterward.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7. Privileged Access Privileged accounts shall only be provided to personnel who require administrative capabilities for their job responsibilities. Privileged accounts shall not be used for normal daily activities. ## 8. Exceptions Exceptions to this policy must be documented and approved by the Information Security Manager.",
+      "# Acme Corp Account Management Procedure ## Account Creation New accounts require an approved access request. ## Role Changes Access permissions shall be updated when a user's responsibilities change. ## Termination Accounts shall be disabled when employment ends. ## Privileged Accounts Administrative access requires explicit approval. ## Review System owners should review privileged accounts when requested by Information Security. ## Gap intentionally left There is no mandatory periodic review interval for all user accounts.",
+      "Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile."
+    ],
+    "reference": "Production changes require authorization, documentation, and testing where practical.",
+    "sources": [
+      {
+        "source": "13_change_management_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "20_account_management_procedure.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 2
+      }
+    ]
+  },
+  {
+    "question": "How is remote access controlled?",
+    "answer": "Remote access at Acme Corp is controlled through a multi-layered approach. Authorization is granted only to personnel with a legitimate business need, and multi-factor authentication is mandatory. Access is provided via company-approved devices whenever possible, and encrypted communication methods are required for remote sessions. Access is revoked when no longer needed, and exceptions to the policy require approval from the Information Security Manager.",
+    "contexts": [
+      "# Acme Corp Remote Access Policy ## Authorization Remote access shall only be provided to authorized personnel with a business need. ## Authentication Multi-factor authentication is required for remote access. ## Devices Remote access should use company-approved devices where possible. ## Protection Remote sessions shall use approved encrypted communication methods. ## Termination Remote access shall be revoked when no longer required.",
+      "systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7. Privileged Access Privileged accounts shall only be provided to personnel who require administrative capabilities for their job responsibilities. Privileged accounts shall not be used for normal daily activities. ## 8. Exceptions Exceptions to this policy must be documented and approved by the Information Security Manager.",
+      "# Acme Corp Physical Security Policy ## Facility Access Access to restricted facilities shall be limited to authorized personnel. ## Visitors Visitors to restricted areas shall be controlled and supervised. ## Equipment Critical information systems shall be protected against unauthorized physical access. ## Reporting Physical security incidents shall be reported. ## Gap intentionally left No formal schedule for reviewing physical access permissions is defined.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Encryption Policy ## Data in Transit Sensitive information transmitted over untrusted networks shall be encrypted. ## Data at Rest Sensitive data stored on approved systems should use encryption where appropriate. ## Cryptographic Standards Only approved cryptographic technologies shall be used. ## Key Protection Cryptographic keys shall be protected against unauthorized access. ## Gap intentionally left Formal cryptographic key rotation intervals are not defined."
+    ],
+    "reference": "Remote access is restricted, authorized, and protected with appropriate authentication controls.",
+    "sources": [
+      {
+        "source": "14_remote_access_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "18_physical_security_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "16_encryption_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "How is sensitive data protected?",
+    "answer": "Sensitive data is protected through encryption for data in transit and at rest, using only approved cryptographic technologies and ensuring key protection. Access to sensitive information is restricted to authorized personnel, and it is stored on approved systems. Data classification policies dictate handling, storage, and secure disposal, while mobile devices storing sensitive data must adhere to approved security configurations and authentication requirements. Backup data is also protected from unauthorized access, and regular risk assessments ensure ongoing security measures.",
+    "contexts": [
+      "# Acme Corp Encryption Policy ## Data in Transit Sensitive information transmitted over untrusted networks shall be encrypted. ## Data at Rest Sensitive data stored on approved systems should use encryption where appropriate. ## Cryptographic Standards Only approved cryptographic technologies shall be used. ## Key Protection Cryptographic keys shall be protected against unauthorized access. ## Gap intentionally left Formal cryptographic key rotation intervals are not defined.",
+      "# Acme Corp Mobile Device Security Policy ## Devices Company-managed mobile devices shall use approved security configurations. ## Authentication Devices shall require user authentication. ## Updates Security updates shall be installed in a timely manner. ## Lost Devices Lost or stolen company devices must be reported immediately. ## Data Protection Sensitive company information stored on mobile devices shall be protected.",
+      "# Acme Corp Data Classification Policy ## Classification Levels Information shall be classified according to sensitivity and business importance. ## Handling Personnel shall handle information according to its classification. ## Access Sensitive information shall be accessible only to authorized personnel. ## Storage Sensitive information must be stored using approved systems. ## Disposal Sensitive information shall be securely destroyed when no longer required.",
+      "# Acme Corp Backup and Recovery Policy ## Purpose This policy establishes requirements for data backup and recovery. ## Backup Critical business information and system configurations shall be backed up regularly. ## Protection Backup data shall be protected from unauthorized access. ## Restoration The organization shall maintain procedures for restoring critical data from backup. ## Testing Backup restoration shall be tested at least annually. ## Retention Backup retention periods shall be established according to business and legal requirements.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be"
+    ],
+    "reference": "Sensitive information is protected using classification and encryption controls appropriate to its sensitivity.",
+    "sources": [
+      {
+        "source": "16_encryption_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "17_mobile_device_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "15_data_classification_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "07_backup_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      }
+    ]
+  },
+  {
+    "question": "How are mobile devices secured?",
+    "answer": "Mobile devices at Acme Corp are secured through the use of approved security configurations, mandatory user authentication, timely installation of security updates, and immediate reporting of lost or stolen devices. Sensitive company information stored on these devices is protected, and remote access, when necessary, requires multi-factor authentication and encrypted communication methods. Additionally, employees are responsible for protecting assigned devices and reporting suspected cybersecurity incidents.",
+    "contexts": [
+      "# Acme Corp Mobile Device Security Policy ## Devices Company-managed mobile devices shall use approved security configurations. ## Authentication Devices shall require user authentication. ## Updates Security updates shall be installed in a timely manner. ## Lost Devices Lost or stolen company devices must be reported immediately. ## Data Protection Sensitive company information stored on mobile devices shall be protected.",
+      "# Acme Corp Remote Access Policy ## Authorization Remote access shall only be provided to authorized personnel with a business need. ## Authentication Multi-factor authentication is required for remote access. ## Devices Remote access should use company-approved devices where possible. ## Protection Remote sessions shall use approved encrypted communication methods. ## Termination Remote access shall be revoked when no longer required.",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Encryption Policy ## Data in Transit Sensitive information transmitted over untrusted networks shall be encrypted. ## Data at Rest Sensitive data stored on approved systems should use encryption where appropriate. ## Cryptographic Standards Only approved cryptographic technologies shall be used. ## Key Protection Cryptographic keys shall be protected against unauthorized access. ## Gap intentionally left Formal cryptographic key rotation intervals are not defined.",
+      "# Acme Corp Password Policy ## Purpose This policy defines password and authentication requirements for Acme Corp systems. ## Password Requirements Passwords must be at least 12 characters long. Passwords must not be shared between users. Default passwords must be changed before production use. ## Multi-Factor Authentication Multi-factor authentication is required for remote access and privileged administrative accounts. ## Credential Protection Users must not store passwords in plain text or disclose them to unauthorized persons. ## Password Changes Passwords must be changed when compromise is suspected. ## Gap intentionally left This policy does not define a routine password expiration schedule."
+    ],
+    "reference": "Mobile devices are subject to organizational security requirements and controls.",
+    "sources": [
+      {
+        "source": "17_mobile_device_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "14_remote_access_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "16_encryption_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "03_password_policy.txt",
+        "chunk": 0
+      }
+    ]
+  },
+  {
+    "question": "How does Acme Corp address secure software development?",
+    "answer": "Acme Corp addresses secure software development by incorporating security requirements throughout the development process, mandating peer reviews for significant code changes, performing security testing before production release, and prohibiting the storage of sensitive secrets in source code. Additionally, security defects are tracked and remediated as part of their vulnerability management process.",
+    "contexts": [
+      "# Acme Corp Secure Software Development Policy ## Security Requirements Security requirements shall be considered during software development. ## Code Review Important application changes should undergo peer review. ## Testing Security testing shall be performed when appropriate before production release. ## Secrets Credentials and sensitive secrets shall not be stored directly in source code. ## Vulnerabilities Security defects shall be tracked and remediated.",
+      "# Acme Corp Information Security Policy ## Document Information Policy Owner: Information Security Department Version: 1.0 Status: Approved Effective Date: 2026-01-01 Review Frequency: Annual ## 1. Purpose The purpose of this policy is to establish the information security principles and responsibilities used by Acme Corp to protect its information systems, business information, and technology assets. ## 2. Scope This policy applies to all employees, contractors, information systems, applications, devices, and information assets owned or managed by Acme Corp. ## 3. Information Security Governance Acme Corp shall maintain an information security program aligned with organizational objectives and cybersecurity risk. Management is responsible for supporting the information security program and ensuring that appropriate security responsibilities are assigned. The Information Security Manager is responsible for coordinating information security activities and reporting significant cybersecurity risks to management. ## 4. Risk Management Cybersecurity risks shall be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be",
+      "be identified, documented, assessed, and reviewed. Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls. Significant cybersecurity risks shall be communicated to appropriate management personnel. ## 5. Access Control Access to Acme Corp information systems shall be limited to authorized users. Access shall be granted according to business requirements and the principle of least privilege. User access must be approved before access to production information systems is provided. ## 6. Asset Protection Information and technology assets shall be identified and protected according to their importance to the organization. Employees are responsible for protecting company devices and information assigned to them. ## 7. Security Awareness Employees shall receive information security awareness training. Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials. ## 8. Incident Management Suspected information security incidents shall be reported to the Information Security Department. The organization shall maintain procedures for responding to cybersecurity incidents. ## 9. Business Continuity Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information. ## 10. Policy Review This policy shall be",
+      "# Acme Corp Access Control Policy ## Document Information Policy Owner: Information Security Department Version: 1.0 Status: Approved Effective Date: 2026-01-01 ## 1. Purpose This policy defines requirements for controlling access to Acme Corp information systems and information assets. ## 2. Access Authorization Access to company systems shall be granted only to authorized users based on business requirements. All new user access requests must be approved by the user's manager before access is provisioned. ## 3. Least Privilege Users shall receive only the minimum level of access required to perform their assigned responsibilities. Administrative privileges shall be restricted to authorized personnel. ## 4. User Account Management Each user shall be assigned an individual account. Shared user accounts should not be used unless there is a documented business or technical requirement. ## 5. Authentication Users must authenticate before accessing protected company systems. Multi-factor authentication shall be required for remote administrative access. ## 6. Termination and Role Changes User access shall be removed when employment is terminated. Managers are responsible for requesting changes to access when an employee changes roles. ## 7.",
+      "# Acme Corp Mobile Device Security Policy ## Devices Company-managed mobile devices shall use approved security configurations. ## Authentication Devices shall require user authentication. ## Updates Security updates shall be installed in a timely manner. ## Lost Devices Lost or stolen company devices must be reported immediately. ## Data Protection Sensitive company information stored on mobile devices shall be protected."
+    ],
+    "reference": "Secure development practices are used to reduce security risk in software and system changes.",
+    "sources": [
+      {
+        "source": "19_secure_development_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "01_information_security_policy.txt",
+        "chunk": 1
+      },
+      {
+        "source": "02_access_control_policy.txt",
+        "chunk": 0
+      },
+      {
+        "source": "17_mobile_device_policy.txt",
+        "chunk": 0
+      }
+    ]
+  }
+]

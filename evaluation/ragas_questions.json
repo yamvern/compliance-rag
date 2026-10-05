@@ -1,0 +1,82 @@
+[
+  {
+    "question": "How does Acme Corp control user access to systems?",
+    "reference": "Access is limited to authorized users based on business requirements, least privilege, and approval processes."
+  },
+  {
+    "question": "What is required for remote administrative access?",
+    "reference": "Remote administrative access requires multi-factor authentication."
+  },
+  {
+    "question": "What happens to user access when employment ends?",
+    "reference": "User accounts and access must be removed or disabled when employment ends."
+  },
+  {
+    "question": "How are privileged accounts controlled?",
+    "reference": "Privileged access is restricted to personnel who require administrative capabilities and should not be used for normal daily activities."
+  },
+  {
+    "question": "What should happen if a password may have been compromised?",
+    "reference": "The affected password should be changed or reset promptly in accordance with the organization's password policy."
+  },
+  {
+    "question": "How should suspected cybersecurity incidents be handled?",
+    "reference": "Suspected cybersecurity incidents should be reported and escalated through the organization's incident response process."
+  },
+  {
+    "question": "How are cybersecurity risks assessed?",
+    "reference": "Cybersecurity risks are assessed using factors such as threats, vulnerabilities, business impact, and existing controls."
+  },
+  {
+    "question": "How are significant cybersecurity risks communicated?",
+    "reference": "Significant cybersecurity risks are communicated to appropriate management personnel."
+  },
+  {
+    "question": "What does Acme Corp require for asset management?",
+    "reference": "Important information assets and systems should be identified, tracked, and managed through their lifecycle."
+  },
+  {
+    "question": "What are the organization's backup requirements?",
+    "reference": "The organization maintains backup and recovery capabilities for important systems and information."
+  },
+  {
+    "question": "How does Acme Corp address business continuity?",
+    "reference": "The organization maintains business continuity and recovery capabilities for important services and information systems."
+  },
+  {
+    "question": "How are third-party cybersecurity risks addressed?",
+    "reference": "Cybersecurity risks related to suppliers and third parties are considered and managed through vendor security requirements."
+  },
+  {
+    "question": "What security awareness expectations exist for personnel?",
+    "reference": "Personnel are expected to receive cybersecurity awareness and training appropriate to their responsibilities."
+  },
+  {
+    "question": "What security events should be logged?",
+    "reference": "Security-relevant activities such as authentication and administrative actions should be logged and monitored."
+  },
+  {
+    "question": "How are vulnerabilities managed?",
+    "reference": "Vulnerabilities are identified, assessed, prioritized, and remediated according to risk."
+  },
+  {
+    "question": "How are production changes controlled?",
+    "reference": "Production changes require authorization, documentation, and testing where practical."
+  },
+  {
+    "question": "How is remote access controlled?",
+    "reference": "Remote access is restricted, authorized, and protected with appropriate authentication controls."
+  },
+  {
+    "question": "How is sensitive data protected?",
+    "reference": "Sensitive information is protected using classification and encryption controls appropriate to its sensitivity."
+  },
+  {
+    "question": "How are mobile devices secured?",
+    "reference": "Mobile devices are subject to organizational security requirements and controls."
+  },
+  {
+    "question": "How does Acme Corp address secure software development?",
+    "reference": "Secure development practices are used to reduce security risk in software and system changes."
+  }
+]

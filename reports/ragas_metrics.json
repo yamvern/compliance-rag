@@ -1,0 +1,198 @@
+{
+  "evaluation": "RAGAS",
+  "evaluation_samples": 20,
+  "judge_model": "cohere/command-a-03-2025",
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "summary": {
+    "samples_total": 20,
+    "samples_successful": 20,
+    "samples_failed": 0,
+    "faithfulness": 0.8933,
+    "answer_relevancy": 0.7519,
+    "context_precision": 0.9533,
+    "context_recall": 1.0,
+    "overall_ragas_score": 0.8996
+  },
+  "results": [
+    {
+      "faithfulness": 0.8888888888888888,
+      "answer_relevancy": 0.9764499923420281,
+      "context_precision": 0.94999999997625,
+      "context_recall": 1.0,
+      "question": "How does Acme Corp control user access to systems?",
+      "answer": "Acme Corp controls user access to systems through a multi-layered approach. Access is granted based on business requirements and the principle of least privilege, requiring manager approval for new user requests. Multi-factor authentication is mandated for remote administrative access, and user accounts are individually assigned with restrictions on shared accounts. Access is removed upon termination, and changes are managed based on role adjustments.",
+      "reference": "Access is limited to authorized users based on business requirements, least privilege, and approval processes."
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9357164900063988,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 1.0,
+      "question": "What is required for remote administrative access?",
+      "answer": "Multi-factor authentication is required for remote administrative access, as stated in both [CONTEXT 1] and [CONTEXT 3]. Additionally, [CONTEXT 2] emphasizes that remote access, including administrative access, should only be provided to authorized personnel with a business need and must use approved encrypted communication methods.",
+      "reference": "Remote administrative access requires multi-factor authentication."
+    },
+    {
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.814265947793731,
+      "context_precision": 0.999999999975,
+      "context_recall": 1.0,
+      "question": "What happens to user access when employment ends?",
+      "answer": "When employment ends, user access is removed, and accounts are disabled. This process is outlined in both the Acme Corp Account Management Procedure and the Access Control Policy, ensuring that access is promptly terminated upon an employee's departure. Managers are responsible for initiating these changes.",
+      "reference": "User accounts and access must be removed or disabled when employment ends."
+    },
+    {
+      "faithfulness": 0.875,
+      "answer_relevancy": 0.9032934388525681,
+      "context_precision": 0.8333333332916666,
+      "context_recall": 1.0,
+      "question": "How are privileged accounts controlled?",
+      "answer": "Privileged accounts are controlled by granting access only to personnel who require administrative capabilities for their job responsibilities, ensuring these accounts are not used for normal daily activities. Explicit approval is required for administrative access, and multi-factor authentication is mandated for privileged accounts. System owners review privileged accounts upon request by the Information Security Manager, though there is no mandatory periodic review interval for all user accounts. Exceptions to these controls must be documented and approved by the Information Security Manager.",
+      "reference": "Privileged access is restricted to personnel who require administrative capabilities and should not be used for normal daily activities."
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7503658856207928,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "question": "What should happen if a password may have been compromised?",
+      "answer": "According to the Acme Corp Password Policy, if a password may have been compromised, it must be changed. This is stated in the \"Password Changes\" section, which requires passwords to be changed when compromise is suspected. There is no further detail provided in the context about the process or additional steps to take in such a situation.",
+      "reference": "The affected password should be changed or reset promptly in accordance with the organization's password policy."
+    },
+    {
+      "faithfulness": 0.8333333333333334,
+      "answer_relevancy": 0.873511949304516,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 1.0,
+      "question": "How should suspected cybersecurity incidents be handled?",
+      "answer": "Suspected cybersecurity incidents must be immediately reported to the Information Security Department, as outlined in the Incident Response Policy. The incident response team will then investigate, classify the incident based on severity and business impact, contain affected systems, and coordinate recovery actions. Significant incidents are escalated to management, and all incident details and response actions are documented. Employees are responsible for reporting such incidents as part of their security awareness responsibilities.",
+      "reference": "Suspected cybersecurity incidents should be reported and escalated through the organization's incident response process."
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.8666666666377778,
+      "context_recall": 1.0,
+      "question": "How are cybersecurity risks assessed?",
+      "answer": "Cybersecurity risks at Acme Corp are assessed by evaluating the likelihood and business impact of identified risks, considering threats, vulnerabilities, and existing security controls. Significant risks are documented in a risk register and reviewed by management, with high-risk items receiving special attention. The assessment process is part of the broader risk management policy, which also includes risk treatment and communication to appropriate personnel. However, the exact frequency of organization-wide risk assessments is not specified in the provided context.",
+      "reference": "Cybersecurity risks are assessed using factors such as threats, vulnerabilities, business impact, and existing controls."
+    },
+    {
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.8920871071363342,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "question": "How are significant cybersecurity risks communicated?",
+      "answer": "Significant cybersecurity risks are communicated to appropriate management personnel, as outlined in [CONTEXT 1]. Additionally, high-risk items are reviewed by management, as specified in [CONTEXT 2]. The process ensures that key stakeholders are informed and can take necessary actions to address these risks.",
+      "reference": "Significant cybersecurity risks are communicated to appropriate management personnel."
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8894152124077902,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "question": "What does Acme Corp require for asset management?",
+      "answer": "Acme Corp requires maintaining an inventory of information systems, devices, software, and important information assets, assigning an owner to each asset, classifying assets based on sensitivity and business importance, and recording assets throughout their lifecycle from acquisition to retirement. Additionally, asset owners are responsible for ensuring appropriate protection requirements are applied.",
+      "reference": "Important information assets and systems should be identified, tracked, and managed through their lifecycle."
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7921812520833079,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 1.0,
+      "question": "What are the organization's backup requirements?",
+      "answer": "The organization's backup requirements include regularly backing up critical business information and system configurations, protecting backup data from unauthorized access, maintaining procedures for restoring critical data, testing backup restoration annually, and establishing backup retention periods based on business and legal requirements. These requirements are outlined in the Acme Corp Backup and Recovery Policy and supported by the organization's commitment to maintaining appropriate backup and recovery capabilities for important information systems and business information.",
+      "reference": "The organization maintains backup and recovery capabilities for important systems and information."
+    },
+    {
+      "faithfulness": 0.8333333333333334,
+      "answer_relevancy": 0.9673472029871616,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "question": "How does Acme Corp address business continuity?",
+      "answer": "Acme Corp addresses business continuity by maintaining a Business Continuity Policy that identifies critical services and dependencies, establishes recovery procedures for critical systems and processes, assigns specific responsibilities to personnel, and mandates periodic testing of business continuity plans. Additionally, the organization ensures appropriate backup and recovery capabilities for important information systems and business information, as outlined in the Security Department procedures. The policies are reviewed annually or when significant changes occur to ensure alignment with organizational objectives and cybersecurity risks. However, the exact test frequency and recovery time objectives are not defined in the provided context.",
+      "reference": "The organization maintains business continuity and recovery capabilities for important services and information systems."
+    },
+    {
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.1567271211748396,
+      "context_precision": 0.49999999995,
+      "context_recall": 1.0,
+      "question": "How are third-party cybersecurity risks addressed?",
+      "answer": "Third-party cybersecurity risks are addressed through due diligence before engaging important third parties, as outlined in the Third-Party and Vendor Security Policy. Cybersecurity and confidentiality requirements are included in supplier agreements, and third-party access to Acme Corp systems is authorized and limited to business needs. High-risk suppliers may be reviewed based on risk, and significant risks are documented in the cybersecurity risk register and reviewed by management, as per the Cybersecurity Risk Management Policy. However, the context does not specify a mandatory periodic reassessment schedule for all critical suppliers.",
+      "reference": "Cybersecurity risks related to suppliers and third parties are considered and managed through vendor security requirements."
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7168791836206313,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0,
+      "question": "What security awareness expectations exist for personnel?",
+      "answer": "Personnel are expected to complete information security awareness training, which covers topics such as phishing, password protection, incident reporting, and safe handling of company information. New employees receive this training during onboarding, and completion is recorded. Employees are responsible for reporting suspected cybersecurity incidents and protecting their authentication credentials. There is no mandatory annual refresher training frequency defined in the policy.",
+      "reference": "Personnel are expected to receive cybersecurity awareness and training appropriate to their responsibilities."
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8179367404541358,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "question": "What security events should be logged?",
+      "answer": "According to the Acme Corp Logging and Monitoring Policy (Context 1), security-relevant systems should generate logs for authentication events, administrative actions, and significant security events. The policy does not provide further details on specific events, but it emphasizes the importance of logging these categories. No additional context is available to expand on this requirement.",
+      "reference": "Security-relevant activities such as authentication and administrative actions should be logged and monitored."
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7095052506529083,
+      "context_precision": 0.999999999975,
+      "context_recall": 1.0,
+      "question": "How are vulnerabilities managed?",
+      "answer": "Vulnerabilities at Acme Corp are managed through a structured process that includes identification, prioritization, remediation, and tracking. Systems are assessed for known vulnerabilities, which are then prioritized based on severity and business impact. Critical vulnerabilities are remediated as soon as reasonably possible, and all identified vulnerabilities and remediation activities are tracked. Security defects are also tracked and remediated as part of the secure software development process.",
+      "reference": "Vulnerabilities are identified, assessed, prioritized, and remediated according to risk."
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6252896287832929,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "question": "How are production changes controlled?",
+      "answer": "Production changes at Acme Corp are controlled through a structured change management policy. Significant changes require authorization, should be tested when practical, and must include documented implementation and rollback procedures. Emergency changes follow an expedited approval process but still require post-implementation documentation. These measures aim to reduce operational and security risks associated with production system modifications.",
+      "reference": "Production changes require authorization, documentation, and testing where practical."
+    },
+    {
+      "faithfulness": 0.8571428571428571,
+      "answer_relevancy": 0.7375870372102655,
+      "context_precision": 0.9166666666361111,
+      "context_recall": 1.0,
+      "question": "How is remote access controlled?",
+      "answer": "Remote access at Acme Corp is controlled through a multi-layered approach. Authorization is granted only to personnel with a legitimate business need, and multi-factor authentication is mandatory. Access is provided via company-approved devices whenever possible, and encrypted communication methods are required for remote sessions. Access is revoked when no longer needed, and exceptions to the policy require approval from the Information Security Manager.",
+      "reference": "Remote access is restricted, authorized, and protected with appropriate authentication controls."
+    },
+    {
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.8497794744732832,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "question": "How is sensitive data protected?",
+      "answer": "Sensitive data is protected through encryption for data in transit and at rest, using only approved cryptographic technologies and ensuring key protection. Access to sensitive information is restricted to authorized personnel, and it is stored on approved systems. Data classification policies dictate handling, storage, and secure disposal, while mobile devices storing sensitive data must adhere to approved security configurations and authentication requirements. Backup data is also protected from unauthorized access, and regular risk assessments ensure ongoing security measures.",
+      "reference": "Sensitive information is protected using classification and encryption controls appropriate to its sensitivity."
+    },
+    {
+      "faithfulness": 0.7777777777777778,
+      "answer_relevancy": 0.7160100310148593,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "question": "How are mobile devices secured?",
+      "answer": "Mobile devices at Acme Corp are secured through the use of approved security configurations, mandatory user authentication, timely installation of security updates, and immediate reporting of lost or stolen devices. Sensitive company information stored on these devices is protected, and remote access, when necessary, requires multi-factor authentication and encrypted communication methods. Additionally, employees are responsible for protecting assigned devices and reporting suspected cybersecurity incidents.",
+      "reference": "Mobile devices are subject to organizational security requirements and controls."
+    },
+    {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9130605348991315,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0,
+      "question": "How does Acme Corp address secure software development?",
+      "answer": "Acme Corp addresses secure software development by incorporating security requirements throughout the development process, mandating peer reviews for significant code changes, performing security testing before production release, and prohibiting the storage of sensitive secrets in source code. Additionally, security defects are tracked and remediated as part of their vulnerability management process.",
+      "reference": "Secure development practices are used to reduce security risk in software and system changes."
+    }
+  ]
+}

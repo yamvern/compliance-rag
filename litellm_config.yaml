@@ -1,0 +1,7 @@
+model_list:
+  - model_name: cohere/command-a-03-2025
+    litellm_params:
+      model: cohere/command-a-03-2025
+
+litellm_settings:
+  drop_params: true
