@@ -1,0 +1,11 @@
+streamlit
+python-dotenv
+cohere
+pypdf
+chromadb
+sentence-transformers
+rank-bm25
+numpy
+scikit-learn
+torch
+transformers
