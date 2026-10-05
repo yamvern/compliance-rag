@@ -1,0 +1,16 @@
+# Acme Corp Secure Software Development Policy
+
+## Security Requirements
+Security requirements shall be considered during software development.
+
+## Code Review
+Important application changes should undergo peer review.
+
+## Testing
+Security testing shall be performed when appropriate before production release.
+
+## Secrets
+Credentials and sensitive secrets shall not be stored directly in source code.
+
+## Vulnerabilities
+Security defects shall be tracked and remediated.

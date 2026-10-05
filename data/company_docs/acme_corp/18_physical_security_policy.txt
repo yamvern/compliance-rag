@@ -1,0 +1,16 @@
+# Acme Corp Physical Security Policy
+
+## Facility Access
+Access to restricted facilities shall be limited to authorized personnel.
+
+## Visitors
+Visitors to restricted areas shall be controlled and supervised.
+
+## Equipment
+Critical information systems shall be protected against unauthorized physical access.
+
+## Reporting
+Physical security incidents shall be reported.
+
+## Gap intentionally left
+No formal schedule for reviewing physical access permissions is defined.

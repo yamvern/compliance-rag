@@ -1,0 +1,16 @@
+# Acme Corp Change Management Policy
+
+## Purpose
+Changes to production systems shall be controlled to reduce operational and security risk.
+
+## Approval
+Significant production changes require authorization before implementation.
+
+## Testing
+Changes should be tested before deployment when practical.
+
+## Documentation
+Implementation and rollback information shall be documented.
+
+## Emergency Changes
+Emergency changes may follow an expedited approval process and must be documented afterward.

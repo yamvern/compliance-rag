@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "question": "A new employee needs access to a production system. What governance step must occur before the permissions are granted?",
+    "expected_sources": [
+      "02_access_control_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 2,
+    "question": "What mechanism reduces the risk of a stolen password being enough to remotely administer company systems?",
+    "expected_sources": [
+      "02_access_control_policy.txt"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": 3,
+    "question": "An employee leaves Acme Corp today. What prevents that person from continuing to use corporate systems?",
+    "expected_sources": [
+      "20_account_management_procedure.txt",
+      "02_access_control_policy.txt"
+    ],
+    "type": "cross_policy"
+  },
+  {
+    "id": 4,
+    "question": "Could an eight-character credential satisfy the organization's authentication rules? Explain which policy contains the relevant requirement.",
+    "expected_sources": [
+      "03_password_policy.txt"
+    ],
+    "type": "reasoning"
+  },
+  {
+    "id": 5,
+    "question": "A user believes their login secret may have been exposed. What action is expected?",
+    "expected_sources": [
+      "03_password_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 6,
+    "question": "A staff member notices suspicious activity that may indicate a cyberattack. Where should the event be escalated?",
+    "expected_sources": [
+      "04_incident_response_policy.txt",
+      "01_information_security_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 7,
+    "question": "Before deciding how seriously to treat a cyber event, how does Acme determine its importance?",
+    "expected_sources": [
+      "04_incident_response_policy.txt"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": 8,
+    "question": "When management must decide which cyber threats deserve attention first, what factors are used to evaluate exposure?",
+    "expected_sources": [
+      "05_risk_management_policy.txt",
+      "01_information_security_policy.txt"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": 9,
+    "question": "Where would leadership expect material cyber exposures to be formally recorded for ongoing management?",
+    "expected_sources": [
+      "05_risk_management_policy.txt"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": 10,
+    "question": "If an auditor asks Acme to demonstrate that it knows which laptops, applications, and systems it owns, which policy provides that evidence?",
+    "expected_sources": [
+      "06_asset_management_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 11,
+    "question": "How does Acme establish accountability for protecting a business-critical information resource?",
+    "expected_sources": [
+      "06_asset_management_policy.txt"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": 12,
+    "question": "How does the organization verify that protected copies of critical information can actually be recovered rather than merely stored?",
+    "expected_sources": [
+      "07_backup_policy.txt"
+    ],
+    "type": "reasoning"
+  },
+  {
+    "id": 13,
+    "question": "A major outage makes a critical service unavailable. Which documentation addresses restoring essential operations?",
+    "expected_sources": [
+      "08_business_continuity_policy.txt",
+      "01_information_security_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 14,
+    "question": "Before Acme entrusts a service provider with important business services, what cybersecurity consideration should take place?",
+    "expected_sources": [
+      "09_vendor_security_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 15,
+    "question": "An external support company needs connectivity to an internal system. What limits should apply to that connectivity?",
+    "expected_sources": [
+      "09_vendor_security_policy.txt",
+      "14_remote_access_policy.txt",
+      "02_access_control_policy.txt"
+    ],
+    "type": "cross_policy"
+  },
+  {
+    "id": 16,
+    "question": "What prepares newly hired personnel to recognize phishing and safely handle company information?",
+    "expected_sources": [
+      "10_security_awareness_policy.txt"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": 17,
+    "question": "An investigator needs to determine who authenticated to a system and which administrator changed it. What organizational requirement supports this investigation?",
+    "expected_sources": [
+      "11_logging_monitoring_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 18,
+    "question": "What happens when monitoring technology identifies an important indication of malicious activity?",
+    "expected_sources": [
+      "11_logging_monitoring_policy.txt"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": 19,
+    "question": "Two software weaknesses are discovered, but one could cause much greater business damage. How does Acme decide which one deserves faster attention?",
+    "expected_sources": [
+      "12_vulnerability_management_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 20,
+    "question": "What prevents an engineer from making an uncontrolled modification directly to a live production environment?",
+    "expected_sources": [
+      "13_change_management_policy.txt"
+    ],
+    "type": "reasoning"
+  },
+  {
+    "id": 21,
+    "question": "An administrator is working from outside the corporate network. What additional identity protection should prevent a password alone from granting access?",
+    "expected_sources": [
+      "14_remote_access_policy.txt",
+      "02_access_control_policy.txt"
+    ],
+    "type": "cross_policy"
+  },
+  {
+    "id": 22,
+    "question": "How does Acme determine that some business information requires stronger handling restrictions than other information?",
+    "expected_sources": [
+      "15_data_classification_policy.txt"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": 23,
+    "question": "Confidential information must cross a network that Acme does not trust. Which safeguard is expected?",
+    "expected_sources": [
+      "16_encryption_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 24,
+    "question": "Protecting encrypted information is not sufficient if the material used to unlock it is exposed. What policy addresses this risk?",
+    "expected_sources": [
+      "16_encryption_policy.txt"
+    ],
+    "type": "reasoning"
+  },
+  {
+    "id": 25,
+    "question": "Someone discovers that their corporate smartphone is missing. What immediate governance action is required?",
+    "expected_sources": [
+      "17_mobile_device_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 26,
+    "question": "What stops an unauthorized person from simply walking into an area containing sensitive technology?",
+    "expected_sources": [
+      "18_physical_security_policy.txt"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": 27,
+    "question": "Before new application code reaches customers, what practices help reduce the chance that insecure changes are released?",
+    "expected_sources": [
+      "19_secure_development_policy.txt",
+      "13_change_management_policy.txt"
+    ],
+    "type": "reasoning"
+  },
+  {
+    "id": 28,
+    "question": "A developer proposes placing a database credential directly inside the application repository. Which requirement makes this inappropriate?",
+    "expected_sources": [
+      "19_secure_development_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 29,
+    "question": "HR hires a new employee who needs a system identity. What evidence should exist before that identity is established?",
+    "expected_sources": [
+      "20_account_management_procedure.txt",
+      "02_access_control_policy.txt"
+    ],
+    "type": "scenario"
+  },
+  {
+    "id": 30,
+    "question": "A system administrator requires elevated capabilities unavailable to ordinary users. What governance requirement applies before those capabilities are provided?",
+    "expected_sources": [
+      "20_account_management_procedure.txt",
+      "02_access_control_policy.txt"
+    ],
+    "type": "cross_policy"
+  }
+]

@@ -1,0 +1,19 @@
+# Acme Corp Third-Party and Vendor Security Policy
+
+## Purpose
+This policy defines cybersecurity requirements for suppliers and service providers.
+
+## Due Diligence
+Security risks shall be considered before engaging important third parties.
+
+## Contracts
+Relevant cybersecurity and confidentiality requirements shall be included in supplier agreements.
+
+## Access
+Third-party access to Acme Corp systems shall be authorized and limited to business need.
+
+## Monitoring
+High-risk suppliers may be reviewed based on risk.
+
+## Gap intentionally left
+A mandatory periodic reassessment schedule for all critical suppliers is not defined.

@@ -1,0 +1,19 @@
+# Acme Corp Backup and Recovery Policy
+
+## Purpose
+This policy establishes requirements for data backup and recovery.
+
+## Backup
+Critical business information and system configurations shall be backed up regularly.
+
+## Protection
+Backup data shall be protected from unauthorized access.
+
+## Restoration
+The organization shall maintain procedures for restoring critical data from backup.
+
+## Testing
+Backup restoration shall be tested at least annually.
+
+## Retention
+Backup retention periods shall be established according to business and legal requirements.

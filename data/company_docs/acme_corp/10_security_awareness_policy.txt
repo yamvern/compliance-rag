@@ -1,0 +1,19 @@
+# Acme Corp Security Awareness and Training Policy
+
+## Purpose
+This policy establishes security awareness requirements for personnel.
+
+## Training
+All employees shall receive information security awareness training.
+
+## New Employees
+New employees shall receive awareness training as part of onboarding.
+
+## Topics
+Training shall include phishing, password protection, incident reporting, and safe handling of company information.
+
+## Records
+Training completion shall be recorded.
+
+## Gap intentionally left
+The policy does not define a mandatory annual refresher frequency.

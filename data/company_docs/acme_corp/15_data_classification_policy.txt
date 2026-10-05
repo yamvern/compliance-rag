@@ -1,0 +1,16 @@
+# Acme Corp Data Classification Policy
+
+## Classification Levels
+Information shall be classified according to sensitivity and business importance.
+
+## Handling
+Personnel shall handle information according to its classification.
+
+## Access
+Sensitive information shall be accessible only to authorized personnel.
+
+## Storage
+Sensitive information must be stored using approved systems.
+
+## Disposal
+Sensitive information shall be securely destroyed when no longer required.

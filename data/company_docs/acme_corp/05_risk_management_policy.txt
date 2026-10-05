@@ -1,0 +1,22 @@
+# Acme Corp Cybersecurity Risk Management Policy
+
+## Purpose
+This policy establishes requirements for managing cybersecurity risk.
+
+## Risk Identification
+Cybersecurity risks shall be identified for systems, applications, business processes, and third-party services.
+
+## Risk Assessment
+Risks shall be evaluated based on likelihood and business impact.
+
+## Risk Treatment
+Risk owners shall determine whether risks are mitigated, transferred, accepted, or avoided.
+
+## Risk Register
+Significant risks shall be documented in a cybersecurity risk register.
+
+## Review
+High-risk items shall be reviewed by management.
+
+## Gap intentionally left
+The policy does not specify an exact organization-wide risk assessment frequency.

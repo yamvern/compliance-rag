@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "question": "How are new user access requests approved?",
+    "expected_source": "02_access_control_policy.txt"
+  },
+  {
+    "id": 2,
+    "question": "What does Acme Corp require for multi-factor authentication?",
+    "expected_source": "02_access_control_policy.txt"
+  },
+  {
+    "id": 3,
+    "question": "What happens to user access when employment ends?",
+    "expected_source": "02_access_control_policy.txt"
+  },
+  {
+    "id": 4,
+    "question": "What are the password length requirements?",
+    "expected_source": "03_password_policy.txt"
+  },
+  {
+    "id": 5,
+    "question": "When should a password be changed?",
+    "expected_source": "03_password_policy.txt"
+  },
+  {
+    "id": 6,
+    "question": "How are cybersecurity incidents reported?",
+    "expected_source": "04_incident_response_policy.txt"
+  },
+  {
+    "id": 7,
+    "question": "How are incidents classified?",
+    "expected_source": "04_incident_response_policy.txt"
+  },
+  {
+    "id": 8,
+    "question": "How are cybersecurity risks assessed?",
+    "expected_source": "05_risk_management_policy.txt"
+  },
+  {
+    "id": 9,
+    "question": "How are significant risks documented?",
+    "expected_source": "05_risk_management_policy.txt"
+  },
+  {
+    "id": 10,
+    "question": "How does the company maintain an inventory of assets?",
+    "expected_source": "06_asset_management_policy.txt"
+  },
+  {
+    "id": 11,
+    "question": "Who is responsible for important information assets?",
+    "expected_source": "06_asset_management_policy.txt"
+  },
+  {
+    "id": 12,
+    "question": "How often are backup restorations tested?",
+    "expected_source": "07_backup_policy.txt"
+  },
+  {
+    "id": 13,
+    "question": "How are critical business systems recovered?",
+    "expected_source": "08_business_continuity_policy.txt"
+  },
+  {
+    "id": 14,
+    "question": "What security requirements apply to suppliers?",
+    "expected_source": "09_vendor_security_policy.txt"
+  },
+  {
+    "id": 15,
+    "question": "How is third-party access controlled?",
+    "expected_source": "09_vendor_security_policy.txt"
+  },
+  {
+    "id": 16,
+    "question": "What security awareness training do employees receive?",
+    "expected_source": "10_security_awareness_policy.txt"
+  },
+  {
+    "id": 17,
+    "question": "What security events should systems log?",
+    "expected_source": "11_logging_monitoring_policy.txt"
+  },
+  {
+    "id": 18,
+    "question": "How are critical security alerts handled?",
+    "expected_source": "11_logging_monitoring_policy.txt"
+  },
+  {
+    "id": 19,
+    "question": "How are vulnerabilities prioritized?",
+    "expected_source": "12_vulnerability_management_policy.txt"
+  },
+  {
+    "id": 20,
+    "question": "How are production changes approved?",
+    "expected_source": "13_change_management_policy.txt"
+  },
+  {
+    "id": 21,
+    "question": "What authentication is required for remote access?",
+    "expected_source": "14_remote_access_policy.txt"
+  },
+  {
+    "id": 22,
+    "question": "How is sensitive information classified and handled?",
+    "expected_source": "15_data_classification_policy.txt"
+  },
+  {
+    "id": 23,
+    "question": "How is sensitive data protected in transit?",
+    "expected_source": "16_encryption_policy.txt"
+  },
+  {
+    "id": 24,
+    "question": "How are cryptographic keys protected?",
+    "expected_source": "16_encryption_policy.txt"
+  },
+  {
+    "id": 25,
+    "question": "What should happen when a company mobile device is lost?",
+    "expected_source": "17_mobile_device_policy.txt"
+  },
+  {
+    "id": 26,
+    "question": "How is access to restricted facilities controlled?",
+    "expected_source": "18_physical_security_policy.txt"
+  },
+  {
+    "id": 27,
+    "question": "What secure software development practices are required?",
+    "expected_source": "19_secure_development_policy.txt"
+  },
+  {
+    "id": 28,
+    "question": "How should application secrets be handled in source code?",
+    "expected_source": "19_secure_development_policy.txt"
+  },
+  {
+    "id": 29,
+    "question": "How are accounts created for new users?",
+    "expected_source": "20_account_management_procedure.txt"
+  },
+  {
+    "id": 30,
+    "question": "How are privileged accounts approved?",
+    "expected_source": "20_account_management_procedure.txt"
+  }
+]

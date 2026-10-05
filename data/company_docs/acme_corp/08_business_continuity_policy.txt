@@ -1,0 +1,19 @@
+# Acme Corp Business Continuity Policy
+
+## Purpose
+Acme Corp shall maintain business continuity and disaster recovery capabilities.
+
+## Business Impact
+Critical services and dependencies shall be identified.
+
+## Recovery
+Recovery procedures shall exist for critical systems and business processes.
+
+## Roles
+Business continuity responsibilities shall be assigned to appropriate personnel.
+
+## Testing
+Business continuity plans shall be tested periodically.
+
+## Gap intentionally left
+The policy does not define the exact test frequency or recovery time objectives.

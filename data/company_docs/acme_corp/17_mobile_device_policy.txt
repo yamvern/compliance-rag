@@ -1,0 +1,16 @@
+# Acme Corp Mobile Device Security Policy
+
+## Devices
+Company-managed mobile devices shall use approved security configurations.
+
+## Authentication
+Devices shall require user authentication.
+
+## Updates
+Security updates shall be installed in a timely manner.
+
+## Lost Devices
+Lost or stolen company devices must be reported immediately.
+
+## Data Protection
+Sensitive company information stored on mobile devices shall be protected.

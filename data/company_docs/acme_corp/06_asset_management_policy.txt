@@ -1,0 +1,16 @@
+# Acme Corp Asset Management Policy
+
+## Asset Inventory
+Acme Corp shall maintain an inventory of information systems, devices, software, and important information assets.
+
+## Asset Ownership
+Each important asset shall have an assigned owner.
+
+## Classification
+Information assets shall be classified according to sensitivity and business importance.
+
+## Lifecycle
+Assets shall be recorded when acquired and removed from the inventory when retired.
+
+## Responsibility
+Asset owners are responsible for ensuring appropriate protection requirements are applied.

@@ -1,0 +1,16 @@
+# Acme Corp Encryption Policy
+
+## Data in Transit
+Sensitive information transmitted over untrusted networks shall be encrypted.
+
+## Data at Rest
+Sensitive data stored on approved systems should use encryption where appropriate.
+
+## Cryptographic Standards
+Only approved cryptographic technologies shall be used.
+
+## Key Protection
+Cryptographic keys shall be protected against unauthorized access.
+
+## Gap intentionally left
+Formal cryptographic key rotation intervals are not defined.

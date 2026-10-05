@@ -1,0 +1,67 @@
+# Acme Corp Information Security Policy
+
+## Document Information
+
+Policy Owner: Information Security Department  
+Version: 1.0  
+Status: Approved  
+Effective Date: 2026-01-01  
+Review Frequency: Annual
+
+## 1. Purpose
+
+The purpose of this policy is to establish the information security principles and responsibilities used by Acme Corp to protect its information systems, business information, and technology assets.
+
+## 2. Scope
+
+This policy applies to all employees, contractors, information systems, applications, devices, and information assets owned or managed by Acme Corp.
+
+## 3. Information Security Governance
+
+Acme Corp shall maintain an information security program aligned with organizational objectives and cybersecurity risk.
+
+Management is responsible for supporting the information security program and ensuring that appropriate security responsibilities are assigned.
+
+The Information Security Manager is responsible for coordinating information security activities and reporting significant cybersecurity risks to management.
+
+## 4. Risk Management
+
+Cybersecurity risks shall be identified, documented, assessed, and reviewed.
+
+Risk assessments shall consider threats, vulnerabilities, business impact, and existing security controls.
+
+Significant cybersecurity risks shall be communicated to appropriate management personnel.
+
+## 5. Access Control
+
+Access to Acme Corp information systems shall be limited to authorized users.
+
+Access shall be granted according to business requirements and the principle of least privilege.
+
+User access must be approved before access to production information systems is provided.
+
+## 6. Asset Protection
+
+Information and technology assets shall be identified and protected according to their importance to the organization.
+
+Employees are responsible for protecting company devices and information assigned to them.
+
+## 7. Security Awareness
+
+Employees shall receive information security awareness training.
+
+Employees are responsible for reporting suspected cybersecurity incidents and protecting authentication credentials.
+
+## 8. Incident Management
+
+Suspected information security incidents shall be reported to the Information Security Department.
+
+The organization shall maintain procedures for responding to cybersecurity incidents.
+
+## 9. Business Continuity
+
+Acme Corp shall maintain appropriate backup and recovery capabilities for important information systems and business information.
+
+## 10. Policy Review
+
+This policy shall be reviewed at least annually and when significant changes occur to the organization, technology environment, or cybersecurity risk profile.

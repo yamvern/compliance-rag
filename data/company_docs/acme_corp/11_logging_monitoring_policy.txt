@@ -1,0 +1,16 @@
+# Acme Corp Logging and Monitoring Policy
+
+## Logging
+Security-relevant systems shall generate logs for authentication events, administrative actions, and significant security events.
+
+## Protection
+Logs shall be protected from unauthorized modification.
+
+## Monitoring
+The Information Security Department shall monitor important systems for suspicious activity.
+
+## Review
+Critical security alerts shall be reviewed and investigated.
+
+## Gap intentionally left
+Log retention duration is not defined.

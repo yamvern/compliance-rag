@@ -1,0 +1,52 @@
+# Acme Corp Access Control Policy
+
+## Document Information
+
+Policy Owner: Information Security Department  
+Version: 1.0  
+Status: Approved  
+Effective Date: 2026-01-01
+
+## 1. Purpose
+
+This policy defines requirements for controlling access to Acme Corp information systems and information assets.
+
+## 2. Access Authorization
+
+Access to company systems shall be granted only to authorized users based on business requirements.
+
+All new user access requests must be approved by the user's manager before access is provisioned.
+
+## 3. Least Privilege
+
+Users shall receive only the minimum level of access required to perform their assigned responsibilities.
+
+Administrative privileges shall be restricted to authorized personnel.
+
+## 4. User Account Management
+
+Each user shall be assigned an individual account.
+
+Shared user accounts should not be used unless there is a documented business or technical requirement.
+
+## 5. Authentication
+
+Users must authenticate before accessing protected company systems.
+
+Multi-factor authentication shall be required for remote administrative access.
+
+## 6. Termination and Role Changes
+
+User access shall be removed when employment is terminated.
+
+Managers are responsible for requesting changes to access when an employee changes roles.
+
+## 7. Privileged Access
+
+Privileged accounts shall only be provided to personnel who require administrative capabilities for their job responsibilities.
+
+Privileged accounts shall not be used for normal daily activities.
+
+## 8. Exceptions
+
+Exceptions to this policy must be documented and approved by the Information Security Manager.

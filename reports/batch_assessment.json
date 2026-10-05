@@ -1,0 +1,204 @@
+{
+  "summary": {
+    "evidence_coverage": 79.17,
+    "supported": 8,
+    "partial": 3,
+    "no_evidence": 1,
+    "needs_review": 0,
+    "assessable_controls": 12,
+    "total_controls": 12
+  },
+  "controls": [
+    {
+      "id": "AC-01",
+      "title": "Remote Administrative MFA",
+      "requirement": "Remote administrative access must use multi-factor authentication.",
+      "status": "SUPPORTED",
+      "reason": "Multiple evidence sources explicitly state that multi-factor authentication is required for remote administrative access.",
+      "gap": null,
+      "recommendation": "No further action required based on the provided evidence.",
+      "evidence_sources": [
+        {
+          "source": "02_access_control_policy.txt",
+          "chunk": 1
+        },
+        {
+          "source": "14_remote_access_policy.txt",
+          "chunk": 0
+        },
+        {
+          "source": "03_password_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "AC-02",
+      "title": "Periodic Access Reviews",
+      "requirement": "User access privileges must be periodically reviewed, and the organization must define a mandatory review frequency.",
+      "status": "PARTIAL",
+      "reason": "The evidence mentions that system owners should review privileged accounts when requested by Information Security, but there is no mandatory periodic review interval defined for all user accounts.",
+      "gap": "Lack of a mandatory periodic review frequency for all user accounts.",
+      "recommendation": "Define and document a mandatory periodic review frequency for all user accounts.",
+      "evidence_sources": [
+        {
+          "source": "20_account_management_procedure.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "IR-01",
+      "title": "Incident Reporting",
+      "requirement": "Personnel must report suspected cybersecurity incidents to the appropriate security function.",
+      "status": "SUPPORTED",
+      "reason": "The evidence clearly states that employees are responsible for reporting suspected cybersecurity incidents to the Information Security Department, as outlined in both the Information Security Policy and the Incident Response Policy.",
+      "gap": null,
+      "recommendation": "No further action is needed based on the provided evidence.",
+      "evidence_sources": [
+        {
+          "source": "01_information_security_policy.txt",
+          "chunk": 1
+        },
+        {
+          "source": "04_incident_response_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "IR-02",
+      "title": "Lessons Learned",
+      "requirement": "The organization must perform documented post-incident lessons-learned reviews after cybersecurity incidents.",
+      "status": "PARTIAL",
+      "reason": "The evidence mentions incident response procedures and documentation of incident details, but does not explicitly state that post-incident lessons-learned reviews are conducted.",
+      "gap": "Lack of explicit mention of post-incident lessons-learned reviews.",
+      "recommendation": "Update the incident response policy to explicitly include post-incident lessons-learned reviews and their frequency.",
+      "evidence_sources": [
+        {
+          "source": "04_incident_response_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "RM-01",
+      "title": "Cyber Risk Assessment",
+      "requirement": "Cybersecurity risks must be identified and assessed based on likelihood and business impact.",
+      "status": "SUPPORTED",
+      "reason": "The evidence clearly outlines processes for identifying and assessing cybersecurity risks based on likelihood and business impact, as detailed in the Risk Management Policy and Information Security Policy.",
+      "gap": null,
+      "recommendation": "Ensure consistent application of the risk management processes across all relevant areas and consider defining a specific risk assessment frequency.",
+      "evidence_sources": [
+        {
+          "source": "05_risk_management_policy.txt",
+          "chunk": 0
+        },
+        {
+          "source": "01_information_security_policy.txt",
+          "chunk": 1
+        }
+      ]
+    },
+    {
+      "id": "AM-01",
+      "title": "Asset Inventory",
+      "requirement": "The organization must maintain an inventory of information systems, devices, software, and important assets.",
+      "status": "SUPPORTED",
+      "reason": "The evidence explicitly states that Acme Corp shall maintain an inventory of information systems, devices, software, and important information assets, as outlined in the Asset Management Policy.",
+      "gap": null,
+      "recommendation": "No further action is needed based on the provided evidence.",
+      "evidence_sources": [
+        {
+          "source": "06_asset_management_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "BK-01",
+      "title": "Backup Restoration Testing",
+      "requirement": "Backup restoration must be tested periodically.",
+      "status": "SUPPORTED",
+      "reason": "The backup policy explicitly states that backup restoration shall be tested at least annually, which meets the requirement for periodic testing.",
+      "gap": null,
+      "recommendation": "Ensure that the annual backup restoration tests are documented and that any issues identified during testing are addressed promptly.",
+      "evidence_sources": [
+        {
+          "source": "07_backup_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "BC-01",
+      "title": "Business Continuity Testing",
+      "requirement": "Business continuity plans must be tested on a defined recurring schedule.",
+      "status": "PARTIAL",
+      "reason": "The evidence indicates that business continuity plans are tested periodically, but the exact frequency of testing is not defined.",
+      "gap": "The testing frequency for business continuity plans is not specified.",
+      "recommendation": "Define and document a specific recurring schedule for testing business continuity plans.",
+      "evidence_sources": [
+        {
+          "source": "08_business_continuity_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "TP-01",
+      "title": "Supplier Security",
+      "requirement": "Cybersecurity risks must be considered before engaging important third-party suppliers.",
+      "status": "SUPPORTED",
+      "reason": "The evidence explicitly states that security risks shall be considered before engaging important third parties, aligning with the requirement.",
+      "gap": null,
+      "recommendation": "Ensure consistent application and documentation of the due diligence process for third-party engagements.",
+      "evidence_sources": [
+        {
+          "source": "09_vendor_security_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "LG-01",
+      "title": "Security Logging",
+      "requirement": "Security-relevant systems must log authentication events and administrative actions.",
+      "status": "SUPPORTED",
+      "reason": "The logging and monitoring policy explicitly states that security-relevant systems shall generate logs for authentication events and administrative actions.",
+      "gap": null,
+      "recommendation": "Ensure that the logging and monitoring policy is consistently implemented and enforced across all security-relevant systems.",
+      "evidence_sources": [
+        {
+          "source": "11_logging_monitoring_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "VM-01",
+      "title": "Vulnerability Prioritization",
+      "requirement": "Vulnerabilities must be prioritized according to severity and business impact.",
+      "status": "SUPPORTED",
+      "reason": "The vulnerability management policy explicitly states that vulnerabilities shall be prioritized according to severity and business impact.",
+      "gap": null,
+      "recommendation": "Ensure consistent application and documentation of the prioritization process across all relevant teams.",
+      "evidence_sources": [
+        {
+          "source": "12_vulnerability_management_policy.txt",
+          "chunk": 0
+        }
+      ]
+    },
+    {
+      "id": "RMV-01",
+      "title": "Removable Media Controls",
+      "requirement": "All removable media devices must be inventoried, encrypted, and formally approved before use.",
+      "status": "NO_EVIDENCE",
+      "reason": "None of the provided evidence mentions inventory, encryption, or formal approval specifically for removable media devices.",
+      "gap": "Lack of evidence regarding inventory, encryption, and formal approval of removable media devices.",
+      "recommendation": "Review and update policies to explicitly address the inventory, encryption, and formal approval of removable media devices.",
+      "evidence_sources": []
+    }
+  ]
+}

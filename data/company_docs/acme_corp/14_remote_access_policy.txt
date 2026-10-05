@@ -1,0 +1,16 @@
+# Acme Corp Remote Access Policy
+
+## Authorization
+Remote access shall only be provided to authorized personnel with a business need.
+
+## Authentication
+Multi-factor authentication is required for remote access.
+
+## Devices
+Remote access should use company-approved devices where possible.
+
+## Protection
+Remote sessions shall use approved encrypted communication methods.
+
+## Termination
+Remote access shall be revoked when no longer required.

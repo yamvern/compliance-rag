@@ -1,0 +1,22 @@
+# Acme Corp Incident Response Policy
+
+## Purpose
+This policy defines how Acme Corp identifies, reports, investigates, and responds to cybersecurity incidents.
+
+## Reporting
+Employees must immediately report suspected security incidents to the Information Security Department.
+
+## Incident Classification
+Incidents shall be classified according to severity and potential business impact.
+
+## Response
+The incident response team shall investigate reported incidents, contain affected systems, and coordinate recovery actions.
+
+## Communication
+Significant incidents shall be escalated to management.
+
+## Documentation
+Incident details and response actions shall be recorded.
+
+## Gap intentionally left
+No formal post-incident lessons-learned review frequency is defined.

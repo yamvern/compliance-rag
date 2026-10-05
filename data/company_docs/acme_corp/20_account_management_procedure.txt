@@ -1,0 +1,19 @@
+# Acme Corp Account Management Procedure
+
+## Account Creation
+New accounts require an approved access request.
+
+## Role Changes
+Access permissions shall be updated when a user's responsibilities change.
+
+## Termination
+Accounts shall be disabled when employment ends.
+
+## Privileged Accounts
+Administrative access requires explicit approval.
+
+## Review
+System owners should review privileged accounts when requested by Information Security.
+
+## Gap intentionally left
+There is no mandatory periodic review interval for all user accounts.
