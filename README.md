@@ -836,29 +836,6 @@ It does **not** mean that an organization has been formally certified as complia
 
 ---
 
-## Capstone Deliverables
-
-The project includes or is being finalized with the following deliverables:
-
-- [x] Defined RAG domain
-- [x] 20-document organizational corpus
-- [x] NIST CSF 2.0 framework source
-- [x] Document ingestion pipeline
-- [x] Chunking strategy
-- [x] Embedding model
-- [x] Vector database
-- [x] Hybrid Search
-- [x] Reranking
-- [x] 30 Golden Questions
-- [x] Recall@5 above 80%
-- [x] Streamlit user interface
-- [x] Authentication
-- [x] RAGAS evaluation on 20 questions
-- [x] Cost analysis for 1k / 10k / 100k users
-- [x] Architecture Decision Record
-- [ ] Testing with 3 real users
-- [ ] Public GitHub repository
-- [ ] Live deployed demo
 
 ---
 
